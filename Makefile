@@ -1,7 +1,7 @@
 COMPILER = scss
 SCSS_V330 = $(shell gem list sass --installed --version '>= 3.3.0')
 SOURCEMAP = none
-SCSS_FLAGS = --style=expanded --unix-newlines
+SCSS_FLAGS = --style=compact --unix-newlines
 WATCH_FLAGS = $(SCSS_FLAGS) --watch
 SOURCE_DIR = scss
 OUTPUT_DIR = .
