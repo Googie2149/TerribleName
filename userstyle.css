@@ -495,7 +495,7 @@
   .messages-page .error { margin: 7px 310px 7px 15px; }
   .res #header-bottom-right.res-navTop { top: auto !important; bottom: 7px !important; }
   .res #header-bottom-right.res-navTop #userbarToggle { background: none !important; border: none !important; color: inherit !important; padding: 0 !important; }
-  .res #header-bottom-right.res-navTop #userbarToggle.userbarShow { bottom: -4px !important; top: auto !important; min-height: auto !important; }
+  .res #header-bottom-right.res-navTop #userbarToggle.userbarShow { bottom: 23px !important; top: auto !important; min-height: auto !important; }
   .res #header-bottom-right.res-navTop #userbarToggle.userbarShow ~ #mail, .res #header-bottom-right.res-navTop #userbarToggle.userbarShow ~ #modmail { display: none !important; }
   .res .gearIcon { background-position: -64px -32px; vertical-align: middle; top: auto !important; }
   .res .gearIcon.newNotification { background-position: -64px -48px; }
