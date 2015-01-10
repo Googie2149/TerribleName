@@ -21,6 +21,14 @@
   }
 }
 
+%tn-quote {
+  border-left: solid 3px $quote-border-color;
+  padding: 0.2em 0.5em;
+  background: $quote-bg;
+  color: $quote-fg;
+  margin: 0.4em;
+}
+
 .md {
   line-height: 1.5em;
   max-width: none;
@@ -61,11 +69,7 @@
   }
 
   blockquote {
-    border-left: solid 3px $quote-border-color;
-    padding: 0.2em 0.5em;
-    background: $quote-bg;
-    color: $quote-fg;
-    margin: 0.4em;
+    @extend %tn-quote;
   }
 
   code,
@@ -93,13 +97,36 @@
 
   @if $show-line-num-in-codeblock == yes {
     pre {
-      @include box-with-line-num($line-num-fg, $line-num-bg);
+      position: relative;
+      background: $line-num-bg;
+      border: solid 1px $line-num-bg;
+
+      > code {
+        margin-left: 2.8em;
+      }
+
+      $nums: '';
+      @for $i from 1 to 1000 {
+        $nums: '#{$nums}#{$i}  ';
+      }
+
+      &::before {
+        content: $nums;
+        position: absolute;
+        color: $line-num-fg;
+        left: 0;
+        top: 7px;
+        bottom: 7px;
+        width: 2.3em;
+        white-space: pre-wrap;
+        direction: rtl;
+        overflow: hidden;
+      }
     }
   } @else {
     pre {
       > code {
         border: solid 1px $codeblock-border-color;
-        @include rounded(3px);
       }
     }
   }
