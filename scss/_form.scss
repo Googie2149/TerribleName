@@ -62,17 +62,24 @@ input[type=password] {
   }
 }
 
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield textarea,
+.linefield textarea {
+  width: $comment-textbox-width;
+}
+
 .roundfield,
 .linefield {
   background: none;
   padding: 0;
+  width: $comment-textbox-width + 8px;
+}
 
-  &.info-notice {
-    width: $comment-textbox-width;
-  }
-
-  .usertext-edit textarea {
-    width: $comment-textbox-width;
+form.submit {
+  display: inline-block;
+  .roundfield.info-notice {
+    width: auto;
   }
 }
 
@@ -370,9 +377,7 @@ input[type=password] {
           margin-left: 4px;
           display: inline-block;
           vertical-align: middle;
-          border-left: solid 4px transparent;
-          border-right: solid 4px transparent;
-          border-top: solid 4px $small-button-fg;
+          @include triangle(bottom, 4px, $small-button-fg);
         }
       }
     }
@@ -463,6 +468,8 @@ input[type=password] {
 }
 
 .usertable {
+  clear: left;
+
   > .toggle.clearflairtemplates-button {
     background: none;
     padding: 0;

@@ -57,9 +57,7 @@
     top: 8px;
     width: 0;
     height: 0;
-    border-top: solid 8px transparent;
-    border-bottom: solid 8px transparent;
-    border-right: solid 8px $comment-bg;
+    @include triangle(left, 8px, $comment-bg);
   }
 }
 
@@ -126,13 +124,13 @@
       > .tagline {
         background: $misc-spam-tagline-bg;
 
-        > time::after {
+        > time:first-of-type::after {
           content: 'Spam';
           display: inline-block;
           background: $misc-spam-color;
           color: $misc-spam-tag-fg;
           padding: 0 3px;
-          margin-left: 5px;
+          margin: 0 5px;
           @include rounded(2px);
         }
       }
