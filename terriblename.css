@@ -1,12 +1,12 @@
 /* Terrible Name (https://github.com/unzan/TerribleName | https://www.reddit.com/r/TerribleName) */
 body { background: #eaeaea url("%%noise%%") left top repeat; color: #111; font-family: "Liberation Sans", Arial, sans-serif; }
 
-.thing .title, .link .tagline a, a { color: #2177b4; }
-.thing .title:visited, .link .tagline a:visited, a:visited { color: #5358ba; }
+.thing .title, .link .tagline a, .md a, a { color: #2177b4; }
+.thing .title:visited, .link .tagline a:visited, .md a:visited, a:visited { color: #5358ba; }
 
 hr { margin: 1.5em 0em; }
 
-hr { border: none; display: block; height: 3px; background: #b7b7b7; }
+.md hr, hr { border: none; display: block; height: 3px; background: #b7b7b7; }
 
 .error { color: #111; }
 
@@ -316,17 +316,20 @@ ul.report-reasons > li.report-reason { display: list-item; white-space: normal; 
 
 .md blockquote { border-left: solid 3px #9e9e9e; padding: 0.2em 0.5em; background: whitesmoke; color: #111; margin: 0.4em; }
 
-.md { line-height: 1.5em; max-width: none; }
-.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 { overflow: hidden; line-height: 1.5em; color: inherit; }
+.md { line-height: 1.5em; font-size: 13px; max-width: none; }
+.md p, .md li, .md td, .md th, .md pre > code { font-size: inherit !important; line-height: inherit !important; }
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 { overflow: hidden; line-height: 1.5em; color: inherit !important; }
 .md h1, .md h2 { font-weight: normal !important; border-bottom: solid 1px #b7b7b7; margin: 0.5em 0em 1em 0em; }
 .md h1 { font-size: 1.5em; border-bottom-width: 2px; }
 .md h2 { font-size: 1.3em; }
 .md h3 { font-size: 1.2em; }
-.md p { margin: 0.5em 0em; }
-.md code, .md pre { font-family: "DejaVu Sans Mono", "Droid Sans Mono", Inconsolata, Monaco, monospace; }
-.md code { color: #b44214; }
+.md h6 { text-decoration: none; }
+.md p, .md p:first-child, .md p:last-child { margin: 0.5em 0em !important; }
+.md code, .md pre { font-family: "DejaVu Sans Mono", "Droid Sans Mono", Inconsolata, Monaco, monospace; border-radius: 0; }
+.md code { color: #b44214; background: none; border: none; padding: 0; margin: 0; }
 .md pre { margin: 1em 0em; padding: 0; max-width: 95%; }
-.md pre > code { padding: 7px; display: block; background: whitesmoke; color: #111; overflow: auto; }
+.md pre > code { padding: 7px !important; display: block; background: whitesmoke; color: #111; overflow: auto; }
+.md pre { background: none; border: none; }
 .md pre > code { border: solid 1px #9e9e9e; }
 .md ul { list-style-type: square; }
 .md a:hover { text-decoration: underline; }
@@ -603,19 +606,21 @@ table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
 .res.res-nightmode .flairselector.drop-choices.active > h2 { background: -webkit-linear-gradient(top, #242a32, #1e2229); background: -moz-linear-gradient(top, #242a32, #1e2229); background: linear-gradient(top, #242a32, #1e2229); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 0 #3e4855; }
 .res.res-nightmode .flairselector.drop-choices.active, .res.res-nightmode .nav-buttons > .nextprev > a, .res.res-nightmode.wiki-page .wiki-page-content .md.wiki, .res.res-nightmode #BigEditor > .RESDialogSmall.BERight > h3, .res.res-nightmode .RESDialogSmall.livePreview > h3 { border: none !important; background: -webkit-linear-gradient(top, #242a32, #1e2229); background: -moz-linear-gradient(top, #242a32, #1e2229); background: linear-gradient(top, #242a32, #1e2229); box-shadow: inset 0 1px 0 #3a434f, 0 1px 2px rgba(0, 0, 0, 0.3); }
 .res.res-nightmode #siteTable.linklisting .thing .entry .usertext > .usertext-body > .md, .res.res-nightmode #siteTable.linklisting .thing .entry.RES-keyNav-activeElement .usertext > .usertext-body > .md { background-color: #242a32 !important; color: #9e9e9e !important; }
+.res.res-nightmode > #header { background: #111 url("%%banner%%") 0 0 no-repeat !important; }
 .res.res-nightmode > #header #sr-header-area { background: rgba(0, 0, 0, 0.5) !important; color: #848484; }
 .res.res-nightmode > #header #header-bottom-left { background: none !important; }
 .res.res-nightmode > #header #header-bottom-left .tabmenu .selected a { padding-bottom: 8px !important; }
 .res.res-nightmode > #header #header-bottom-right { background: none !important; }
 .res.res-nightmode > #header .tabmenu { background: -webkit-linear-gradient(top, #292f37, #1e2229); background: -moz-linear-gradient(top, #292f37, #1e2229); background: linear-gradient(top, #292f37, #1e2229); box-shadow: inset 0 1px 0 #3e4855; }
 .res.res-nightmode .side .sidecontentbox .title, .res.res-nightmode .markdownEditor-wrapper { border: solid 1px #13161A; color: #9e9e9e; background: -webkit-linear-gradient(top, #353e49, #242a32); background: -moz-linear-gradient(top, #353e49, #242a32); background: linear-gradient(top, #353e49, #242a32); box-shadow: inset 0 1px 0 #475261; }
-.res.res-nightmode .info-notice, .res.res-nightmode .infobar, .res.res-nightmode .linkinfo, .res.res-nightmode .action-form, .res.res-nightmode .flat-list > .report-reasons { background: #292f37; color: #9e9e9e; border: solid 1px #0f1114; box-shadow: 0 1px 2px #0d0f11, inset 0 1px 0 #38404c; }
+.res.res-nightmode .info-notice, .res.res-nightmode .infobar, .res.res-nightmode .linkinfo, .res.res-nightmode .link .action-form, .res.res-nightmode .link .flat-list > .report-reasons { background: #292f37; color: #9e9e9e; border: solid 1px #0f1114; box-shadow: 0 1px 2px #0d0f11, inset 0 1px 0 #38404c; }
 .res.res-nightmode form.submit.content { background: none !important; }
 .res.res-nightmode .side .spacer > #search input, .res.res-nightmode #newlink.submit .formtabs-content .roundfield-content textarea, .res.res-nightmode #newlink.submit .formtabs-content .roundfield-content input#url, .res.res-nightmode #newlink.submit .formtabs-content .roundfield-content input#sr-autocomplete, .res.res-nightmode textarea, .res.res-nightmode input[type=text], .res.res-nightmode .usertext > .usertext-edit > div > textarea, .res.res-nightmode .usertext-edit.viewSource > div > textarea, .res.res-nightmode input[type=password] { background: #1e2229 !important; color: #9e9e9e !important; border-color: #13161A !important; box-shadow: inset 0 1px 2px #080a0b, 0 1px 0 #2f3640; }
 .res.res-nightmode #shortlink-text { box-shadow: none; }
 .res.res-nightmode .fancy-settings + .tabmenu > li > a, .res.res-nightmode .formtab.tabmenu > li > a { color: #9e9e9e !important; }
 .res.res-nightmode .fancy-settings + .tabmenu > li.selected > a::after, .res.res-nightmode .formtab.tabmenu > li.selected > a::after { display: none; }
 .res.res-nightmode .report-reasons li { color: #9e9e9e !important; }
+.res.res-nightmode .comment .action-form, .res.res-nightmode .comment .report-reasons { background: #2f3640; }
 .res.res-nightmode .tabpane-content, .res.res-nightmode .formtabs-content { background: none; border: none; box-shadow: none; }
 .res.res-nightmode .tabpane-content .roundfield, .res.res-nightmode .formtabs-content .roundfield { background: none !important; }
 .res.res-nightmode .menuarea { color: #9e9e9e; }
@@ -669,7 +674,7 @@ table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
 .res.res-nightmode .thing .tagline .author.admin, .res.res-nightmode .thing .tagline .author.admin:hover { background-color: #b9221f !important; }
 .res.res-nightmode .thing .tagline .author.moderator, .res.res-nightmode .thing .tagline .author.moderator:hover { background-color: #424d00 !important; }
 .res.res-nightmode .thing.reported { border: none; }
-.res.res-nightmode .linkflairlabel, .res.res-nightmode .flair { background-color: #292f37; color: #9e9e9e; border: none; }
+.res.res-nightmode .linkflairlabel, .res.res-nightmode .flair { background-color: #333b46; color: #9e9e9e; border: none; }
 .res.res-nightmode .nestedlisting .thing.comment.noncollapsed::before { background: #242a32; }
 .res.res-nightmode .commentarea { border-top-color: black; box-shadow: inset 0 1px 0 #1e2229; }
 .res.res-nightmode .commentarea .comment.noncollapsed > .entry { background: #242a32; }
