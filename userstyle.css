@@ -53,7 +53,7 @@
   .big-mod-buttons > span[role=radiogroup] > .pretty-button:nth-child(2) { color: #dc322f; }
   .big-mod-buttons > span[role=radiogroup] > .pretty-button.positive { color: #859900; }
   .comment .pretty-button:hover { text-decoration: underline !important; }
-  .infobar, .link .report-reasons, .link .action-form, .unvotable-message, .contest-mode.infobar, .linkinfo, .content.submit .info-notice, .profile-page .gold-accent.snoovatar-link, .profile-page .server-seconds, .message > .subject > .correspondent { background: #FFF5CC; color: #111; border: solid 1px #aaaaaa; font-family: "Liberation Sans", Arial, sans-serif; border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 1px #fffbeb, inset 0 -1px 1px #ffeda3; }
+  .infobar, .link .report-reasons, .link .action-form, .unvotable-message, .contest-mode.infobar, .gold-accent.comment-visits-box, .linkinfo, .content.submit .info-notice, .profile-page .gold-accent.snoovatar-link, .profile-page .server-seconds, .message > .subject > .correspondent { background: #FFF5CC; color: #111; border: solid 1px #aaaaaa; font-family: "Liberation Sans", Arial, sans-serif; border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 1px 1px #fffbeb, inset 0 -1px 1px #ffeda3; }
   .menuarea .spacer > .help-hoverable { z-index: 3000; position: absolute; background: #FFF5CC; color: #111; padding: 4px 6px; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); border-radius: 3px; }
   .sr-interest-bar > .bubble > .query-box > .query, #search input[type=text], .roundfield-content > input#url, .pretty-form textarea, .pretty-form input[type=text], .pretty-form input[type=password], textarea, input[type=text], input[type=password] { padding: 3px; background: #fff; color: #444444; border: solid 1px #aaaaaa !important; font-family: "Liberation Sans", Arial, sans-serif; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8); border-radius: 3px; }
   .sr-interest-bar > .bubble > .query-box > .query:focus, #search input[type=text]:focus, .roundfield-content > input#url:focus, .pretty-form textarea:focus, .pretty-form input[type=text]:focus, .pretty-form input[type=password]:focus, textarea:focus, input[type=text]:focus, input[type=password]:focus { border-color: #ed855a !important; }
@@ -76,7 +76,6 @@
   .flairselector, .tabpane-content, .formtabs-content, .login-form-side, .searchfacets, .fancy-settings .linefield, .searchpane.raisedbox, .explore-item, .multi-details form.rename-multi, .multi-details form.copy-multi, .multi-details .settings > .delete.confirm-button > .confirmation, .res #alert_message { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 1px 1px rgba(0, 0, 0, 0.14); overflow: hidden; background: #efefef; border: solid 1px #aaaaaa; padding: 10px; border-radius: 3px; }
   .tabpane-content, .formtabs-content { clear: both; margin-bottom: 1em; }
   .formtabs-content { width: 530px; }
-  .formtabs-content textarea { resize: vertical; }
   .fancy-settings { padding: 10px; overflow: hidden; }
   .fancy-settings .wiki_button { display: block; clear: left; }
   .flairgrant .save-button, .fancy-settings .save-button { clear: left; }
@@ -225,12 +224,11 @@
   .md table tbody tr, .res #alert_message table.commentPreview tbody tr { background: #fff; }
   .md table tbody tr:hover, .res #alert_message table.commentPreview tbody tr:hover { background: #FFF5CC; }
   .md blockquote, .message.noncollapsed > .entry .md-container > .parent.rounded { border-left: solid 3px #9e9e9e; padding: 0.2em 0.5em; background: whitesmoke; color: #111; margin: 0.4em; }
-  .md { line-height: 1.5em; font-size: 13px; max-width: none; }
+  .md { line-height: 1.5em; font-size: 13px; max-width: none; color: inherit; }
   .md p, .md li, .md td, .md th, .md pre > code { font-size: inherit !important; line-height: inherit !important; }
   .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 { overflow: hidden; line-height: 1.5em; color: inherit !important; }
-  .md h1, .md h2 { font-weight: normal !important; border-bottom: solid 1px #b7b7b7; margin: 0.5em 0em 1em 0em; }
-  .md h1 { font-size: 1.5em; border-bottom-width: 2px; }
-  .md h2 { font-size: 1.3em; }
+  .md h1 { font-size: 1.55em; font-weight: bold; margin: 0.5em 0em; }
+  .md h2 { font-size: 1.3em; font-weight: normal !important; margin: 0.5em 0em 1em 0em; border-bottom: solid 1px #b7b7b7; }
   .md h3 { font-size: 1.2em; }
   .md h6 { text-decoration: none; }
   .md p, .md p:first-child, .md p:last-child { margin: 0.5em 0em !important; }
@@ -240,6 +238,7 @@
   .md pre > code { padding: 7px !important; display: block; background: whitesmoke; color: #111; overflow: auto; }
   .md pre { background: none; border: none; }
   .md pre > code { border: solid 1px #9e9e9e; }
+  .md ul:last-child, .md ol:last-child { margin-bottom: 1em; }
   .md ul { list-style-type: square; }
   .md a:hover { text-decoration: underline; }
   .md a[href$="/spoiler"] { background: #111 !important; color: #111 !important; text-decoration: none; }
@@ -279,9 +278,11 @@
   .comment.deleted > .entry { opacity: 0.7; }
   .comment.deleted > .entry > .usertext > .usertext-body { display: none; }
   .comment .unvotable-message { margin-left: 5px; }
+  .comment.new-comment .usertext-body { border-left: none; border-right: none; background: #dbefee; border-color: #b8dfdc; }
   .comment.collapsed > .entry, .morerecursion > .entry { margin-bottom: 0.7em; }
   .contest-mode.infobar { position: absolute; top: 5px; right: 0; max-width: 300px; margin: 0; font-size: 0; }
   .contest-mode.infobar:hover, .contest-mode.infobar > strong { font-size: 13px; }
+  .gold-accent.comment-visits-box { margin-left: 10px; }
   .side { background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
   .titlebox { margin-top: 20px; }
   .titlebox .subscribe-button { display: block; margin-bottom: 1em; }
@@ -631,7 +632,6 @@
   .res.wiki-page button.RESBigEditorPop { clear: none; margin: 5px 0; }
   .res.wiki-page .wiki-page-content > #editform > div > .markdownEditor > .RESCharCounter { margin-right: 30px; }
   .res.wiki-page .wiki-page-content > #editform .help-toggle { display: block; float: left; margin: 5px 0 20px 0; }
-  .res.wiki-page .wiki-page-content > #editform textarea#wiki_page_content { resize: vertical; }
   .res.wiki-page .wiki-page-content > #editform > label[for="reason"], .res.wiki-page .wiki-page-content > #editform > .livePreview { display: block; clear: left; }
   .res.wiki-page .wiki-page-content > #editform > .livePreview { min-width: 100%; width: 100%; }
   .res .subscription-box .subButtons { padding: 3px 0 !important; }
