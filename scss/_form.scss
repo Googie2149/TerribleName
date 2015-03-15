@@ -23,6 +23,14 @@ input[type=password] {
   .usertext-edit {
     display: inline-block;
     width: auto !important;
+
+    > .md {
+      margin: 0;
+    }
+
+    textarea {
+      @extend %tn-markdown-editor-textbox;
+    }
   }
 
   .markhelp,
@@ -234,7 +242,7 @@ form.submit {
   button {
     display: inline-block;
     vertical-align: middle;
-    margin: 0em 0.3em;
+    margin: 0 0.3em;
   }
 }
 
@@ -267,7 +275,7 @@ form.submit {
 
 .flairselection {
   > .flairremove {
-    margin: 1em 0em;
+    margin: 1em 0;
   }
 }
 
@@ -402,25 +410,6 @@ form.submit {
     > form {
       position: relative;
       min-width: 10em;
-
-      // FIXME: why is this here?
-      // i'm not sure wtf does this shit for.
-      // it doesn't do anything on ff 32.0a1 (nightly).
-      .RES-sort-button {
-        position: absolute;
-        background: $res-temp-sort-bg;
-        float: none;
-        right: 2px;
-        top: 2px;
-        width: 2.3em;
-        padding: 0 3px;
-        overflow: hidden;
-        @include rounded(2px);
-
-        &::before {
-          content: 'temp     ';
-        }
-      }
     }
   }
 }
