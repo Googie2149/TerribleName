@@ -1,4 +1,113 @@
-.linkflairlabel,
-.flair {
-  @extend %tn-flair;
+.linkflairlabel {
+	@extend %tn-flair;
 }
+
+.flair {
+	display: inline-block;
+	font-size: $normal-font-size !important;
+	line-height: 1.2em;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+	background-image: url(%%spritesheet%%);
+	background-color: rgba(0,0,0,0);
+	background-repeat: no-repeat;
+}
+
+@mixin kirby-flair ($width, $pos, $name) {
+	.flair-#{$name} {
+		min-width: #{$width}px;
+		height: 32px;
+		background-position: -#{$pos}px -2px;
+	}
+}
+
+@mixin kirby-anim ($posy, $animname) {
+	.flair-kirby-#{$animname} {
+		min-width: 21px;
+		height: 19px;
+		background-image: url("%%KirbyAnimation%%");
+		background-position: -209px -#{$posy}px;
+	}
+
+	.flair-kirby-#{$animname}:hover {
+		min-width: 21px;
+		height: 19px;
+		background-image: url("%%KirbyAnimation%%");
+	    -webkit-animation: kirbyanim-#{$animname} .9s steps(10) infinite; 
+		-moz-animation: kirbyanim-#{$animname} .9s steps(10) infinite; 
+		-ms-animation: kirbyanim-#{$animname} .9s steps(10) infinite; 
+		-o-animation: kirbyanim-#{$animname} .9s steps(10) infinite; 
+		animation: kirbyanim-#{$animname} .9s steps(10) infinite;
+	}
+
+	@-webkit-keyframes kirbyanim-#{$animname} {
+		from { background-position: 0px -#{$posy}px; } to { background-position: -210px -#{$posy}px; }
+	}
+	@-moz-keyframes kirbyanim-#{$animname} {
+		from { background-position: 0px -#{$posy}px; } to { background-position: -210px -#{$posy}px; }
+	}
+	@-ms-keyframes kirbyanim-#{$animname} {
+		from { background-position: 0px -#{$posy}px; } to { background-position: -210px -#{$posy}px; }
+	}
+	@-o-keyframes kirbyanim-#{$animname} {
+		from { background-position: 0px -#{$posy}px; } to { background-position: -210px -#{$posy}px; }
+	}
+	@keyframes kirbyanim-#{$animname} {
+		from { background-position: 0px -#{$posy}px; } to { background-position: -210px -#{$posy}px; }
+	}
+
+}
+
+@include kirby-flair(16, 2,    "BnWKirby");
+@include kirby-flair(24, 22,   "ChuChu");
+@include kirby-flair(32, 50,   "ColorDedede");
+@include kirby-flair(36, 86,   "DarkMetaKnight");
+@include kirby-flair(32, 126,  "Dedede");
+@include kirby-flair(32, 162,  "FlyingDedede");
+@include kirby-flair(23, 198,  "Gooey");
+@include kirby-flair(23, 225,  "Hammer");
+@include kirby-flair(23, 252,  "Jet");
+@include kirby-flair(30, 279,  "Kracko");
+@include kirby-flair(31, 313,  "Kine");
+@include kirby-flair(35, 348,  "GalactaKnight");
+@include kirby-flair(32, 387,  "GalactaKnight2");
+@include kirby-flair(28, 423,  "Magalor");
+@include kirby-flair(28, 455,  "Marx");
+@include kirby-flair(37, 487,  "MasklessMetaknight");
+@include kirby-flair(38, 528,  "Metaknight");
+@include kirby-flair(25, 570,  "Mirror");
+@include kirby-flair(25, 599,  "Naga");
+@include kirby-flair(20, 628,  "Pitch");
+@include kirby-flair(26, 652,  "Rick");
+@include kirby-flair(22, 682,  "Rockstar");
+@include kirby-flair(24, 708,  "Scarfy");
+@include kirby-flair(25, 736,  "Scuba");
+@include kirby-flair(25, 765,  "Slash");
+@include kirby-flair(24, 794,  "Sparky");
+@include kirby-flair(25, 822,  "Star");
+@include kirby-flair(22, 851,  "Sunglasses");
+@include kirby-flair(44, 877,  "Taranza");
+@include kirby-flair(19, 925,  "Victory");
+@include kirby-flair(26, 948,  "Waddledee");
+@include kirby-flair(28, 978,  "Witch");
+@include kirby-flair(29, 1010, "Chilly");
+@include kirby-flair(30, 1043, "Fighter");
+@include kirby-flair(32, 1077, "Peace");
+
+@include kirby-anim(0,   "default");
+@include kirby-anim(19,  "yellow");
+@include kirby-anim(38,  "red");
+@include kirby-anim(57,  "green");
+@include kirby-anim(76,  "snow");
+@include kirby-anim(95,  "carbon");
+@include kirby-anim(114, "ocean");
+@include kirby-anim(133, "sapphire");
+@include kirby-anim(152, "grape");
+@include kirby-anim(171, "emerald");
+@include kirby-anim(190, "orange");
+@include kirby-anim(209, "chocolate");
+@include kirby-anim(228, "cherry");
+@include kirby-anim(247, "chalk");
+@include kirby-anim(266, "mirror");
+

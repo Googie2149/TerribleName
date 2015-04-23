@@ -89,8 +89,7 @@ a.pretty-button:after, .sidecontentbox > .title .collapse-button:after, .wiki-pa
   content: ']';
 }
 
-.linkflairlabel,
-.flair {
+.linkflairlabel {
   display: inline-block;
   font-size: 13px !important;
   border: solid 1px #e0ce85;
@@ -532,6 +531,1098 @@ hr {
   border: none;
 }
 
+.flair {
+  display: inline-block;
+  font-size: 13px !important;
+  line-height: 1.2em;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+  background-image: url(%%spritesheet%%);
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.flair-BnWKirby {
+  min-width: 16px;
+  height: 32px;
+  background-position: -2px -2px;
+}
+
+.flair-ChuChu {
+  min-width: 24px;
+  height: 32px;
+  background-position: -22px -2px;
+}
+
+.flair-ColorDedede {
+  min-width: 32px;
+  height: 32px;
+  background-position: -50px -2px;
+}
+
+.flair-DarkMetaKnight {
+  min-width: 36px;
+  height: 32px;
+  background-position: -86px -2px;
+}
+
+.flair-Dedede {
+  min-width: 32px;
+  height: 32px;
+  background-position: -126px -2px;
+}
+
+.flair-FlyingDedede {
+  min-width: 32px;
+  height: 32px;
+  background-position: -162px -2px;
+}
+
+.flair-Gooey {
+  min-width: 23px;
+  height: 32px;
+  background-position: -198px -2px;
+}
+
+.flair-Hammer {
+  min-width: 23px;
+  height: 32px;
+  background-position: -225px -2px;
+}
+
+.flair-Jet {
+  min-width: 23px;
+  height: 32px;
+  background-position: -252px -2px;
+}
+
+.flair-Kracko {
+  min-width: 30px;
+  height: 32px;
+  background-position: -279px -2px;
+}
+
+.flair-Kine {
+  min-width: 31px;
+  height: 32px;
+  background-position: -313px -2px;
+}
+
+.flair-GalactaKnight {
+  min-width: 35px;
+  height: 32px;
+  background-position: -348px -2px;
+}
+
+.flair-GalactaKnight2 {
+  min-width: 32px;
+  height: 32px;
+  background-position: -387px -2px;
+}
+
+.flair-Magalor {
+  min-width: 28px;
+  height: 32px;
+  background-position: -423px -2px;
+}
+
+.flair-Marx {
+  min-width: 28px;
+  height: 32px;
+  background-position: -455px -2px;
+}
+
+.flair-MasklessMetaknight {
+  min-width: 37px;
+  height: 32px;
+  background-position: -487px -2px;
+}
+
+.flair-Metaknight {
+  min-width: 38px;
+  height: 32px;
+  background-position: -528px -2px;
+}
+
+.flair-Mirror {
+  min-width: 25px;
+  height: 32px;
+  background-position: -570px -2px;
+}
+
+.flair-Naga {
+  min-width: 25px;
+  height: 32px;
+  background-position: -599px -2px;
+}
+
+.flair-Pitch {
+  min-width: 20px;
+  height: 32px;
+  background-position: -628px -2px;
+}
+
+.flair-Rick {
+  min-width: 26px;
+  height: 32px;
+  background-position: -652px -2px;
+}
+
+.flair-Rockstar {
+  min-width: 22px;
+  height: 32px;
+  background-position: -682px -2px;
+}
+
+.flair-Scarfy {
+  min-width: 24px;
+  height: 32px;
+  background-position: -708px -2px;
+}
+
+.flair-Scuba {
+  min-width: 25px;
+  height: 32px;
+  background-position: -736px -2px;
+}
+
+.flair-Slash {
+  min-width: 25px;
+  height: 32px;
+  background-position: -765px -2px;
+}
+
+.flair-Sparky {
+  min-width: 24px;
+  height: 32px;
+  background-position: -794px -2px;
+}
+
+.flair-Star {
+  min-width: 25px;
+  height: 32px;
+  background-position: -822px -2px;
+}
+
+.flair-Sunglasses {
+  min-width: 22px;
+  height: 32px;
+  background-position: -851px -2px;
+}
+
+.flair-Taranza {
+  min-width: 44px;
+  height: 32px;
+  background-position: -877px -2px;
+}
+
+.flair-Victory {
+  min-width: 19px;
+  height: 32px;
+  background-position: -925px -2px;
+}
+
+.flair-Waddledee {
+  min-width: 26px;
+  height: 32px;
+  background-position: -948px -2px;
+}
+
+.flair-Witch {
+  min-width: 28px;
+  height: 32px;
+  background-position: -978px -2px;
+}
+
+.flair-Chilly {
+  min-width: 29px;
+  height: 32px;
+  background-position: -1010px -2px;
+}
+
+.flair-Fighter {
+  min-width: 30px;
+  height: 32px;
+  background-position: -1043px -2px;
+}
+
+.flair-Peace {
+  min-width: 32px;
+  height: 32px;
+  background-position: -1077px -2px;
+}
+
+.flair-kirby-default {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -0px;
+}
+
+.flair-kirby-default:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-default 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-default 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-default 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-default 0.9s steps(10) infinite;
+  animation: kirbyanim-default 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-default {
+  from {
+    background-position: 0px -0px;
+  }
+  to {
+    background-position: -210px -0px;
+  }
+}
+@-moz-keyframes kirbyanim-default {
+  from {
+    background-position: 0px -0px;
+  }
+  to {
+    background-position: -210px -0px;
+  }
+}
+@-ms-keyframes kirbyanim-default {
+  from {
+    background-position: 0px -0px;
+  }
+  to {
+    background-position: -210px -0px;
+  }
+}
+@-o-keyframes kirbyanim-default {
+  from {
+    background-position: 0px -0px;
+  }
+  to {
+    background-position: -210px -0px;
+  }
+}
+@keyframes kirbyanim-default {
+  from {
+    background-position: 0px -0px;
+  }
+  to {
+    background-position: -210px -0px;
+  }
+}
+.flair-kirby-yellow {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -19px;
+}
+
+.flair-kirby-yellow:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-yellow 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-yellow 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-yellow 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-yellow 0.9s steps(10) infinite;
+  animation: kirbyanim-yellow 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-yellow {
+  from {
+    background-position: 0px -19px;
+  }
+  to {
+    background-position: -210px -19px;
+  }
+}
+@-moz-keyframes kirbyanim-yellow {
+  from {
+    background-position: 0px -19px;
+  }
+  to {
+    background-position: -210px -19px;
+  }
+}
+@-ms-keyframes kirbyanim-yellow {
+  from {
+    background-position: 0px -19px;
+  }
+  to {
+    background-position: -210px -19px;
+  }
+}
+@-o-keyframes kirbyanim-yellow {
+  from {
+    background-position: 0px -19px;
+  }
+  to {
+    background-position: -210px -19px;
+  }
+}
+@keyframes kirbyanim-yellow {
+  from {
+    background-position: 0px -19px;
+  }
+  to {
+    background-position: -210px -19px;
+  }
+}
+.flair-kirby-red {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -38px;
+}
+
+.flair-kirby-red:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-red 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-red 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-red 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-red 0.9s steps(10) infinite;
+  animation: kirbyanim-red 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-red {
+  from {
+    background-position: 0px -38px;
+  }
+  to {
+    background-position: -210px -38px;
+  }
+}
+@-moz-keyframes kirbyanim-red {
+  from {
+    background-position: 0px -38px;
+  }
+  to {
+    background-position: -210px -38px;
+  }
+}
+@-ms-keyframes kirbyanim-red {
+  from {
+    background-position: 0px -38px;
+  }
+  to {
+    background-position: -210px -38px;
+  }
+}
+@-o-keyframes kirbyanim-red {
+  from {
+    background-position: 0px -38px;
+  }
+  to {
+    background-position: -210px -38px;
+  }
+}
+@keyframes kirbyanim-red {
+  from {
+    background-position: 0px -38px;
+  }
+  to {
+    background-position: -210px -38px;
+  }
+}
+.flair-kirby-green {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -57px;
+}
+
+.flair-kirby-green:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-green 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-green 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-green 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-green 0.9s steps(10) infinite;
+  animation: kirbyanim-green 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-green {
+  from {
+    background-position: 0px -57px;
+  }
+  to {
+    background-position: -210px -57px;
+  }
+}
+@-moz-keyframes kirbyanim-green {
+  from {
+    background-position: 0px -57px;
+  }
+  to {
+    background-position: -210px -57px;
+  }
+}
+@-ms-keyframes kirbyanim-green {
+  from {
+    background-position: 0px -57px;
+  }
+  to {
+    background-position: -210px -57px;
+  }
+}
+@-o-keyframes kirbyanim-green {
+  from {
+    background-position: 0px -57px;
+  }
+  to {
+    background-position: -210px -57px;
+  }
+}
+@keyframes kirbyanim-green {
+  from {
+    background-position: 0px -57px;
+  }
+  to {
+    background-position: -210px -57px;
+  }
+}
+.flair-kirby-snow {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -76px;
+}
+
+.flair-kirby-snow:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-snow 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-snow 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-snow 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-snow 0.9s steps(10) infinite;
+  animation: kirbyanim-snow 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-snow {
+  from {
+    background-position: 0px -76px;
+  }
+  to {
+    background-position: -210px -76px;
+  }
+}
+@-moz-keyframes kirbyanim-snow {
+  from {
+    background-position: 0px -76px;
+  }
+  to {
+    background-position: -210px -76px;
+  }
+}
+@-ms-keyframes kirbyanim-snow {
+  from {
+    background-position: 0px -76px;
+  }
+  to {
+    background-position: -210px -76px;
+  }
+}
+@-o-keyframes kirbyanim-snow {
+  from {
+    background-position: 0px -76px;
+  }
+  to {
+    background-position: -210px -76px;
+  }
+}
+@keyframes kirbyanim-snow {
+  from {
+    background-position: 0px -76px;
+  }
+  to {
+    background-position: -210px -76px;
+  }
+}
+.flair-kirby-carbon {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -95px;
+}
+
+.flair-kirby-carbon:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-carbon 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-carbon 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-carbon 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-carbon 0.9s steps(10) infinite;
+  animation: kirbyanim-carbon 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-carbon {
+  from {
+    background-position: 0px -95px;
+  }
+  to {
+    background-position: -210px -95px;
+  }
+}
+@-moz-keyframes kirbyanim-carbon {
+  from {
+    background-position: 0px -95px;
+  }
+  to {
+    background-position: -210px -95px;
+  }
+}
+@-ms-keyframes kirbyanim-carbon {
+  from {
+    background-position: 0px -95px;
+  }
+  to {
+    background-position: -210px -95px;
+  }
+}
+@-o-keyframes kirbyanim-carbon {
+  from {
+    background-position: 0px -95px;
+  }
+  to {
+    background-position: -210px -95px;
+  }
+}
+@keyframes kirbyanim-carbon {
+  from {
+    background-position: 0px -95px;
+  }
+  to {
+    background-position: -210px -95px;
+  }
+}
+.flair-kirby-ocean {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -114px;
+}
+
+.flair-kirby-ocean:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-ocean 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-ocean 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-ocean 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-ocean 0.9s steps(10) infinite;
+  animation: kirbyanim-ocean 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-ocean {
+  from {
+    background-position: 0px -114px;
+  }
+  to {
+    background-position: -210px -114px;
+  }
+}
+@-moz-keyframes kirbyanim-ocean {
+  from {
+    background-position: 0px -114px;
+  }
+  to {
+    background-position: -210px -114px;
+  }
+}
+@-ms-keyframes kirbyanim-ocean {
+  from {
+    background-position: 0px -114px;
+  }
+  to {
+    background-position: -210px -114px;
+  }
+}
+@-o-keyframes kirbyanim-ocean {
+  from {
+    background-position: 0px -114px;
+  }
+  to {
+    background-position: -210px -114px;
+  }
+}
+@keyframes kirbyanim-ocean {
+  from {
+    background-position: 0px -114px;
+  }
+  to {
+    background-position: -210px -114px;
+  }
+}
+.flair-kirby-sapphire {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -133px;
+}
+
+.flair-kirby-sapphire:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-sapphire 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-sapphire 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-sapphire 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-sapphire 0.9s steps(10) infinite;
+  animation: kirbyanim-sapphire 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-sapphire {
+  from {
+    background-position: 0px -133px;
+  }
+  to {
+    background-position: -210px -133px;
+  }
+}
+@-moz-keyframes kirbyanim-sapphire {
+  from {
+    background-position: 0px -133px;
+  }
+  to {
+    background-position: -210px -133px;
+  }
+}
+@-ms-keyframes kirbyanim-sapphire {
+  from {
+    background-position: 0px -133px;
+  }
+  to {
+    background-position: -210px -133px;
+  }
+}
+@-o-keyframes kirbyanim-sapphire {
+  from {
+    background-position: 0px -133px;
+  }
+  to {
+    background-position: -210px -133px;
+  }
+}
+@keyframes kirbyanim-sapphire {
+  from {
+    background-position: 0px -133px;
+  }
+  to {
+    background-position: -210px -133px;
+  }
+}
+.flair-kirby-grape {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -152px;
+}
+
+.flair-kirby-grape:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-grape 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-grape 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-grape 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-grape 0.9s steps(10) infinite;
+  animation: kirbyanim-grape 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-grape {
+  from {
+    background-position: 0px -152px;
+  }
+  to {
+    background-position: -210px -152px;
+  }
+}
+@-moz-keyframes kirbyanim-grape {
+  from {
+    background-position: 0px -152px;
+  }
+  to {
+    background-position: -210px -152px;
+  }
+}
+@-ms-keyframes kirbyanim-grape {
+  from {
+    background-position: 0px -152px;
+  }
+  to {
+    background-position: -210px -152px;
+  }
+}
+@-o-keyframes kirbyanim-grape {
+  from {
+    background-position: 0px -152px;
+  }
+  to {
+    background-position: -210px -152px;
+  }
+}
+@keyframes kirbyanim-grape {
+  from {
+    background-position: 0px -152px;
+  }
+  to {
+    background-position: -210px -152px;
+  }
+}
+.flair-kirby-emerald {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -171px;
+}
+
+.flair-kirby-emerald:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-emerald 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-emerald 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-emerald 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-emerald 0.9s steps(10) infinite;
+  animation: kirbyanim-emerald 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-emerald {
+  from {
+    background-position: 0px -171px;
+  }
+  to {
+    background-position: -210px -171px;
+  }
+}
+@-moz-keyframes kirbyanim-emerald {
+  from {
+    background-position: 0px -171px;
+  }
+  to {
+    background-position: -210px -171px;
+  }
+}
+@-ms-keyframes kirbyanim-emerald {
+  from {
+    background-position: 0px -171px;
+  }
+  to {
+    background-position: -210px -171px;
+  }
+}
+@-o-keyframes kirbyanim-emerald {
+  from {
+    background-position: 0px -171px;
+  }
+  to {
+    background-position: -210px -171px;
+  }
+}
+@keyframes kirbyanim-emerald {
+  from {
+    background-position: 0px -171px;
+  }
+  to {
+    background-position: -210px -171px;
+  }
+}
+.flair-kirby-orange {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -190px;
+}
+
+.flair-kirby-orange:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-orange 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-orange 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-orange 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-orange 0.9s steps(10) infinite;
+  animation: kirbyanim-orange 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-orange {
+  from {
+    background-position: 0px -190px;
+  }
+  to {
+    background-position: -210px -190px;
+  }
+}
+@-moz-keyframes kirbyanim-orange {
+  from {
+    background-position: 0px -190px;
+  }
+  to {
+    background-position: -210px -190px;
+  }
+}
+@-ms-keyframes kirbyanim-orange {
+  from {
+    background-position: 0px -190px;
+  }
+  to {
+    background-position: -210px -190px;
+  }
+}
+@-o-keyframes kirbyanim-orange {
+  from {
+    background-position: 0px -190px;
+  }
+  to {
+    background-position: -210px -190px;
+  }
+}
+@keyframes kirbyanim-orange {
+  from {
+    background-position: 0px -190px;
+  }
+  to {
+    background-position: -210px -190px;
+  }
+}
+.flair-kirby-chocolate {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -209px;
+}
+
+.flair-kirby-chocolate:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-chocolate 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-chocolate 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-chocolate 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-chocolate 0.9s steps(10) infinite;
+  animation: kirbyanim-chocolate 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-chocolate {
+  from {
+    background-position: 0px -209px;
+  }
+  to {
+    background-position: -210px -209px;
+  }
+}
+@-moz-keyframes kirbyanim-chocolate {
+  from {
+    background-position: 0px -209px;
+  }
+  to {
+    background-position: -210px -209px;
+  }
+}
+@-ms-keyframes kirbyanim-chocolate {
+  from {
+    background-position: 0px -209px;
+  }
+  to {
+    background-position: -210px -209px;
+  }
+}
+@-o-keyframes kirbyanim-chocolate {
+  from {
+    background-position: 0px -209px;
+  }
+  to {
+    background-position: -210px -209px;
+  }
+}
+@keyframes kirbyanim-chocolate {
+  from {
+    background-position: 0px -209px;
+  }
+  to {
+    background-position: -210px -209px;
+  }
+}
+.flair-kirby-cherry {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -228px;
+}
+
+.flair-kirby-cherry:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-cherry 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-cherry 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-cherry 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-cherry 0.9s steps(10) infinite;
+  animation: kirbyanim-cherry 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-cherry {
+  from {
+    background-position: 0px -228px;
+  }
+  to {
+    background-position: -210px -228px;
+  }
+}
+@-moz-keyframes kirbyanim-cherry {
+  from {
+    background-position: 0px -228px;
+  }
+  to {
+    background-position: -210px -228px;
+  }
+}
+@-ms-keyframes kirbyanim-cherry {
+  from {
+    background-position: 0px -228px;
+  }
+  to {
+    background-position: -210px -228px;
+  }
+}
+@-o-keyframes kirbyanim-cherry {
+  from {
+    background-position: 0px -228px;
+  }
+  to {
+    background-position: -210px -228px;
+  }
+}
+@keyframes kirbyanim-cherry {
+  from {
+    background-position: 0px -228px;
+  }
+  to {
+    background-position: -210px -228px;
+  }
+}
+.flair-kirby-chalk {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -247px;
+}
+
+.flair-kirby-chalk:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-chalk 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-chalk 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-chalk 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-chalk 0.9s steps(10) infinite;
+  animation: kirbyanim-chalk 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-chalk {
+  from {
+    background-position: 0px -247px;
+  }
+  to {
+    background-position: -210px -247px;
+  }
+}
+@-moz-keyframes kirbyanim-chalk {
+  from {
+    background-position: 0px -247px;
+  }
+  to {
+    background-position: -210px -247px;
+  }
+}
+@-ms-keyframes kirbyanim-chalk {
+  from {
+    background-position: 0px -247px;
+  }
+  to {
+    background-position: -210px -247px;
+  }
+}
+@-o-keyframes kirbyanim-chalk {
+  from {
+    background-position: 0px -247px;
+  }
+  to {
+    background-position: -210px -247px;
+  }
+}
+@keyframes kirbyanim-chalk {
+  from {
+    background-position: 0px -247px;
+  }
+  to {
+    background-position: -210px -247px;
+  }
+}
+.flair-kirby-mirror {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  background-position: -209px -266px;
+}
+
+.flair-kirby-mirror:hover {
+  min-width: 21px;
+  height: 19px;
+  background-image: url("%%KirbyAnimation%%");
+  -webkit-animation: kirbyanim-mirror 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim-mirror 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim-mirror 0.9s steps(10) infinite;
+  -o-animation: kirbyanim-mirror 0.9s steps(10) infinite;
+  animation: kirbyanim-mirror 0.9s steps(10) infinite;
+}
+
+@-webkit-keyframes kirbyanim-mirror {
+  from {
+    background-position: 0px -266px;
+  }
+  to {
+    background-position: -210px -266px;
+  }
+}
+@-moz-keyframes kirbyanim-mirror {
+  from {
+    background-position: 0px -266px;
+  }
+  to {
+    background-position: -210px -266px;
+  }
+}
+@-ms-keyframes kirbyanim-mirror {
+  from {
+    background-position: 0px -266px;
+  }
+  to {
+    background-position: -210px -266px;
+  }
+}
+@-o-keyframes kirbyanim-mirror {
+  from {
+    background-position: 0px -266px;
+  }
+  to {
+    background-position: -210px -266px;
+  }
+}
+@keyframes kirbyanim-mirror {
+  from {
+    background-position: 0px -266px;
+  }
+  to {
+    background-position: -210px -266px;
+  }
+}
 .fancy-toggle-button > .option.add, .fancy-toggle-button > .option.remove {
   font-size: 13px;
   margin: 0;
