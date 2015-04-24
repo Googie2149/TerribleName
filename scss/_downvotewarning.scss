@@ -1,0 +1,22 @@
+/*downvote warning*/
+/* from here http://redd.it/1618vv */
+.arrow.down:hover:before {
+position: absolute;
+display: block;
+z-index: 1000;
+width: 210px;
+padding: 5px;
+border: 0px solid #333;
+background: #FFCBCF;
+opacity: 0.85;
+content: "Please reserve your downvotes for off-topic comments and submissions. Thank you.";
+text-align: center;
+font-size: 10px;
+color: black;
+font-weight: bold;
+margin-left: 25px;
+margin-top: 5px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-border-radius: 4px
+}
