@@ -8,6 +8,10 @@
 .titlebox {
   margin-top: 20px;
 
+  .word {
+    display: none;
+  }
+
   .subscribe-button {
     display: block;
     margin-bottom: 1em;
@@ -56,6 +60,13 @@
   @extend %tn-background-reset;
 }
 
+.subscribers::after {
+    content: 'Waddle Dees';
+}
+.users-online::after {
+  content: 'Currently Waddling';
+}
+
 .subscribers,
 .users-online {
   $padding: 5px;
@@ -79,7 +90,7 @@
   }
 
   .word {
-    display: block;
+    display: none;
     font-size: $normal-font-size;
     color: lighten($sidebar-fg, 10%);
   }
