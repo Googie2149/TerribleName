@@ -208,12 +208,12 @@
   .link .flat-list.buttons > li.option.active { display: inline-block; }
   .link .flat-list.buttons > li.nsfw-stamp, .link .flat-list.buttons > li.first { display: inline-block !important; }
   .thing.stickied a.title { color: #6f8000 !important; font-weight: bold !important; }
-  .thumbnail { width: 76px !important; padding: 2px 4px; position: relative; overflow: visible; font-size: 16px; line-height: 1em; text-align: center; }
-  .thumbnail:before { display: inline-block; margin-top: 5px; width: 40px; height: 40px; background: #b7b7b7; color: #fff; font: normal 28px "Liberation Serif", "Times New Roman", serif; line-height: 1.4em; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); border-radius: 100%; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.8); }
-  .thumbnail.default, .thumbnail.self, .thumbnail.nsfw { background: none; height: 50px; width: 70px; }
-  .thumbnail.may-blank.default:before { content: '?'; }
-  .thumbnail.may-blank.self:before { content: 'T'; background: rgba(38, 139, 210, 0.6); }
-  .thumbnail.may-blank.nsfw:before { content: 'X'; background: rgba(211, 54, 130, 0.5); }
+  .thumbnail { padding: 2px 4px 0 0; position: relative; overflow: visible; font-size: 16px; line-height: 1em; text-align: center; /* &:before { display: inline-block; margin-top: 5px; width: 40px; height: 40px; background: $default-thumb-bg; color: $default-thumb-fg; font: normal 28px $serif; line-height: 1.4em; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); @include rounded(100%); @include shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.8)); }
+*/ }
+  .thumbnail.default, .thumbnail.self, .thumbnail.nsfw { width: 72px; height: 55px; background: url(%%thumbnails%%); }
+  .thumbnail.may-blank.default { background-position: -5px -5px; }
+  .thumbnail.may-blank.self { background-position: -5px -87px; }
+  .thumbnail.may-blank.nsfw { height: 72px; background-position: -87px -2px; }
   .thumbnail img { display: block; padding: 3px; background: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   .link.spam .thumbnail:before { background: #dc322f; }
   .link.spam .thumbnail:after { content: 'REMOVED'; position: absolute; font-size: 10px; background: #dc322f; color: #fff; top: 100%; left: 4px; right: 4px; padding: 0 3px; }
@@ -231,7 +231,6 @@
   .link .tagline { margin-top: 4px; }
   .link .title, .link .domain { vertical-align: middle; }
   .link.stickied a.title { color: #6b6b6b; font-weight: normal; }
-  .link.stickied .thumbnail.self:before { content: 'S'; background: rgba(133, 153, 0, 0.5); }
   .organic-listing { background-color: transparent !important; border: none !important; }
   .organic-listing > .help { display: none; }
   .promotedlink .sponsored-tagline { bottom: 10px; right: -5px; background: #FFF5CC; color: inherit; padding: 4px 10px; border: solid 1px rgba(0, 0, 0, 0.3); border-right: none; text-transform: capitalize; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.7); border-radius: 3px 0 0 3px; }
@@ -431,7 +430,6 @@
     to { background-position: -210px -0px; } }
   @keyframes kirbyanim-default { from { background-position: 0px -0px; }
     to { background-position: -210px -0px; } }
-  /* Too dang big. Figure out what to do with this later. @include kirby-anim(19,  "yellow"); @include kirby-anim(38,  "red"); @include kirby-anim(57,  "green"); @include kirby-anim(76,  "snow"); @include kirby-anim(95,  "carbon"); @include kirby-anim(114, "ocean"); @include kirby-anim(133, "sapphire"); @include kirby-anim(152, "grape"); @include kirby-anim(171, "emerald"); @include kirby-anim(190, "orange"); @include kirby-anim(209, "chocolate"); @include kirby-anim(228, "cherry"); @include kirby-anim(247, "chalk"); @include kirby-anim(266, "mirror"); */
   .subscription-box .sr-type-img, .subreddit .sr-type-img { overflow: hidden; padding-left: 16px; margin-right: 4px; box-sizing: border-box; }
   .subscription-box .sr-type-img[alt="moderator"], .subreddit .sr-type-img[alt="moderator"] { background-position: -16px -32px; }
   .subscription-box .sr-type-img[alt="private"], .subreddit .sr-type-img[alt="private"] { background-position: -16px -96px; }
