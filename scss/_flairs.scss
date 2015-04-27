@@ -96,6 +96,8 @@
 @include kirby-flair(32, 1077, "Peace");
 
 @include kirby-anim(0,   "default");
+
+@if env(STYLE) != compact {
 /* Too dang big. Figure out what to do with this later.
 @include kirby-anim(19,  "yellow");
 @include kirby-anim(38,  "red");
@@ -112,3 +114,4 @@
 @include kirby-anim(247, "chalk");
 @include kirby-anim(266, "mirror");
 */
+}
