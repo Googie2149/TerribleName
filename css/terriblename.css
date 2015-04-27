@@ -496,7 +496,11 @@ span.hover.pagename.redditname { color: transparent; }
 
 .gold-accent.comment-visits-box { margin-left: 10px; }
 
-.side { background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
+body .side .md h3 strong a { position: absolute; top: -695px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
+
+.side .usertext-body .md h3 strong a { font-size: 0; }
+
+.side { padding-top: 310px; background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
 
 .titlebox { margin-top: 20px; }
 .titlebox .word { display: none; }
