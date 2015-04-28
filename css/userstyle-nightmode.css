@@ -102,8 +102,8 @@
   .res.res-nightmode .nestedlisting .thing.comment.noncollapsed:before { background: #242a32; }
   .res.res-nightmode .commentarea { border-top-color: black; box-shadow: inset 0 1px 0 #1e2229; }
   .res.res-nightmode .comment.noncollapsed > .entry > .usertext.border { background: #2c3c47; }
-  .res.res-nightmode .comment.noncollapsed.spam > .entry:before { border-right-color: #461a08; }
-  .res.res-nightmode .comment.noncollapsed.spam > .entry > .tagline { background-color: #461a08; }
+  .res.res-nightmode .comment.noncollapsed.spam > .entry:before { border-right-color: #0f3855; }
+  .res.res-nightmode .comment.noncollapsed.spam > .entry > .tagline { background-color: #0f3855; }
   .res.res-nightmode .comment.noncollapsed.new-comment .usertext-body .md { border: none; }
   .res.res-nightmode .comment.noncollapsed.new-comment .usertext-body, .res.res-nightmode .comment.noncollapsed.new-comment .entry.RES-keyNav-activeElement .usertext-body { border-top: solid 1px #3e5363; border-bottom: solid 1px #3e5363; background-color: #324450 !important; }
   .res.res-nightmode .morerecursion > .entry.RES-keyNav-activeElement > .deepthread, .res.res-nightmode .morechildren > .entry.RES-keyNav-activeElement > .morecomments, .res.res-nightmode .comment.collapsed > .entry.RES-keyNav-activeElement > .tagline { outline-color: #BDD4E0; }
@@ -126,8 +126,8 @@
   .res.res-nightmode .md a:not(.userTagLink):not(.noKeyNav):not(.expando-button) { background: none !important; }
   .res.res-nightmode .md p, .res.res-nightmode .md ul, .res.res-nightmode .md ol, .res.res-nightmode .md li, .res.res-nightmode .md strong, .res.res-nightmode .md table, .res.res-nightmode .md tbody, .res.res-nightmode .md tr, .res.res-nightmode .md td, .res.res-nightmode .md em, .res.res-nightmode .md h1, .res.res-nightmode .md h2, .res.res-nightmode .md h3, .res.res-nightmode .md h4, .res.res-nightmode .md h5, .res.res-nightmode .md h6 { background: none !important; color: inherit !important; }
   .res.res-nightmode .md pre, .res.res-nightmode .md code, .res.res-nightmode .md blockquote { color: #9e9e9e; background: #292f37 !important; }
-  .res.res-nightmode .md code { background: none !important; color: #eb7443; }
-  .res.res-nightmode .md pre > code { color: #eb7443; border-color: #38404c; }
+  .res.res-nightmode .md code { background: none !important; color: #62ade3; }
+  .res.res-nightmode .md pre > code { color: #62ade3; border-color: #38404c; }
   .res.res-nightmode .md hr { background: #38404c !important; }
   .res.res-nightmode .md h1, .res.res-nightmode .md h2 { border-bottom-color: #515151 !important; }
   .res.res-nightmode .md td, .res.res-nightmode .md th { border-color: #333b46; }

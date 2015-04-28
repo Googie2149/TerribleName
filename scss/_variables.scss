@@ -64,7 +64,7 @@ $serif: 'Liberation Serif', 'Times New Roman', serif;
 $monospace: 'Liberation Mono', 'Droid Sans Mono', 'DejaVu Sans Mono', Inconsolata, Monaco, monospace;
 $normal-font-size: 13px;
 
-$accent: $orange;
+$accent: $blue;
 $main-bg: $gray;
 $main-fg: $black;
 $focus-color: $accent;
@@ -155,8 +155,8 @@ $removed-thumb-bg: $red;
 $removed-thumb-fg: $white;
 $flat-list-hover-bg: darken($main-bg, 11%);
 
-$flair-bg: $bright-yellow;
-$flair-fg: $main-fg;
+$flair-bg: $blue;
+$flair-fg: $white;
 $flair-border-color: desaturate(darken($flair-bg, 20%), 40%);
 $notice-bubble-bg: $bright-yellow;
 
