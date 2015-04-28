@@ -363,28 +363,33 @@
   {
     &,
     &:hover {
-      @extend %tn-icon;
+      display: inline-block;
+      background-image: url(%%arrows%%);
+      background-repeat: no-repeat;
+      height: 21px !important;
+      width: 21px !important;
+      padding-right: 1px;
     }
   }
 
   &.up,
   &.up:hover {
-    background-position: -64px -80px !important;
+    background-position: -5px -67px !important;
   }
 
   &.upmod,
   &.upmod:hover {
-    background-position: -48px -80px !important;
+    background-position: -5px -98px !important;
   }
 
   &.down,
   &.down:hover {
-    background-position: -96px -80px !important;
+    background-position: -5px -5px !important;
   }
 
   &.downmod,
   &.downmod:hover {
-    background-position: -80px -80px !important;
+    background-position: -5px -36px !important;
   }
 }
 

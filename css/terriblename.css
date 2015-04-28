@@ -15,10 +15,10 @@ a:visited, .thing .title:visited, .link .tagline a:visited { color: #5358ba; }
 
 hr, .md hr { border: none; display: block; height: 3px; background: #b7b7b7; }
 
-.link .usertext-body .md, .linklisting > .link.comment .usertext-body .md, .comment.noncollapsed > .entry { background: #fff; color: #111; border: none; padding: 4px 15px; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+.link .usertext-body .md, .linklisting > .link.comment .usertext-body .md, .comment.noncollapsed > .entry, .wiki-page .wiki-page-content .md.wiki { background: #fff; color: #111; border: none; padding: 4px 15px; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
-a.pretty-button:before, .sidecontentbox > .title .collapse-button:before { content: '['; }
-a.pretty-button:after, .sidecontentbox > .title .collapse-button:after { content: ']'; }
+a.pretty-button:before, .sidecontentbox > .title .collapse-button:before, .wiki-page .wikititle:before { content: '['; }
+a.pretty-button:after, .sidecontentbox > .title .collapse-button:after, .wiki-page .wikititle:after { content: ']'; }
 
 .linkflairlabel { display: inline-block; font-size: 13px !important; border: solid 1px #344d5e; line-height: 1.2em; padding: 1px 4px; vertical-align: middle; background-color: #268bd2; color: #fff; }
 
@@ -30,17 +30,19 @@ button, input[type=submit] { display: inline-block; padding-bottom: 3px; text-tr
 
 #search > input[type="submit"] { padding: 0 !important; min-width: 0 !important; box-shadow: none; }
 
-.next-suggestions > a:hover, .next-suggestions > a:focus, .expando-button.selftext.collapsed, .res .selftext.collapsed.expando-button.toggleImage.image, .res .toggleImage.image.expando-button.collapsedExpando, .res .selftext.collapsed.expando-button.toggleImage.video-muted, .res .toggleImage.video-muted.expando-button.collapsedExpando, .expando-button.selftext.collapsed:hover, .expando-button.video.collapsed, .res .video.collapsed.expando-button.toggleImage.image, .res .video.collapsed.expando-button.toggleImage.video-muted, .expando-button.video.collapsed:hover, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:hover, .res .commentNavSortType, .nextprev > a[rel], .menuarea .spacer .toggle .togglebutton, .menuarea .spacer .dropdown.lightdrop, .res .RESSubscriptionButton, .res #BigEditor .RESCloseButton, .res button.RESBigEditorPop, .res #alert_message .buttonContainer > input[type=button] { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.12); }
+.next-suggestions > a:hover, .next-suggestions > a:focus, .expando-button.selftext.collapsed, .res .selftext.collapsed.expando-button.toggleImage.image, .res .toggleImage.image.expando-button.collapsedExpando, .res .selftext.collapsed.expando-button.toggleImage.video-muted, .res .toggleImage.video-muted.expando-button.collapsedExpando, .expando-button.selftext.collapsed:hover, .expando-button.video.collapsed, .res .video.collapsed.expando-button.toggleImage.image, .res .video.collapsed.expando-button.toggleImage.video-muted, .expando-button.video.collapsed:hover, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:hover, .wiki-page .pageactions > .wikiaction, .res .commentNavSortType, .nextprev > a[rel], .menuarea .spacer .toggle .togglebutton, .menuarea .spacer .dropdown.lightdrop, .res .RESSubscriptionButton, .res #BigEditor .RESCloseButton, .res button.RESBigEditorPop, .res #alert_message .buttonContainer > input[type=button] { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.12); }
 
-.next-suggestions > a:hover, .next-suggestions > a:focus, .expando-button.selftext.collapsed, .res .selftext.collapsed.expando-button.toggleImage.image, .res .toggleImage.image.expando-button.collapsedExpando, .res .selftext.collapsed.expando-button.toggleImage.video-muted, .res .toggleImage.video-muted.expando-button.collapsedExpando, .expando-button.selftext.collapsed:hover, .expando-button.video.collapsed, .res .video.collapsed.expando-button.toggleImage.image, .res .video.collapsed.expando-button.toggleImage.video-muted, .expando-button.video.collapsed:hover, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:hover, .res .commentNavSortType, .nextprev > a[rel], .menuarea .spacer .toggle .togglebutton, .menuarea .spacer .dropdown.lightdrop, .res .RESSubscriptionButton, .res #BigEditor .RESCloseButton, .res button.RESBigEditorPop, .res #alert_message .buttonContainer > input[type=button] { color: #6b6b6b; text-decoration: none !important; padding: 2px 6px; border: solid 1px #aaaaaa; background: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); background: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); background: linear-gradient(top, #f7f7f7, #e7e7e7); border-radius: 3px; }
+.next-suggestions > a:hover, .next-suggestions > a:focus, .expando-button.selftext.collapsed, .res .selftext.collapsed.expando-button.toggleImage.image, .res .toggleImage.image.expando-button.collapsedExpando, .res .selftext.collapsed.expando-button.toggleImage.video-muted, .res .toggleImage.video-muted.expando-button.collapsedExpando, .expando-button.selftext.collapsed:hover, .expando-button.video.collapsed, .res .video.collapsed.expando-button.toggleImage.image, .res .video.collapsed.expando-button.toggleImage.video-muted, .expando-button.video.collapsed:hover, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:hover, .wiki-page .pageactions > .wikiaction, .res .commentNavSortType, .nextprev > a[rel], .menuarea .spacer .toggle .togglebutton, .menuarea .spacer .dropdown.lightdrop, .res .RESSubscriptionButton, .res #BigEditor .RESCloseButton, .res button.RESBigEditorPop, .res #alert_message .buttonContainer > input[type=button] { color: #6b6b6b; text-decoration: none !important; padding: 2px 6px; border: solid 1px #aaaaaa; background: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); background: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); background: linear-gradient(top, #f7f7f7, #e7e7e7); border-radius: 3px; }
 
-.next-suggestions > a:active, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:active, .res .commentNavSortType:active, .nextprev > a[rel]:active, .menuarea .spacer .toggle .togglebutton:active, .menuarea .spacer .dropdown.lightdrop:active, .res .RESSubscriptionButton:active, .res #BigEditor .RESCloseButton:active, .res button.RESBigEditorPop:active, .res #alert_message .buttonContainer > input[type=button]:active { background: -webkit-linear-gradient(top, #efefef, #e0e0e0); background: -moz-linear-gradient(top, #efefef, #e0e0e0); background: linear-gradient(top, #efefef, #e0e0e0); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7); }
+.wiki-page .pageactions > .wikiaction.wikiaction-current, .next-suggestions > a:active, .expando-button.selftext.expanded, .res .toggleImage.image.expando-button.collapsed.expanded, .res .toggleImage.image.expando-button.expanded, .res .toggleImage.video-muted.expando-button.collapsed.expanded, .res .toggleImage.video-muted.expando-button.expanded, .expando-button.selftext.expanded:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover, .flairselector .flairoptionpane ul > li:active, .wiki-page .pageactions > .wikiaction:active, .res .commentNavSortType:active, .nextprev > a[rel]:active, .menuarea .spacer .toggle .togglebutton:active, .menuarea .spacer .dropdown.lightdrop:active, .res .RESSubscriptionButton:active, .res #BigEditor .RESCloseButton:active, .res button.RESBigEditorPop:active, .res #alert_message .buttonContainer > input[type=button]:active { background: -webkit-linear-gradient(top, #efefef, #e0e0e0); background: -moz-linear-gradient(top, #efefef, #e0e0e0); background: linear-gradient(top, #efefef, #e0e0e0); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.7); }
 
-.res .commentNavSortType { margin: 0; border-right-style: none; color: #6b6b6b !important; border-radius: 0; }
+.wiki-page .pageactions > .wikiaction, .res .commentNavSortType { margin: 0; border-right-style: none; color: #6b6b6b !important; border-radius: 0; }
 
-.res .commentNavSortType:nth-of-type(1) { border-radius: 3px 0 0 3px; }
+.wiki-page .pageactions > .wikiaction:first-child, .res .commentNavSortType:nth-of-type(1) { border-radius: 3px 0 0 3px; }
 
-.res .commentNavSortType:last-child { border-right-style: solid; border-radius: 0 3px 3px 0; }
+.wiki-page .pageactions > .wikiaction:last-child, .res .commentNavSortType:last-child { border-right-style: solid; border-radius: 0 3px 3px 0; }
+
+.wiki-page .pageactions > .wikiaction.wikiaction-current { font-weight: bold; }
 
 .next-suggestions > a { display: inline-block; padding: 2px 6px; border: solid 1px rgba(170, 170, 170, 0.6); margin-right: 3px; font-weight: bold; color: #6b6b6b; }
 
@@ -78,13 +80,14 @@ button, input[type=submit] { display: inline-block; padding-bottom: 3px; text-tr
 .comment.noncollapsed > .entry .flat-list.buttons { background: whitesmoke; border-top: solid 1px #e6e6e6; padding: 4px 12px 4px 8px; border-radius: 0 0 3px 3px; }
 .comment.noncollapsed > .entry .flat-list.buttons li a { font-weight: normal; }
 
-.up.arrow, .up.arrow:hover, .down.arrow, .down.arrow:hover, .upmod.arrow, .upmod.arrow:hover, .downmod.arrow, .downmod.arrow:hover, .submit.mod-override > .morelink > a:after, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .tagline .userattrs .cakeday, #mail, #modmail, .gilded-icon:before, .icon-menu .reddit-edit:before, .icon-menu .reddit-edited:before, .icon-menu .moderator-mail:before, .icon-menu .reddit-moderators:before, .icon-menu .reddit-contributors:before, .icon-menu .reddit-traffic:before, .icon-menu .reddit-modqueue:before, .icon-menu .reddit-reported:before, .icon-menu .reddit-spam:before, .icon-menu .reddit-ban:before, .icon-menu .reddit-flair:before, .icon-menu .reddit-moderationlog:before, .icon-menu .reddit-unmoderated:before, .icon-menu .edit-stylesheet:before, .icon-menu .wikiaction-revisions:before, .icon-menu .wikiaction-pages:before, .res .gearIcon, .res #BigEditor .RESCloseButton:before, .res button.RESBigEditorPop:before { display: inline-block !important; background-image: url("%%icons%%") !important; background-repeat: no-repeat !important; width: 16px !important; height: 16px !important; }
+.submit.mod-override > .morelink > a:after, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .tagline .userattrs .cakeday, #mail, #modmail, .gilded-icon:before, .icon-menu .reddit-edit:before, .icon-menu .reddit-edited:before, .icon-menu .moderator-mail:before, .icon-menu .reddit-moderators:before, .icon-menu .reddit-contributors:before, .icon-menu .reddit-traffic:before, .icon-menu .reddit-modqueue:before, .icon-menu .reddit-reported:before, .icon-menu .reddit-spam:before, .icon-menu .reddit-ban:before, .icon-menu .reddit-flair:before, .icon-menu .reddit-moderationlog:before, .icon-menu .reddit-unmoderated:before, .icon-menu .edit-stylesheet:before, .icon-menu .wikiaction-revisions:before, .icon-menu .wikiaction-pages:before, .res .gearIcon, .res #BigEditor .RESCloseButton:before, .res button.RESBigEditorPop:before { display: inline-block !important; background-image: url("%%icons%%") !important; background-repeat: no-repeat !important; width: 16px !important; height: 16px !important; }
 
 .arrow { margin-left: 3px; }
-.up.arrow, .up.arrow:hover { background-position: -64px -80px !important; }
-.upmod.arrow, .upmod.arrow:hover { background-position: -48px -80px !important; }
-.down.arrow, .down.arrow:hover { background-position: -96px -80px !important; }
-.downmod.arrow, .downmod.arrow:hover { background-position: -80px -80px !important; }
+.up.arrow, .up.arrow:hover, .down.arrow, .down.arrow:hover, .upmod.arrow, .upmod.arrow:hover, .downmod.arrow, .downmod.arrow:hover { display: inline-block; background-image: url(%%arrows%%); background-repeat: no-repeat; height: 21px !important; width: 21px !important; padding-right: 1px; }
+.up.arrow, .up.arrow:hover { background-position: -5px -67px !important; }
+.upmod.arrow, .upmod.arrow:hover { background-position: -5px -98px !important; }
+.down.arrow, .down.arrow:hover { background-position: -5px -5px !important; }
+.downmod.arrow, .downmod.arrow:hover { background-position: -5px -36px !important; }
 
 .res .comment.noncollapsed > .entry.RES-keyNav-activeElement { background: #fff !important; }
 .res .comment.noncollapsed > .entry.RES-keyNav-activeElement:after { content: ''; background: #78b9e6; position: absolute; right: 0; top: 0; bottom: 0; width: 4px; border-radius: 0 3px 3px 0; }
@@ -471,7 +474,7 @@ span.hover.pagename.redditname { color: transparent; }
 .comment.spam .entry:before { border-right-color: #b8daf2; }
 .comment.spam .entry .tagline { background: #b8daf2; }
 .comment.spam .entry .tagline time:first-of-type:after { content: 'Spam'; display: inline-block; background: #6c71c4; color: #fff; padding: 0 3px; margin: 0 5px; border-radius: 2px; }
-.comment .midcol { position: absolute; width: 16px; top: 3px; }
+.comment .midcol { position: absolute; width: 23px; top: 3px; }
 .comment .child { margin-top: 0; border-left: none; }
 .comment .child > .usertext { margin-left: 20px; }
 .comment .score, .comment.collapsed { font-size: 13px; }
@@ -583,7 +586,38 @@ body .side .md h3 strong a { position: absolute; top: 155px; width: 300px; heigh
 .icon-menu .wikiaction-pages:before { background-position: -16px -80px; }
 .icon-menu .moderator-mail:before { margin-top: 0; margin-left: 0; background-position: -48px 0; }
 
-/*@import "wiki";*/
+.wiki-page > .content { position: relative; }
+.wiki-page .infobar { padding: 3px 8px; display: block; margin: 7px 15px 15px 15px; }
+.wiki-page .infobar .md p { padding: 0; margin: 0; }
+.wiki-page .wiki-page-content { margin: 15px !important; }
+.wiki-page .wiki-page-content .morelink { margin: 1em 0 !important; padding: 0 !important; }
+.wiki-page .wiki-page-content .morelink:hover { background: none !important; border: none !important; }
+.wiki-page .wiki-page-content .md.wiki > .toc > ul { border: none; padding: 10px; margin: 0; }
+.wiki-page .wikititle { display: inline-block; margin: 9px 15px 0 15px; line-height: 1em; padding: 0; font-weight: bold; }
+.wiki-page .pageactions { padding: 0; border: none; margin: 0; float: right; margin: 5px 15px 0 0; border-radius: 0; }
+.wiki-page .pageactions > .wikiaction { font-size: 14px !important; text-transform: capitalize; }
+.wiki-page .wikirevisionlisting { margin-bottom: 1em; }
+.wiki-page .wikirevisionlisting .generic-table tr td { padding: 5px; border: solid 1px #b7b7b7; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7); }
+.wiki-page .wikirevisionlisting .generic-table tr td > input[type=radio] { margin: 0 3px; }
+.wiki-page .wikirevisionlisting .generic-table tr:hover > td { background-color: #FFF5CC; }
+.wiki-page .nextprev { float: right; margin-top: 5px; }
+
+.md.wiki > .toc { background: #FFF5CC; float: right; padding: 8px; margin: 10px 0 10px 10px; border: solid 1px rgba(0, 0, 0, 0.2); position: relative; box-shadow: inset 0 -9px 3px #fff7d6; border-radius: 0; }
+.md.wiki > .toc:after { content: ''; position: absolute; height: 2px; background: #f0d875; bottom: -3px; left: 0; right: 0; border-bottom: solid 1px rgba(0, 0, 0, 0.2); border-left: solid 1px rgba(0, 0, 0, 0.2); border-right: solid 1px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+.md.wiki > .toc:before { content: 'CONTENTS'; font-weight: bold; display: block; padding-bottom: 3px; border-bottom: solid 2px rgba(0, 0, 0, 0.2); }
+.md.wiki > .toc > ul ul { border-left-color: rgba(0, 0, 0, 0.2); }
+
+table.diff { width: 100%; background: #fff; border: solid 1px #b7b7b7; margin-bottom: 1em; }
+table.diff tbody, table.diff colgroup { border: none; }
+table.diff th, table.diff td, table.diff .diff_header, table.diff .diff_next { border: none; padding: 2px 4px; }
+table.diff .diff_header, table.diff .diff_next { background: #e6e6e6; color: #444444; border: none; border: solid 1px #b7b7b7; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7); }
+table.diff th.diff_header { padding: 4px; }
+table.diff td[nowrap] { min-width: 35%; border: none !important; }
+table.diff .diff_sub { background: rgba(220, 50, 47, 0.3); }
+table.diff .diff_add { background: rgba(133, 153, 0, 0.3); }
+table.diff tbody .diff_header { text-align: right; }
+table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
+
 .res #header-bottom-right.res-navTop { top: auto !important; bottom: 7px !important; }
 .res #header-bottom-right.res-navTop #userbarToggle { background: none !important; border: none !important; color: inherit !important; padding: 0 !important; }
 .res #header-bottom-right.res-navTop #userbarToggle.userbarShow { bottom: 23px !important; top: auto !important; min-height: auto !important; }
