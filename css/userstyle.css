@@ -5,9 +5,9 @@
   a, .thing .title, .link .tagline a, .md a { color: #2177b4; }
   a:visited, .thing .title:visited, .link .tagline a:visited { color: #5358ba; }
   #header { background: #111 url("http://i.imgur.com/kfumYVX.jpg") 0 0 no-repeat !important; }
-  #header .tabmenu > li > a, .res .redditname > a[href$="/r/Dashboard/"], .res .redditname > .dashboardTab { background: none; display: block; font-weight: normal; color: #9e9e9e; padding: 8px 13px; }
-  #header .tabmenu > li > a:hover, .res .redditname > a[href$="/r/Dashboard/"]:hover, .res .redditname > .dashboardTab:hover { color: #d1d1d1; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); }
-  #header .tabmenu > li.selected > a, .res .redditname > a[href$="/r/Dashboard/"].active, .res .redditname > .dashboardTab.active { color: #eaeaea; border: none; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); }
+  #header .tabmenu > li > a, .res .redditname > a[href$="/r/Dashboard/"], .res .redditname > .dashboardTab { background: none; display: block; font-weight: normal; color: #fff; padding: 8px 13px; }
+  #header .tabmenu > li > a:hover, .res .redditname > a[href$="/r/Dashboard/"]:hover, .res .redditname > .dashboardTab:hover { color: white; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); }
+  #header .tabmenu > li.selected > a, .res .redditname > a[href$="/r/Dashboard/"].active, .res .redditname > .dashboardTab.active { color: white; border: none; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); }
   hr, .md hr, .subscription-box .box-separator { border: none; display: block; height: 3px; background: #b7b7b7; }
   .link .usertext-body .md, .linklisting > .link.comment .usertext-body .md, .link.thing.subreddit .usertext-body .md, .comment.noncollapsed > .entry, .message.noncollapsed > .entry, .wiki-page .wiki-page-content .md.wiki { background: #fff; color: #111; border: none; padding: 4px 15px; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
   a.pretty-button:before, .sidecontentbox > .title .collapse-button:before, .wiki-page .wikititle:before { content: '['; }
@@ -93,7 +93,6 @@
   .big-mod-buttons > span[role=radiogroup] > .pretty-button.positive { color: #859900; }
   .comment .pretty-button:hover { text-decoration: underline !important; }
   #search input[type=text] { padding: 6px; }
-  .usertext { position: relative; }
   .usertext .usertext-edit { display: inline-block; width: auto !important; }
   .usertext .usertext-edit > .md { margin: 0; }
   .usertext .markhelp, .usertext .markhelp > table { width: auto; max-width: 520px; }
@@ -170,24 +169,24 @@
   #header { background: transparent url(%%snoo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 140px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
   #header-img-a { display: inline-block; vertical-align: middle; margin: 20px 10px 0 20px; }
   #header-bottom-left > .pagename:last-child:after { content: ''; height: 32px; }
-  .pagename:last-child:after, #header .tabmenu { display: block; margin: 0; padding-left: 6px; overflow: hidden; text-shadow: 0 1px 0 #040404; position: absolute; bottom: 0; left: 0; right: 0; background: -webkit-linear-gradient(top, #2C2928, #1f1d1c); background: -moz-linear-gradient(top, #2C2928, #1f1d1c); background: linear-gradient(top, #2C2928, #1f1d1c); box-shadow: inset 0 1px 0 #474240, inset 0 -1px 0 #141312; }
+  .pagename:last-child:after, #header .tabmenu { display: block; margin: 0; padding-left: 6px; overflow: hidden; text-shadow: 0 1px 0 #1a6091; position: absolute; bottom: 0; left: 0; right: 0; background: -webkit-linear-gradient(top, #268bd2, #227dbc); background: -moz-linear-gradient(top, #268bd2, #227dbc); background: linear-gradient(top, #268bd2, #227dbc); box-shadow: inset 0 1px 0 #4ca2df, inset 0 -1px 0 #1f71ab; }
   #header .tabmenu > li { display: block; float: left; margin: 0; padding: 0; }
   #sr-header-area { background: rgba(0, 0, 0, 0.8); border-bottom: none; }
-  #sr-header-area a { color: #848484; }
-  #sr-header-area a:hover { color: #d1d1d1; text-decoration: none; }
-  #sr-header-area .selected > a { color: #d1d1d1; }
+  #sr-header-area a { color: #999999; }
+  #sr-header-area a:hover { color: #e6e6e6; text-decoration: none; }
+  #sr-header-area .selected > a { color: #e6e6e6; }
   #sr-header-area .drop-choices.srdrop { background: #111; border: none; box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3); }
-  #sr-header-area .drop-choices.srdrop a.choice { color: #848484; padding: 3px 8px; }
+  #sr-header-area .drop-choices.srdrop a.choice { color: #999999; padding: 3px 8px; }
   #sr-header-area .drop-choices.srdrop a.choice:hover { color: #fff !important; background: #268bd2 !important; }
   #sr-header-area .drop-choices.srdrop a.choice.bottom-option { border-top: solid 1px #202020; }
   #sr-more-link { background: rgba(0, 0, 0, 0.8); }
-  .dropdown.srdrop .selected { background: none; color: #848484; padding-right: 5px; }
+  .dropdown.srdrop .selected { background: none; color: #999999; padding-right: 5px; }
   .dropdown.srdrop .selected:after { content: ''; display: inline-block; margin-left: 5px; width: 0; height: 0; border-left: solid 4px transparent; border-right: solid 4px transparent; border-top: solid 4px transparent; border-bottom: solid 4px transparent; }
-  #header-bottom-right { background: none; bottom: 7px; right: 20px; font-size: larger; padding: 0 !important; color: #9e9e9e; line-height: 16px !important; }
+  #header-bottom-right { background: none; bottom: 7px; right: 20px; font-size: larger; padding: 0 !important; color: #fff; line-height: 16px !important; }
   #header-bottom-right > .user, #header-bottom-right > .flat-list, #header-bottom-right > .logout { vertical-align: middle; display: inline-block; }
   #header-bottom-right .user { color: inherit; }
   #header-bottom-right .userkarma { border: none; }
-  #header-bottom-right a { color: #9e9e9e; }
+  #header-bottom-right a { color: #fff; }
   #header-bottom-right .separator { visibility: hidden; }
   #header-bottom-right .message-count { background: #268bd2; font-size: 13px; color: #fff; vertical-align: middle; padding: 1px 4px; line-height: 1em; }
   .pagename.redditname a { background: url(%%logo%%) no-repeat; position: absolute; top: 18px; width: 150px; height: 87px; color: transparent; }
@@ -289,7 +288,7 @@
   .contest-mode.infobar { position: absolute; top: 5px; right: 0; max-width: 300px; margin: 0; font-size: 0; }
   .contest-mode.infobar:hover, .contest-mode.infobar strong { font-size: 13px; }
   .gold-accent.comment-visits-box { margin-left: 10px; }
-  body .side .md h3 strong a { position: absolute; top: -695px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
+  body .side .md h3 strong a { position: absolute; top: 155px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
   .side .usertext-body .md h3 strong a { font-size: 0; }
   .side { padding-top: 310px; background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
   .titlebox { margin-top: 20px; }
@@ -508,18 +507,18 @@
   body.with-listing-chooser .listing-chooser { top: 140px; background: rgba(0, 0, 0, 0.9); padding-right: 0; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.8); }
   body.with-listing-chooser .listing-chooser .grippy { background: #eaeaea url("http://i.imgur.com/l6K6XJU.jpg") top left repeat; border-left: none; width: 10px; border-right: solid 1px rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.9); }
   body.with-listing-chooser .listing-chooser .grippy:before, body.with-listing-chooser .listing-chooser .grippy:after { display: none !important; }
-  body.with-listing-chooser .listing-chooser .intro { border-top: solid 3px rgba(232, 176, 0, 0.4); border-bottom: solid 3px rgba(232, 176, 0, 0.4); padding: 10px 0; color: #9e9e9e; background: rgba(181, 137, 0, 0.4); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4); }
+  body.with-listing-chooser .listing-chooser .intro { border-top: solid 3px rgba(232, 176, 0, 0.4); border-bottom: solid 3px rgba(232, 176, 0, 0.4); padding: 10px 0; color: #fff; background: rgba(181, 137, 0, 0.4); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4); }
   body.with-listing-chooser .listing-chooser .intro > p { margin-right: 10px; }
-  body.with-listing-chooser .listing-chooser li { color: #9e9e9e; border: solid 1px #111010; margin-bottom: 5px; background: -webkit-linear-gradient(top, #2C2928, #1f1d1c); background: -moz-linear-gradient(top, #2C2928, #1f1d1c); background: linear-gradient(top, #2C2928, #1f1d1c); box-shadow: inset 0 1px 0 #514c4a, 0 2px 2px rgba(0, 0, 0, 0.4); }
-  body.with-listing-chooser .listing-chooser li.selected { margin-right: 0; color: #c1c1c1; background: -webkit-linear-gradient(top, #393534, #2c2928); background: -moz-linear-gradient(top, #393534, #2c2928); background: linear-gradient(top, #393534, #2c2928); box-shadow: inset 0 1px 0 #5f5856, 0 2px 2px rgba(0, 0, 0, 0.4); }
+  body.with-listing-chooser .listing-chooser li { color: #fff; border: solid 1px #1e6ea7; margin-bottom: 5px; background: -webkit-linear-gradient(top, #268bd2, #227dbc); background: -moz-linear-gradient(top, #268bd2, #227dbc); background: linear-gradient(top, #268bd2, #227dbc); box-shadow: inset 0 1px 0 #5eabe2, 0 2px 2px rgba(0, 0, 0, 0.4); }
+  body.with-listing-chooser .listing-chooser li.selected { margin-right: 0; color: white; background: -webkit-linear-gradient(top, #3797db, #268bd2); background: -moz-linear-gradient(top, #3797db, #268bd2); background: linear-gradient(top, #3797db, #268bd2); box-shadow: inset 0 1px 0 #73b6e6, 0 2px 2px rgba(0, 0, 0, 0.4); }
   body.with-listing-chooser .listing-chooser li.selected:before { border-left-color: #cb4b16; }
   body.with-listing-chooser .listing-chooser li > a { color: inherit; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-  body.with-listing-chooser .listing-chooser li > a > .description { color: #6b6b6b; }
+  body.with-listing-chooser .listing-chooser li > a > .description { color: #cccccc; }
   body.with-listing-chooser .listing-chooser > .contents > h3 { font-size: 1.2em; margin-right: 13px; }
   body.with-listing-chooser .listing-chooser > .contents > .multis > .create { padding-bottom: 9px; }
   body.with-listing-chooser .listing-chooser > .contents > .multis > .create input[type=text] { width: 93px; border: none !important; padding: 2px; margin-bottom: 8px; border-radius: 3px; box-shadow: none; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7); }
   body.with-listing-chooser .listing-chooser > .contents > .multis > .create button { opacity: 1; }
-  body.with-listing-chooser .listing-chooser > .contents > .multis > .create button:active { box-shadow: inset 0 2px 2px #16527c, 0 1px 0 #57514f; }
+  body.with-listing-chooser .listing-chooser > .contents > .multis > .create button:active { box-shadow: inset 0 2px 2px #16527c, 0 1px 0 #66b0e3; }
   .multi-details > h1 > a, .multi-details > h2 > a { color: #444444; }
   .multi-details > h1 { display: block !important; text-transform: uppercase; }
   .multi-details > h1 > a:hover { text-decoration: none; }
@@ -600,14 +599,14 @@
   .res .gearIcon.newNotification { background-position: -64px -48px; }
   .res #RESMainGearOverlay { border: none !important; margin-top: 1px !important; }
   .res #RESAccountSwitcherIconOverlay, .res #RESAccountSwitcherIcon { margin-right: 8px; }
-  .res #RESAccountSwitcherIconOverlay::after, .res #RESAccountSwitcherIcon::after { content: ''; position: absolute; top: 8px; border-left: solid 4px transparent; border-right: solid 4px transparent; border-top: solid 4px #9e9e9e; }
+  .res #RESAccountSwitcherIconOverlay::after, .res #RESAccountSwitcherIcon::after { content: ''; position: absolute; top: 8px; border-left: solid 4px transparent; border-right: solid 4px transparent; border-top: solid 4px #fff; }
   .res #RESAccountSwitcherIconOverlay { background-image: none !important; border: none !important; margin-left: 1px !important; margin-top: 2px !important; }
-  .res #RESAccountSwitcherIconOverlay::after { border-top-color: #d1d1d1; }
+  .res #RESAccountSwitcherIconOverlay::after { border-top-color: white; }
   .res #RESAccountSwitcherIconOverlay, .res #RESAccountSwitcherIcon, .res #RESMainGearOverlay { background: none !important; }
   .res #RESShortcutsEditContainer, .res #RESShortcutsSort, .res #RESShortcutsAdd, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsTrash { background: transparent !important; }
-  .res #RESShortcutsSort, .res #RESShortcutsAdd, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsTrash { color: #848484; font-size: 13px; }
-  .res #sr-header-area a.subbarlink.RESShortcutsCurrentSub { color: #eaeaea !important; }
-  .res > .res > #srList { font-size: 10px; background: #111; color: #848484; border: none; box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3); }
+  .res #RESShortcutsSort, .res #RESShortcutsAdd, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsTrash { color: #999999; font-size: 13px; }
+  .res #sr-header-area a.subbarlink.RESShortcutsCurrentSub { color: white !important; }
+  .res > .res > #srList { font-size: 10px; background: #111; color: #999999; border: none; box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3); }
   .res #srList tr { border: none; }
   .res #srList tr a { color: #59a9e1; }
   .res #srList tr:hover { color: #fff; background: #268bd2; }
@@ -685,9 +684,9 @@
   .res.wiki-page .wiki-page-content > #editform .help-toggle { display: block; float: left; margin: 5px 0 20px 0; }
   .res.wiki-page .wiki-page-content > #editform > label[for="reason"], .res.wiki-page .wiki-page-content > #editform > .livePreview { display: block; clear: left; }
   .res.wiki-page .wiki-page-content > #editform > .livePreview { min-width: 100%; width: 100%; }
-  .res #RESAccountSwitcherDropdown .addAccount, .res #RESPrefsDropdown .toggleButton .toggleOn, .res #RESPrefsDropdown .toggleButton .toggleOff { color: #9e9e9e; border: none; vertical-align: middle; background: -webkit-linear-gradient(top, #4c4745, #3c3837); background: -moz-linear-gradient(top, #4c4745, #3c3837); background: linear-gradient(top, #4c4745, #3c3837); border-radius: 3px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .res #RESAccountSwitcherDropdown .addAccount, .res #RESPrefsDropdown .toggleButton .toggleOn, .res #RESPrefsDropdown .toggleButton .toggleOff { color: #fff; border: none; vertical-align: middle; background: -webkit-linear-gradient(top, #55a7e0, #3b99dc); background: -moz-linear-gradient(top, #55a7e0, #3b99dc); background: linear-gradient(top, #55a7e0, #3b99dc); border-radius: 3px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 2px rgba(0, 0, 0, 0.6); }
   .res #RESAccountSwitcherDropdown .addAccount:active, .res #RESPrefsDropdown .toggleButton .toggleOn:active, .res #RESPrefsDropdown .toggleButton .toggleOff:active, .res #RESPrefsDropdown .toggleButton:not(.enabled) .toggleOff, .res #RESPrefsDropdown .toggleButton.enabled .toggleOn { box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.9), 0 1px 0 rgba(255, 255, 255, 0.2); }
-  .res .RESDropdownList { color: #9e9e9e; border: none; padding: 7px 0; margin-top: 4px; z-index: 90 !important; background: -webkit-linear-gradient(bottom, #312e2d 97%, #1c1a19); background: -moz-linear-gradient(bottom, #312e2d 97%, #1c1a19); background: linear-gradient(bottom, #312e2d 97%, #1c1a19); border-radius: 0 0 3px 3px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  .res .RESDropdownList { color: #fff; border: none; padding: 7px 0; margin-top: 4px; z-index: 90 !important; background: -webkit-linear-gradient(bottom, #2a90d8 97%, #217ab8); background: -moz-linear-gradient(bottom, #2a90d8 97%, #217ab8); background: linear-gradient(bottom, #2a90d8 97%, #217ab8); border-radius: 0 0 3px 3px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
   .res .RESDropdownList li { border: none; color: inherit; }
   .res .RESDropdownList li:hover { color: #fff; background: #268bd2; }
   .res .RESDropdownList li a, .res .RESDropdownList li a:hover { color: inherit; background: none; }

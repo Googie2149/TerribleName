@@ -43,7 +43,7 @@
   .res.res-nightmode .error { color: #9e9e9e; }
   .res.res-nightmode h1 { border-bottom: none; }
   .res.res-nightmode #header #header-bottom-left > .pagename:last-child::after, .res.res-nightmode #header .tabmenu { background: -webkit-linear-gradient(top, #292f37, #1e2229); background: -moz-linear-gradient(top, #292f37, #1e2229); background: linear-gradient(top, #292f37, #1e2229); box-shadow: inset 0 1px 0 #3e4855; }
-  .res.res-nightmode #sr-header-area { background: rgba(0, 0, 0, 0.8) !important; color: #848484; }
+  .res.res-nightmode #sr-header-area { background: rgba(0, 0, 0, 0.8) !important; color: #999999; }
   .res.res-nightmode #header-bottom-left .tabmenu .selected a { padding-bottom: 8px !important; }
   .res.res-nightmode form.submit.content .info-notice { background: #292f37 !important; }
   .res.res-nightmode .side .spacer > #search input[type=submit] { background-color: transparent; }

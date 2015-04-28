@@ -16,7 +16,7 @@ $max-comment-width: 63em;
 // - none: do not show level indicator
 $comment-level-indicator: child-only;
 
-$res-nightmode-compatible: yes;
+$res-nightmode-compatible: no;
 
 // --- PALETTE ---------------------------------------------
 
@@ -113,9 +113,9 @@ $header-fg: darken($gray, 14%);
 $page-title-height: $header-height - 51px;
 $page-title-fg: darken($gray, 20%);
 
-$menu-bar-bg: $dark-brown;
-$menu-bar-fg: darken($gray, 30%);
-$sr-header-fg: darken($gray, 40%);
+$menu-bar-bg: $blue;
+$menu-bar-fg: $white;
+$sr-header-fg: darken($white, 40%);
 $sr-header-bg: rgba(0, 0, 0, 0.8);
 $sr-dropdown-bg: $black;
 $sr-dropdown-fg: $sr-header-fg;
