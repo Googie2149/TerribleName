@@ -2,7 +2,7 @@ body .side .md h3 strong a {
   position: absolute;
   top: $header-height + 15;
   width: 300px;
-  height: 300px;  
+  height: 300px;
   background-image: url(%%Banner2%%);
 }
 
@@ -11,11 +11,13 @@ body .side .md h3 strong a {
 }
 
 .side {
-  padding-top: 310px;
+  padding-top: 315px;
   background: none;
   color: $sidebar-fg;
   width: $sidebar-width;
-  margin: 1em 1em 1em 2em;
+  margin: 0 1em 1em 2em;
+  background-image: url(%%BG2%%) !important;
+  background-repeat: y;
 }
 
 .titlebox {
@@ -172,6 +174,10 @@ body .side .md h3 strong a {
     }
   }
 
+  .midcol {
+    width: 21px;
+    padding-right: 7px
+  }
 }
 
 .sidebox .spacer {
@@ -212,4 +218,3 @@ body .side .md h3 strong a {
     }
   }
 }
-

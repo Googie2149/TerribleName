@@ -167,8 +167,9 @@
   ul.report-reasons { list-style: square outside; overflow: visible; }
   ul.report-reasons > li.report-reason-title { display: block; line-height: 1em !important; }
   ul.report-reasons > li.report-reason { display: list-item; white-space: normal; overflow: visible; padding: 0; margin: 0 0 3px 15px; }
-  #header { background: transparent url(%%snoo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 140px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
-  #header-img-a { display: inline-block; vertical-align: middle; margin: 20px 10px 0 20px; }
+  #header { background: transparent url(%%logo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 160px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  #header-img-a { display: inline-block; vertical-align: middle; margin: 0 10px 0 75px; }
+  .pagename.redditname a { background: url(%%snoo%%) no-repeat; position: absolute; top: 62px; width: 60px; height: 65px; left: 10px; color: transparent; }
   #header-bottom-left > .pagename:last-child:after { content: ''; height: 32px; }
   .pagename:last-child:after, #header .tabmenu { display: block; margin: 0; padding-left: 6px; overflow: hidden; text-shadow: 0 1px 0 #1a6091; position: absolute; bottom: 0; left: 0; right: 0; background: -webkit-linear-gradient(top, #268bd2, #227dbc); background: -moz-linear-gradient(top, #268bd2, #227dbc); background: linear-gradient(top, #268bd2, #227dbc); box-shadow: inset 0 1px 0 #4ca2df, inset 0 -1px 0 #1f71ab; }
   #header .tabmenu > li { display: block; float: left; margin: 0; padding: 0; }
@@ -190,9 +191,7 @@
   #header-bottom-right a { color: #fff; }
   #header-bottom-right .separator { visibility: hidden; }
   #header-bottom-right .message-count { background: #268bd2; font-size: 13px; color: #fff; vertical-align: middle; padding: 1px 4px; line-height: 1em; }
-  .pagename.redditname a { background: url(%%logo%%) no-repeat; position: absolute; top: 18px; width: 150px; height: 87px; color: transparent; }
   span.hover.pagename.redditname { color: transparent; }
-  /* .pagename { color: $page-title-fg; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); font-variant: normal; font-size: 2.9em; font-weight: normal; vertical-align: middle;  &:before { content: ''; display: inline-block; vertical-align: middle; height: $page-title-height; width: 3px; }  &.redditname { > a { display: inline; color: inherit;  &:hover { color: lighten($page-title-fg, 20%); text-decoration: none; } } } } */
   .wiki-page > .content, .listing-page > .content { overflow: visible; margin-right: 330px; }
   .link { padding: 1.3em 0em; }
   .link.last-clicked { border: none; overflow: visible; }
@@ -270,7 +269,7 @@
   .comment.spam .entry:before { border-right-color: #b8daf2; }
   .comment.spam .entry .tagline { background: #b8daf2; }
   .comment.spam .entry .tagline time:first-of-type:after { content: 'Spam'; display: inline-block; background: #6c71c4; color: #fff; padding: 0 3px; margin: 0 5px; border-radius: 2px; }
-  .comment .midcol { position: absolute; width: 23px; top: 3px; }
+  .comment .midcol { position: absolute; width: 23px; top: 3px; left: -3px; }
   .comment .child { margin-top: 0; border-left: none; }
   .comment .child > .usertext { margin-left: 20px; }
   .comment .score, .comment.collapsed { font-size: 13px; }
@@ -289,9 +288,9 @@
   .contest-mode.infobar { position: absolute; top: 5px; right: 0; max-width: 300px; margin: 0; font-size: 0; }
   .contest-mode.infobar:hover, .contest-mode.infobar strong { font-size: 13px; }
   .gold-accent.comment-visits-box { margin-left: 10px; }
-  body .side .md h3 strong a { position: absolute; top: 155px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
+  body .side .md h3 strong a { position: absolute; top: 175px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
   .side .usertext-body .md h3 strong a { font-size: 0; }
-  .side { padding-top: 310px; background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
+  .side { padding-top: 315px; background: none; color: #515151; width: 300px; margin: 0 1em 1em 2em; background-image: url(%%BG2%%) !important; background-repeat: y; }
   .titlebox { margin-top: 20px; }
   .titlebox .word { display: none; }
   .titlebox .subscribe-button { display: block; margin-bottom: 1em; }
@@ -317,6 +316,7 @@
   .sidecontentbox > .title, .sidecontentbox > .content { border: solid 1px #aaaaaa; padding: 7px; }
   .sidecontentbox .content { overflow: hidden; background: rgba(255, 255, 255, 0.2); border-top: none; border-radius: 0 0 3px 3px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   .sidecontentbox .content > li { margin: 3px 0; }
+  .sidecontentbox .midcol { width: 21px; padding-right: 7px; }
   .icon-menu a { background: none; display: block; padding: 3px 6px; vertical-align: middle; border-color: transparent; border-width: 1px; border-style: solid; color: #6b6b6b; border-radius: 3px; }
   .icon-menu a:visited { color: #6b6b6b; }
   .icon-menu a:active, .icon-menu a:hover { border-color: #aaaaaa; }
@@ -447,9 +447,9 @@
   .explore-header #explore-settings button, #compose-message button#send { padding-bottom: 3px; }
   .sidebox.holiday_shopping > .morelink > a { color: #fff; }
   .sidebox.holiday_shopping > .morelink > a:before { position: absolute; left: 12px; top: 2px; }
-  #header-img.default-header { background: url("http://i.imgur.com/1yRy1Sk.png") center center no-repeat; width: 82px; height: 89px; margin: 0 10px 0 20px; vertical-align: middle; }
+  #header-img.default-header { background: url("http://i.imgur.com/1yRy1Sk.png") center center no-repeat; width: 82px; height: 109px; margin: 0 10px 0 20px; vertical-align: middle; }
   #header-img-a { max-width: 300px; overflow: hidden; }
-  #header-img-a > #header-img { max-height: 89px !important; width: auto !important; }
+  #header-img-a > #header-img { max-height: 109px !important; width: auto !important; }
   body.with-listing-chooser #header .pagename { position: static; margin-left: 0; }
   .organic-listing .nextprev { margin: 10px; }
   .organic-listing .nextprev .arrow { min-width: 0; text-align: center; vertical-align: middle; }
@@ -505,7 +505,7 @@
   body.with-listing-chooser.listing-chooser-collapsed > .listing-chooser { padding-right: 10px; }
   body.with-listing-chooser.listing-chooser-collapsed > .listing-chooser .grippy { width: 10px; }
   body.with-listing-chooser.listing-chooser-collapsed > .content { margin-left: 30px; }
-  body.with-listing-chooser .listing-chooser { top: 140px; background: rgba(0, 0, 0, 0.9); padding-right: 0; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.8); }
+  body.with-listing-chooser .listing-chooser { top: 160px; background: rgba(0, 0, 0, 0.9); padding-right: 0; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.8); }
   body.with-listing-chooser .listing-chooser .grippy { background: #eaeaea url("http://i.imgur.com/l6K6XJU.jpg") top left repeat; border-left: none; width: 10px; border-right: solid 1px rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.9); }
   body.with-listing-chooser .listing-chooser .grippy:before, body.with-listing-chooser .listing-chooser .grippy:after { display: none !important; }
   body.with-listing-chooser .listing-chooser .intro { border-top: solid 3px rgba(232, 176, 0, 0.4); border-bottom: solid 3px rgba(232, 176, 0, 0.4); padding: 10px 0; color: #fff; background: rgba(181, 137, 0, 0.4); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4); }
@@ -729,6 +729,6 @@
   .res .subscription-box .subButtons > .subscribe-button, .res .subscription-box .subButtons > .RESshortcut, .res .subscription-box .subButtons > .RESDashboardToggle { margin-right: 5px; }
   .res .subscription-box .subButtons > .subscribe-button > .option, .res .subscription-box .subButtons > .RESshortcut, .res .subscription-box .subButtons > .RESDashboardToggle { padding: 2px 5px; font-size: 10px !important; }
   .res.res-commentBoxes .comments-page .nestedlisting .thing.comment { border: none !important; overflow: visible !important; } }
-@-moz-document regexp("https?://([^.]+\\.)?reddit\\.com/r/[Dd]ashboard([/#?].*)?") { .redditname { position: absolute; z-index: 100; left: 10px; top: 109px; }
+@-moz-document regexp("https?://([^.]+\\.)?reddit\\.com/r/[Dd]ashboard([/#?].*)?") { .redditname { position: absolute; z-index: 100; left: 10px; top: 129px; }
   .redditname:before { display: none; }
   #viewImagesButton { margin-left: 360px; } }

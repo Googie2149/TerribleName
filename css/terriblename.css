@@ -335,9 +335,11 @@ ul.report-reasons { list-style: square outside; overflow: visible; }
 ul.report-reasons > li.report-reason-title { display: block; line-height: 1em !important; }
 ul.report-reasons > li.report-reason { display: list-item; white-space: normal; overflow: visible; padding: 0; margin: 0 0 3px 15px; }
 
-#header { background: transparent url(%%snoo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 140px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+#header { background: transparent url(%%logo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 160px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
 
-#header-img-a { display: inline-block; vertical-align: middle; margin: 20px 10px 0 20px; }
+#header-img-a { display: inline-block; vertical-align: middle; margin: 0 10px 0 75px; }
+
+.pagename.redditname a { background: url(%%snoo%%) no-repeat; position: absolute; top: 62px; width: 60px; height: 65px; left: 10px; color: transparent; }
 
 #header-bottom-left > .pagename:last-child:after { content: ''; height: 32px; }
 
@@ -367,17 +369,8 @@ ul.report-reasons > li.report-reason { display: list-item; white-space: normal; 
 #header-bottom-right .separator { visibility: hidden; }
 #header-bottom-right .message-count { background: #268bd2; font-size: 13px; color: #fff; vertical-align: middle; padding: 1px 4px; line-height: 1em; }
 
-.pagename.redditname a { background: url(%%logo%%) no-repeat; position: absolute; top: 18px; width: 150px; height: 87px; color: transparent; }
-
 span.hover.pagename.redditname { color: transparent; }
 
-/*
-.pagename { color: $page-title-fg; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); font-variant: normal; font-size: 2.9em; font-weight: normal; vertical-align: middle;
- &:before { content: ''; display: inline-block; vertical-align: middle; height: $page-title-height; width: 3px; }
- &.redditname { > a { display: inline; color: inherit;
- &:hover { color: lighten($page-title-fg, 20%); text-decoration: none; } } }
-}
-*/
 .wiki-page > .content, .listing-page > .content { overflow: visible; margin-right: 330px; }
 
 .link { padding: 1.3em 0em; }
@@ -474,7 +467,7 @@ span.hover.pagename.redditname { color: transparent; }
 .comment.spam .entry:before { border-right-color: #b8daf2; }
 .comment.spam .entry .tagline { background: #b8daf2; }
 .comment.spam .entry .tagline time:first-of-type:after { content: 'Spam'; display: inline-block; background: #6c71c4; color: #fff; padding: 0 3px; margin: 0 5px; border-radius: 2px; }
-.comment .midcol { position: absolute; width: 23px; top: 3px; }
+.comment .midcol { position: absolute; width: 23px; top: 3px; left: -3px; }
 .comment .child { margin-top: 0; border-left: none; }
 .comment .child > .usertext { margin-left: 20px; }
 .comment .score, .comment.collapsed { font-size: 13px; }
@@ -498,11 +491,11 @@ span.hover.pagename.redditname { color: transparent; }
 
 .gold-accent.comment-visits-box { margin-left: 10px; }
 
-body .side .md h3 strong a { position: absolute; top: 155px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
+body .side .md h3 strong a { position: absolute; top: 175px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
 
 .side .usertext-body .md h3 strong a { font-size: 0; }
 
-.side { padding-top: 310px; background: none; color: #515151; width: 300px; margin: 1em 1em 1em 2em; }
+.side { padding-top: 315px; background: none; color: #515151; width: 300px; margin: 0 1em 1em 2em; background-image: url(%%BG2%%) !important; background-repeat: y; }
 
 .titlebox { margin-top: 20px; }
 .titlebox .word { display: none; }
@@ -536,6 +529,7 @@ body .side .md h3 strong a { position: absolute; top: 155px; width: 300px; heigh
 .sidecontentbox > .title, .sidecontentbox > .content { border: solid 1px #aaaaaa; padding: 7px; }
 .sidecontentbox .content { overflow: hidden; background: rgba(255, 255, 255, 0.2); border-top: none; border-radius: 0 0 3px 3px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 .sidecontentbox .content > li { margin: 3px 0; }
+.sidecontentbox .midcol { width: 21px; padding-right: 7px; }
 
 .icon-menu a { background: none; display: block; padding: 3px 6px; vertical-align: middle; border-color: transparent; border-width: 1px; border-style: solid; color: #6b6b6b; border-radius: 3px; }
 .icon-menu a:visited { color: #6b6b6b; }

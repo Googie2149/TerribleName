@@ -1,6 +1,6 @@
 #header {
   @extend %tn-header;
-  background: transparent url(%%snoo%%) left top no-repeat;
+  background: transparent url(%%logo%%) left top no-repeat;
   color: $header-fg;
   border-bottom: none;
   height: $header-height;
@@ -11,7 +11,17 @@
 #header-img-a {
   display: inline-block;
   vertical-align: middle;
-  margin: 20px 10px 0 20px;
+  margin: 0 10px 0 75px;
+}
+
+.pagename.redditname a {
+ background: url(%%snoo%%) no-repeat;
+      position: absolute;
+      top: 62px;
+      width: 60px;
+      height: 65px;
+      left: 10px;
+      color: transparent;
 }
 
 #header-bottom-left > .pagename:last-child:after {
@@ -154,47 +164,36 @@
   }
 }
 
-
-.pagename.redditname a {
- background: url(%%logo%%) no-repeat;
-      position: absolute;
-      top: 18px;
-      width: 150px;
-      height: 87px;
-      color: transparent;
-}
-
 span.hover.pagename.redditname {
 color: transparent;
 }
 
-/*
-.pagename {
-  color: $page-title-fg;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  font-variant: normal;
-  font-size: 2.9em;
-  font-weight: normal;
-  vertical-align: middle;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: $page-title-height;
-    width: 3px;
-  }
-
-  &.redditname {
-    > a {
-      display: inline;
-      color: inherit;
-
-      &:hover {
-        color: lighten($page-title-fg, 20%);
-        text-decoration: none;
-      }
-    }
-  }
-}
-*/
+//
+//.pagename {
+//  color: $page-title-fg;
+//  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+//  font-variant: normal;
+//  font-size: 2.9em;
+//  font-weight: normal;
+//  vertical-align: middle;
+//
+//  &:before {
+//    content: '';
+//    display: inline-block;
+//    vertical-align: middle;
+//    height: $page-title-height;
+//    width: 3px;
+//  }
+//
+//  &.redditname {
+//    > a {
+//      display: inline;
+//      color: inherit;
+//
+//      &:hover {
+//        color: lighten($page-title-fg, 20%);
+//        text-decoration: none;
+//      }
+//    }
+//  }
+//}

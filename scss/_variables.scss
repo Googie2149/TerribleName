@@ -42,7 +42,7 @@ $dark-green:      darken($green, 5%);
 $dark-orange:     desaturate(darken($orange, 20%), 10%);
 $dark-red:        darken($red, 30%);
 $dark-blue:       #13161A;
-$dark-blue-gray:  #405666; 
+$dark-blue-gray:  #405666;
 $bright-cyan:     #BDD4E0;
 
 $sidebar-width:   300px;
@@ -107,7 +107,7 @@ $link-fg: darken($blue, 7%);
 $link-fg-visited: darken($violet, 7%);
 $sticky-link-fg: $dark-green;
 
-$header-height: 140px;
+$header-height: 160px;
 $header-bg: $black;
 $header-fg: darken($gray, 14%);
 $page-title-height: $header-height - 51px;
