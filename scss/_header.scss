@@ -1,6 +1,5 @@
 #header {
   @extend %tn-header;
-  background: transparent url(%%logo%%) left top no-repeat;
   color: $header-fg;
   border-bottom: none;
   height: $header-height;
@@ -11,16 +10,16 @@
 #header-img-a {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px 0 75px;
+  margin: 42px 10px 0 10px;
 }
 
 .pagename.redditname a {
- background: url(%%snoo%%) no-repeat;
+ background: url(%%logo%%) no-repeat;
       position: absolute;
-      top: 62px;
-      width: 60px;
-      height: 65px;
-      left: 10px;
+      top: 20px;
+      width: 150px;
+      height: 87px;
+      left: 65px;
       color: transparent;
 }
 

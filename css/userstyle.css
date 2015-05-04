@@ -167,9 +167,9 @@
   ul.report-reasons { list-style: square outside; overflow: visible; }
   ul.report-reasons > li.report-reason-title { display: block; line-height: 1em !important; }
   ul.report-reasons > li.report-reason { display: list-item; white-space: normal; overflow: visible; padding: 0; margin: 0 0 3px 15px; }
-  #header { background: transparent url(%%logo%%) left top no-repeat; color: #c6c6c6; border-bottom: none; height: 160px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
-  #header-img-a { display: inline-block; vertical-align: middle; margin: 0 10px 0 75px; }
-  .pagename.redditname a { background: url(%%snoo%%) no-repeat; position: absolute; top: 62px; width: 60px; height: 65px; left: 10px; color: transparent; }
+  #header { color: #c6c6c6; border-bottom: none; height: 160px; position: relative; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  #header-img-a { display: inline-block; vertical-align: middle; margin: 42px 10px 0 10px; }
+  .pagename.redditname a { background: url(%%logo%%) no-repeat; position: absolute; top: 20px; width: 150px; height: 87px; left: 65px; color: transparent; }
   #header-bottom-left > .pagename:last-child:after { content: ''; height: 32px; }
   .pagename:last-child:after, #header .tabmenu { display: block; margin: 0; padding-left: 6px; overflow: hidden; text-shadow: 0 1px 0 #1a6091; position: absolute; bottom: 0; left: 0; right: 0; background: -webkit-linear-gradient(top, #268bd2, #227dbc); background: -moz-linear-gradient(top, #268bd2, #227dbc); background: linear-gradient(top, #268bd2, #227dbc); box-shadow: inset 0 1px 0 #4ca2df, inset 0 -1px 0 #1f71ab; }
   #header .tabmenu > li { display: block; float: left; margin: 0; padding: 0; }
@@ -211,8 +211,8 @@
 */ }
   .thumbnail.default, .thumbnail.self, .thumbnail.nsfw { width: 72px; height: 55px; background: url(%%thumbnails%%); }
   .thumbnail.may-blank.default { background-position: -5px -5px; }
-  .thumbnail.may-blank.self { background-position: -5px -87px; }
-  .thumbnail.may-blank.nsfw { height: 72px; background-position: -87px -2px; }
+  .thumbnail.may-blank.self { background-position: -5px -152px; }
+  .thumbnail.may-blank.nsfw { height: 72px; background-position: -5px -70px; }
   .thumbnail img { display: block; padding: 3px; background: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   .link.spam .thumbnail:before { background: #dc322f; }
   .link.spam .thumbnail:after { content: 'REMOVED'; position: absolute; font-size: 10px; background: #dc322f; color: #fff; top: 100%; left: 4px; right: 4px; padding: 0 3px; }
@@ -290,7 +290,7 @@
   .gold-accent.comment-visits-box { margin-left: 10px; }
   body .side .md h3 strong a { position: absolute; top: 175px; width: 300px; height: 300px; background-image: url(%%Banner2%%); }
   .side .usertext-body .md h3 strong a { font-size: 0; }
-  .side { padding-top: 315px; background: none; color: #515151; width: 300px; margin: 0 1em 1em 2em; background-image: url(%%BG2%%) !important; background-repeat: y; }
+  .side { background: none; color: #515151; width: 300px; margin: 0 .5em 1em 2em; padding: 315px 5px 0 5px; background-image: url(%%BG2%%) !important; background-repeat: y; }
   .titlebox { margin-top: 20px; }
   .titlebox .word { display: none; }
   .titlebox .subscribe-button { display: block; margin-bottom: 1em; }

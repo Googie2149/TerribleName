@@ -11,11 +11,11 @@ body .side .md h3 strong a {
 }
 
 .side {
-  padding-top: 315px;
   background: none;
   color: $sidebar-fg;
   width: $sidebar-width;
-  margin: 0 1em 1em 2em;
+  margin: 0 .5em 1em 2em;
+  padding: 315px 5px 0 5px;
   background-image: url(%%BG2%%) !important;
   background-repeat: y;
 }

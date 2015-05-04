@@ -84,7 +84,7 @@
 }
 
 .thumbnail {
-  
+
   padding: 2px 4px 0 0;
   position: relative;
   overflow: visible;
@@ -122,12 +122,12 @@
     }
 
     &.self {
-      background-position: -5px -87px;
+      background-position: -5px -152px;
     }
 
     &.nsfw {
       height: 72px;
-      background-position: -87px -2px;
+      background-position: -5px -70px;
     }
   }
 
