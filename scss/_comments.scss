@@ -27,6 +27,16 @@
     clear: both;
     overflow: visible;
 
+    textarea {
+      background-image: url(%%CommentBackground%%);
+      background-repeat: no-repeat;
+      background-position-y: 5px;
+
+      &:focus {
+        background-position: -504px -104px;
+      }
+    }
+
     > .usertext-edit {
       display: inline-block;
       width: auto;
