@@ -204,6 +204,7 @@
     background: $nsfw-tag-bg;
     color: $nsfw-tag-fg;
     @include rounded(2px);
+    content: "SPOILER";
   }
 }
 

@@ -23,6 +23,17 @@ body .side .md h3 strong a {
   border-radius: 10px;
 }
 
+#search input[type=text] {
+  margin-top: 3px;
+  background-color: #f9ffff;
+  height: 30px;
+  width: 300px;
+  padding-left: 38px;
+  background-position: bottom left;
+  background-image: url(%%SearchButton%%);
+  background-repeat: no-repeat;
+}
+
 .titlebox {
   margin-top: 20px;
 

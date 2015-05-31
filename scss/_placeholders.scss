@@ -318,7 +318,7 @@
     content: '';
     position: absolute;
     left: -8px;
-    top: 8px;
+    top: 15px;
     width: 0;
     height: 0;
     @include triangle(left, 8px, $comment-bg);
@@ -328,6 +328,8 @@
 %tn-comment-tagline {
   display: block;
   padding: 6px 14px 6px 10px;
+  min-height: 32px;
+  line-height: 32px;
   border-bottom: solid 1px darken($comment-bg, 10%);
   @include rounded(3px 3px 0 0);
 }
