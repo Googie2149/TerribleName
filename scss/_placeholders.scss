@@ -95,11 +95,11 @@
   &:hover,
   &:focus {
     color: $button-fg;
-    @include linear-gradient(top, lighten($button-bg, 5%), darken($button-bg, 5%));
+    @include linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%));
   }
 
   &:active {
-    @include linear-gradient(top, $button-bg, darken($button-bg, 10%));
+    @include linear-gradient(top, darken($button-bg, 10%), $button-bg);
     @include shadow(inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7));
   }
 }

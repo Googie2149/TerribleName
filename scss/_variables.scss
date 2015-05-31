@@ -37,7 +37,7 @@ $magenta:         #d33682;
 $violet:          #6c71c4;
 $blue:            #268bd2;
 $cyan:            #2aa198;
-$green:           #859900;
+$green:           #269900;
 $dark-green:      darken($green, 5%);
 $dark-orange:     desaturate(darken($orange, 20%), 10%);
 $dark-red:        darken($red, 30%);
@@ -157,7 +157,7 @@ $flat-list-hover-bg: darken($main-bg, 11%);
 
 $flair-bg: $blue;
 $flair-fg: $white;
-$flair-border-color: desaturate(darken($flair-bg, 20%), 40%);
+$flair-border-color: $flair-bg;
 $notice-bubble-bg: $bright-yellow;
 
 $list-entry-fg: darken($gray, 50%);

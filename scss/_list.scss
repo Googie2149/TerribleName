@@ -192,21 +192,46 @@
 }
 
 .nsfw-stamp {
-  border: none;
+  border: none !important;
   margin: 0 4px 0 0;
+  font-size:0px!important;
 
   acronym {
     display: inline-block;
-    font-size: ($normal-font-size - 2);
-    padding: 0 3px;
-    text-align: center;
     border: none !important;
     background: $nsfw-tag-bg;
     color: $nsfw-tag-fg;
     @include rounded(2px);
-    content: "SPOILER";
+    font-size:0px!important;
+    padding:9px 5px 6px 5px;
+    content: "";
+
+    &::after {
+      font-size: ($normal-font-size - 2)!important;
+      content: "SPOILER";
+    }
   }
 }
+
+.marknsfw-button a[href="#"], .unmarknsfw-button a[href="#"]
+{
+height: 18px;
+	margin-top: -3px;
+	font-size:0px!important;
+ display:inline-block;
+ vertical-align:top;
+ overflow:hidden;
+ letter-spacing:-20px;
+ content:"";
+
+ &::before {
+   font-size: $normal-font-size;
+   display:block;
+   letter-spacing:normal;
+   content:"spoiler";
+ }
+}
+.unmarknsfw-button a[href="#"]:before{content:"un-spoiler";}
 
 .entry .flat-list.buttons > li.reported-stamp.stamp {
   position: absolute;
