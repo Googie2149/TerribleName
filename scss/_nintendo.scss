@@ -1,57 +1,68 @@
-/* NINTENDO FAMILY */
-/*===NINTENDO FAMILY===*/
-div.side a[href$="/r/nintendo"],div.side a[href$="/r/nintendogameclub"],div.side a[href$="/r/casualnintendo"],div.side a[href$="/r/3ds"],div.side a[href$="/r/animalcrossing"],div.side a[href$="/r/donkeykong"],div.side a[href$="/r/earthbound"],div.side a[href$="/r/fzero"],div.side a[href$="/r/fireemblem"],div.side a[href$="/r/gameboy"],div.side a[href$="/r/gamecube"],div.side a[href$="/r/kidicarus"],div.side a[href$="/r/kirby"],div.side a[href$="/r/mario"],div.side a[href$="/r/metroid"],div.side a[href$="/r/n64"],div.side a[href$="/r/nes"],div.side a[href$="/r/pikmin"],div.side a[href$="/r/pokemon"],div.side a[href$="/r/professorlayton"],div.side a[href$="/r/smashbros"],div.side a[href$="/r/snes"],div.side a[href$="/r/starfox"],div.side a[href$="/r/wii"],div.side a[href$="/r/wiiu"],div.side a[href$="/r/zelda"],div.side a[href$="/r/advance_wars"],div.side a[href$="/r/nintendomusic"],div.side a[href$="/r/Club_Nintendo"],div.side a[href$="/r/VirtualBoy"] {
+/*===NINTENDO FAMILY=====================================*/
+div.side blockquote:last-of-type a {
     display: inline-block;
-    width: 33px; 
-    height: 33px;
-    border: 0;
-    margin-right: 1px;
-    background:url(%%mininintendofamily%%);
-    }
-div.side a[href$="/r/advance_wars"] {background-position: 0 -34px}
-div.side a[href$="/r/casualnintendo"] {background-position: 0 -68px}
-div.side a[href$="/r/3ds"] {background-position: 0 -102px}
-div.side a[href$="/r/animalcrossing"] {background-position: 0 -136px}
-div.side a[href$="/r/donkeykong"] {background-position: 0 -170px}
-div.side a[href$="/r/earthbound"] {background-position: 0 -204px}
-div.side a[href$="/r/fzero"] {background-position: 0 -238px}
-div.side a[href$="/r/fireemblem"] {background-position: 0 -272px}
-div.side a[href$="/r/gameboy"] {background-position: 0 -306px}
-div.side a[href$="/r/gamecube"] {background-position: 0 -340px}
-div.side a[href$="/r/kidicarus"] {background-position: 0 -374px}
-div.side a[href$="/r/kirby"] {background-position: 0 -408px}
-div.side a[href$="/r/mario"] {background-position: 0 -442px}
-div.side a[href$="/r/metroid"] {background-position: 0 -476px}
-div.side a[href$="/r/n64"] {background-position: 0 -510px}
-div.side a[href$="/r/nes"] {background-position: 0 -544px}
-div.side a[href$="/r/pikmin"] {background-position: 0 -578px}
-div.side a[href$="/r/pokemon"] {background-position: 0 -612px}
-div.side a[href$="/r/professorlayton"] {background-position: 0 -646px}
-div.side a[href$="/r/smashbros"] {background-position: 0 -680px}
-div.side a[href$="/r/snes"] {background-position: 0 -714px}
-div.side a[href$="/r/starfox"] {background-position: 0 -748px}
-div.side a[href$="/r/wii"] {background-position: 0 -782px}
-div.side a[href$="/r/wiiu"] {background-position: 0 -816px}
-div.side a[href$="/r/zelda"] {background-position: 0 -850px}
-div.side a[href$="/r/VirtualBoy"] {background-position: 0 -884px}
-div.side a[href$="/r/Club_Nintendo"] {background-position: 0 -918px}
-div.side a[href$="/r/nintendomusic"] {background-position: 0 -952px}
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    margin: 1px;
+    background:url(%%nintendofamily%%);
+}
 
-div.side a[href$="/r/nintendo"]:hover::before,div.side a[href$="/r/nintendogameclub"]:hover::before,div.side a[href$="/r/casualnintendo"]:hover::before,div.side a[href$="/r/3ds"]:hover::before,div.side a[href$="/r/animalcrossing"]:hover::before,div.side a[href$="/r/donkeykong"]:hover::before,div.side a[href$="/r/earthbound"]:hover::before,div.side a[href$="/r/fzero"]:hover::before,div.side a[href$="/r/fireemblem"]:hover::before,div.side a[href$="/r/gameboy"]:hover::before,div.side a[href$="/r/gamecube"]:hover::before,div.side a[href$="/r/kidicarus"]:hover::before,div.side a[href$="/r/kirby"]:hover::before,div.side a[href$="/r/mario"]:hover::before,div.side a[href$="/r/metroid"]:hover::before,div.side a[href$="/r/n64"]:hover::before,div.side a[href$="/r/nes"]:hover::before,div.side a[href$="/r/pikmin"]:hover::before,div.side a[href$="/r/pokemon"]:hover::before,div.side a[href$="/r/professorlayton"]:hover::before,div.side a[href$="/r/smashbros"]:hover::before,div.side a[href$="/r/snes"]:hover::before,div.side a[href$="/r/starfox"]:hover::before,div.side a[href$="/r/wii"]:hover::before,div.side a[href$="/r/wiiu"]:hover::before,div.side a[href$="/r/zelda"]:hover::before,div.side a[href$="/r/Club_Nintendo"]:hover::before,div.side a[href$="/r/nintendomusic"]:hover::before,div.side a[href$="/r/advance_wars"]:hover::before,div.side a[href$="/r/VirtualBoy"]:hover::before {
-    display: block;
-    position: absolute;
-    margin-top: -27px;
-    margin-left: -20px;
-    height: 18px;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #fff;
-    text-align: center;
-    padding: 5px 8px 3px 8px;
-    }
-div.side a[href$="/r/nintendo"]:hover::before {content: "/r/nintendo"}
+div.side blockquote a[href$="/r/casualnintendo"] {background-position: 0 -35px}
+div.side blockquote a[href$="/r/nintendomusic"] {background-position: 0 -70px}
+div.side blockquote a[href$="/r/Club_Nintendo"] {background-position: 0 -105px}
+div.side blockquote a[href$="/r/mariners"] {background-position: 0 -140px}
+div.side blockquote a[href$="/r/amiibo"] {background-position: 0 -175px}
+div.side blockquote a[href$="/r/wiiu"] {background-position: 0 -210px}
+div.side blockquote a[href$="/r/3ds"] {background-position: 0 -245px}
+div.side blockquote a[href$="/r/wii"] {background-position: 0 -280px}
+div.side blockquote a[href$="/r/nds"] {background-position: 0 -315px}
+div.side blockquote a[href$="/r/gamecube"] {background-position: 0 -350px}
+div.side blockquote a[href$="/r/gameboyadvance"] {background-position: 0 -385px}
+div.side blockquote a[href$="/r/n64"] {background-position: 0 -420px}
+div.side blockquote a[href$="/r/VirtualBoy"] {background-position: 0 -455px}
+div.side blockquote a[href$="/r/snes"] {background-position: 0 -490px}
+div.side blockquote a[href$="/r/gameboy"] {background-position: 0 -525px}
+div.side blockquote a[href$="/r/nes"] {background-position: 0 -560px}
+div.side blockquote a[href$="/r/hanafuda"] {background-position: 0 -595px}
+div.side blockquote a[href$="/r/mario"] {background-position: -35px 0}
+div.side blockquote a[href$="/r/donkeykong"] {background-position: -35px -35px}
+div.side blockquote a[href$="/r/zelda"] {background-position: -35px -70px}
+div.side blockquote a[href$="/r/metroid"] {background-position: -35px -105px}
+div.side blockquote a[href$="/r/kirby"] {background-position: -35px -140px}
+div.side blockquote a[href$="/r/starfox"] {background-position: -35px -175px}
+div.side blockquote a[href$="/r/pokemon"] {background-position: -35px -210px}
+div.side blockquote a[href$="/r/fzero"] {background-position: -35px -245px}
+div.side blockquote a[href$="/r/earthbound"] {background-position: -35px -280px}
+div.side blockquote a[href$="/r/fireemblem"] {background-position: -35px -315px}
+div.side blockquote a[href$="/r/animalcrossing"] {background-position: -35px -350px}
+div.side blockquote a[href$="/r/kidicarus"] {background-position: -35px -385px}
+div.side blockquote a[href$="/r/pikmin"] {background-position: -35px -420px}
+div.side blockquote a[href$="/r/Xenoblade_Chronicles"] {background-position: -35px -455px}
+div.side blockquote a[href$="/r/advance_wars"] {background-position: -35px -490px}
+div.side blockquote a[href$="/r/tomodachilife"] {background-position: -35px -525px}
+div.side blockquote a[href$="/r/smashbros"] {background-position: -35px -560px}
+div.side blockquote a[href$="/r/splatoon"] {background-position: 0px -665px}
+div.side blockquote a[href$="/r/nintendocanada"] {background-position: 0 -630px}
+div.side blockquote a[href$="/r/NintendoLatam"] {background-position: -35px -630px}
+div.side blockquote a[href$="/r/NintendoUK"] {background-position: -35px -595px}
+
+div.side blockquote:last-of-type a:hover::before {
+display: block;
+position: absolute;
+margin-top: -27px;
+margin-left: -20px;
+height: 18px;
+background-color: #000;
+color: #fff;
+border: 1px solid #fff;
+text-align: center;
+padding: 5px 8px 3px 8px;
+}
+
+div.side blockquote [href$="/r/nintendo"]:hover::before {content: "/r/nintendo"}
 div.side a[href$="/r/nintendogameclub"]:hover::before {content: "/r/nintendogameclub"}
-div.side a[href$="/r/casualnintendo"]:hover::before {content: "/r/casualnintendo"}
+div.side blockquote a[href$="/r/casualnintendo"]:hover::before {content: "/r/casualnintendo"}
 div.side a[href$="/r/3ds"]:hover::before {content: "/r/3ds"}
 div.side a[href$="/r/animalcrossing"]:hover::before {content: "/r/animalcrossing"}
 div.side a[href$="/r/donkeykong"]:hover::before {content: "/r/donkeykong"}
@@ -60,6 +71,8 @@ div.side a[href$="/r/fzero"]:hover::before {content: "/r/fzero"}
 div.side a[href$="/r/fireemblem"]:hover::before {content: "/r/fireemblem"}
 div.side a[href$="/r/gameboy"]:hover::before {content: "/r/gameboy"}
 div.side a[href$="/r/gamecube"]:hover::before {content: "/r/gamecube"}
+div.side a[href$="/r/gameboyadvance"]:hover::before {content: "/r/gameboyadvance"}
+div.side a[href$="/r/hanafuda"]:hover::before {content: "/r/hanafuda"}
 div.side a[href$="/r/kidicarus"]:hover::before {content: "/r/kidicarus"}
 div.side a[href$="/r/kirby"]:hover::before {content: "/r/kirby"}
 div.side a[href$="/r/mario"]:hover::before {content: "/r/mario"}
@@ -67,23 +80,34 @@ div.side a[href$="/r/metroid"]:hover::before {content: "/r/metroid"}
 div.side a[href$="/r/n64"]:hover::before {content: "/r/n64"}
 div.side a[href$="/r/nes"]:hover::before {content: "/r/nes"}
 div.side a[href$="/r/pikmin"]:hover::before {content: "/r/pikmin"}
+div.side a[href$="/r/Xenoblade_Chronicles"]:hover::before {content: "/r/Xenoblade_Chronicles"}
 div.side a[href$="/r/pokemon"]:hover::before {content: "/r/pokemon"}
 div.side a[href$="/r/professorlayton"]:hover::before {content: "/r/professorlayton"}
 div.side a[href$="/r/smashbros"]:hover::before {content: "/r/smashbros"}
 div.side a[href$="/r/snes"]:hover::before {content: "/r/snes"}
 div.side a[href$="/r/starfox"]:hover::before {content: "/r/starfox"}
 div.side a[href$="/r/wii"]:hover::before {content: "/r/wii"}
+div.side a[href$="/r/nds"]:hover::before {content: "/r/nds"}
 div.side a[href$="/r/wiiu"]:hover::before {content: "/r/wiiu"}
 div.side a[href$="/r/zelda"]:hover::before {content: "/r/zelda"}
 div.side a[href$="/r/advance_wars"]:hover::before {content: "/r/advance_wars"}
+div.side a[href$="/r/tomodachilife"]:hover::before {content: "/r/tomodachilife"}
 div.side a[href$="/r/Club_Nintendo"]:hover::before {content: "/r/Club_Nintendo"}
+div.side a[href$="/r/mariners"]:hover::before {content: "/r/mariners"}
+div.side a[href$="/r/amiibo"]:hover::before {content: "/r/amiibo"}
 div.side a[href$="/r/nintendomusic"]:hover::before {content: "/r/nintendomusic"}
 div.side a[href$="/r/VirtualBoy"]:hover::before {content: "/r/VirtualBoy"}
+div.side a[href$="/r/splatoon"]:hover::before {content: "/r/splatoon"}
+div.side a[href$="/r/NintendoUK"]:hover::before {content: "/r/NintendoUK"}
+div.side a[href$="/r/nintendocanada"]:hover::before {content: "/r/nintendocanada"}
+div.side a[href$="/r/NintendoLatam"]:hover::before {content: "/r/nintendoLatam"}
 
-.side blockquote {
+.side blockquote{
     padding: 0;
-    margin: 0;
+    margin:0;
     border-left: 0;
-    background-color: transparent;
+    background-color:transparent;
     text-align: center;
     }
+
+/*Sorry about the formatting of the Nintendo Family, blame SCSS*/

@@ -112,9 +112,9 @@ input[type=submit], .fancy-toggle-button > .option.add, .fancy-toggle-button > .
   border: none;
   text-align: center;
   margin-right: 3px;
-  background: -webkit-linear-gradient(top, #268bd2, #217ab8);
-  background: -moz-linear-gradient(top, #268bd2, #217ab8);
-  background: linear-gradient(top, #268bd2, #217ab8);
+  background: -webkit-linear-gradient(top, #62ade3, #1a6091);
+  background: -moz-linear-gradient(top, #62ade3, #1a6091);
+  background: linear-gradient(top, #62ade3, #1a6091);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
@@ -124,9 +124,9 @@ input[type=submit]:hover, .fancy-toggle-button > .option.add:hover, .fancy-toggl
 input[type=submit]:focus, .fancy-toggle-button > .option.add:focus, .fancy-toggle-button > .option.remove:focus, .morelink a:focus, .res .RESshortcutside:focus,
 .res .RESDashboardToggle:focus, .res #alert_message > input[type=button]:focus {
   color: #fff;
-  background: -webkit-linear-gradient(top, #62ade3, #1a6091);
-  background: -moz-linear-gradient(top, #62ade3, #1a6091);
-  background: linear-gradient(top, #62ade3, #1a6091);
+  background: -webkit-linear-gradient(top, #268bd2, #217ab8);
+  background: -moz-linear-gradient(top, #268bd2, #217ab8);
+  background: linear-gradient(top, #268bd2, #217ab8);
 }
 button:active,
 input[type=submit]:active, .fancy-toggle-button > .option.add:active, .fancy-toggle-button > .option.remove:active, .morelink a:active, .res .RESshortcutside:active,
@@ -546,277 +546,508 @@ hr {
   background-image: url(%%spritesheet%%);
   background-color: transparent;
   background-repeat: no-repeat;
+  text-indent: -999999px;
 }
 
+@-webkit-keyframes kirbyanim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -210px 0px;
+  }
+}
+@-moz-keyframes kirbyanim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -210px 0px;
+  }
+}
+@-ms-keyframes kirbyanim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -210px 0px;
+  }
+}
+@-o-keyframes kirbyanim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -210px 0px;
+  }
+}
+@keyframes kirbyanim {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -210px 0px;
+  }
+}
 .flair-BnWKirby {
   min-width: 16px;
   height: 32px;
-  background-position: -2px -2px;
+  background-position: -5px -5px;
 }
 
 .flair-ChuChu {
   min-width: 24px;
   height: 32px;
-  background-position: -22px -2px;
+  background-position: -31px -5px;
 }
 
 .flair-ColorDedede {
   min-width: 32px;
   height: 32px;
-  background-position: -50px -2px;
+  background-position: -65px -5px;
 }
 
 .flair-DarkMetaKnight {
   min-width: 36px;
   height: 32px;
-  background-position: -86px -2px;
+  background-position: -107px -5px;
 }
 
 .flair-Dedede {
   min-width: 32px;
   height: 32px;
-  background-position: -126px -2px;
+  background-position: -153px -5px;
 }
 
 .flair-FlyingDedede {
   min-width: 32px;
   height: 32px;
-  background-position: -162px -2px;
+  background-position: -195px -5px;
 }
 
 .flair-Gooey {
   min-width: 23px;
   height: 32px;
-  background-position: -198px -2px;
+  background-position: -237px -5px;
 }
 
 .flair-Hammer {
   min-width: 23px;
   height: 32px;
-  background-position: -225px -2px;
+  background-position: -270px -5px;
 }
 
 .flair-Jet {
   min-width: 23px;
   height: 32px;
-  background-position: -252px -2px;
+  background-position: -303px -5px;
 }
 
 .flair-Kracko {
   min-width: 30px;
   height: 32px;
-  background-position: -279px -2px;
+  background-position: -336px -5px;
 }
 
 .flair-Kine {
   min-width: 31px;
   height: 32px;
-  background-position: -313px -2px;
+  background-position: -376px -5px;
 }
 
 .flair-GalactaKnight {
   min-width: 35px;
   height: 32px;
-  background-position: -348px -2px;
+  background-position: -417px -5px;
 }
 
 .flair-GalactaKnight2 {
   min-width: 32px;
   height: 32px;
-  background-position: -387px -2px;
+  background-position: -462px -5px;
 }
 
 .flair-Magalor {
   min-width: 28px;
   height: 32px;
-  background-position: -423px -2px;
+  background-position: -504px -5px;
 }
 
 .flair-Marx {
   min-width: 28px;
   height: 32px;
-  background-position: -455px -2px;
+  background-position: -542px -5px;
 }
 
 .flair-MasklessMetaknight {
   min-width: 37px;
   height: 32px;
-  background-position: -487px -2px;
+  background-position: -580px -5px;
 }
 
 .flair-Metaknight {
   min-width: 38px;
   height: 32px;
-  background-position: -528px -2px;
+  background-position: -627px -5px;
 }
 
 .flair-Mirror {
   min-width: 25px;
   height: 32px;
-  background-position: -570px -2px;
+  background-position: -675px -5px;
+}
+
+.flair-MirrorKirby {
+  min-width: 30px;
+  height: 32px;
+  background-position: -710px -5px;
 }
 
 .flair-Naga {
   min-width: 25px;
   height: 32px;
-  background-position: -599px -2px;
+  background-position: -750px -5px;
+}
+
+.flair-NormalDedede {
+  min-width: 24px;
+  height: 32px;
+  background-position: -785px -5px;
 }
 
 .flair-Pitch {
   min-width: 20px;
   height: 32px;
-  background-position: -628px -2px;
+  background-position: -819px -5px;
 }
 
 .flair-Rick {
   min-width: 26px;
   height: 32px;
-  background-position: -652px -2px;
+  background-position: -849px -5px;
 }
 
 .flair-Rockstar {
   min-width: 22px;
   height: 32px;
-  background-position: -682px -2px;
+  background-position: -885px -5px;
 }
 
 .flair-Scarfy {
   min-width: 24px;
   height: 32px;
-  background-position: -708px -2px;
+  background-position: -917px -5px;
 }
 
 .flair-Scuba {
   min-width: 25px;
   height: 32px;
-  background-position: -736px -2px;
+  background-position: -951px -5px;
 }
 
 .flair-Slash {
   min-width: 25px;
   height: 32px;
-  background-position: -765px -2px;
+  background-position: -986px -5px;
 }
 
 .flair-Sparky {
   min-width: 24px;
   height: 32px;
-  background-position: -794px -2px;
+  background-position: -1021px -5px;
 }
 
 .flair-Star {
   min-width: 25px;
   height: 32px;
-  background-position: -822px -2px;
+  background-position: -1055px -5px;
+}
+
+.flair-Starship {
+  min-width: 28px;
+  height: 32px;
+  background-position: -1090px -5px;
 }
 
 .flair-Sunglasses {
   min-width: 22px;
   height: 32px;
-  background-position: -851px -2px;
+  background-position: -1128px -5px;
 }
 
 .flair-Taranza {
   min-width: 44px;
   height: 32px;
-  background-position: -877px -2px;
+  background-position: -1160px -5px;
 }
 
 .flair-Victory {
   min-width: 19px;
   height: 32px;
-  background-position: -925px -2px;
+  background-position: -1214px -5px;
 }
 
 .flair-Waddledee {
   min-width: 26px;
   height: 32px;
-  background-position: -948px -2px;
+  background-position: -1243px -5px;
 }
 
 .flair-Witch {
   min-width: 28px;
   height: 32px;
-  background-position: -978px -2px;
+  background-position: -1279px -5px;
+}
+
+.flair-YoYo {
+  min-width: 27px;
+  height: 32px;
+  background-position: -1317px -5px;
 }
 
 .flair-Chilly {
   min-width: 29px;
   height: 32px;
-  background-position: -1010px -2px;
+  background-position: -1354px -5px;
 }
 
 .flair-Fighter {
   min-width: 30px;
   height: 32px;
-  background-position: -1043px -2px;
+  background-position: -1393px -5px;
 }
 
 .flair-Peace {
   min-width: 32px;
   height: 32px;
-  background-position: -1077px -2px;
+  background-position: -1433px -5px;
 }
 
 .flair-kirby-default {
   min-width: 21px;
   height: 19px;
-  background-image: url("%%KirbyAnimation%%");
-  background-position: -209px -0px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim1%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-default:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
 }
 
-.flair-kirby-default:hover {
+.flair-kirby-yellow {
   min-width: 21px;
   height: 19px;
-  margin-top: 13px;
-  background-image: url("%%KirbyAnimation%%");
-  -webkit-animation: kirbyanim-default 0.9s steps(10) infinite;
-  -moz-animation: kirbyanim-default 0.9s steps(10) infinite;
-  -ms-animation: kirbyanim-default 0.9s steps(10) infinite;
-  -o-animation: kirbyanim-default 0.9s steps(10) infinite;
-  animation: kirbyanim-default 0.9s steps(10) infinite;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim2%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-yellow:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
 }
 
-@-webkit-keyframes kirbyanim-default {
-  from {
-    background-position: 0px -0px;
-  }
-  to {
-    background-position: -210px -0px;
-  }
+.flair-kirby-red {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim3%%");
+  background-position: -209px 0px;
 }
-@-moz-keyframes kirbyanim-default {
-  from {
-    background-position: 0px -0px;
-  }
-  to {
-    background-position: -210px -0px;
-  }
+.flair-kirby-red:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
 }
-@-ms-keyframes kirbyanim-default {
-  from {
-    background-position: 0px -0px;
-  }
-  to {
-    background-position: -210px -0px;
-  }
+
+.flair-kirby-green {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim4%%");
+  background-position: -209px 0px;
 }
-@-o-keyframes kirbyanim-default {
-  from {
-    background-position: 0px -0px;
-  }
-  to {
-    background-position: -210px -0px;
-  }
+.flair-kirby-green:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
 }
-@keyframes kirbyanim-default {
-  from {
-    background-position: 0px -0px;
-  }
-  to {
-    background-position: -210px -0px;
-  }
+
+.flair-kirby-snow {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim5%%");
+  background-position: -209px 0px;
 }
+.flair-kirby-snow:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-carbon {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim6%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-carbon:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-ocean {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim7%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-ocean:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-sapphire {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim8%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-sapphire:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-grape {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim9%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-grape:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-emerald {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim10%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-emerald:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-orange {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim11%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-orange:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-chocolate {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim12%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-chocolate:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-cherry {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim13%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-cherry:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-chalk {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim14%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-chalk:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
+.flair-kirby-mirror {
+  min-width: 21px;
+  height: 19px;
+  margin: 6px 2px 7px 2px;
+  background-image: url("%%anim15%%");
+  background-position: -209px 0px;
+}
+.flair-kirby-mirror:hover {
+  -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+  -moz-animation: kirbyanim 0.9s steps(10) infinite;
+  -ms-animation: kirbyanim 0.9s steps(10) infinite;
+  -o-animation: kirbyanim 0.9s steps(10) infinite;
+  animation: kirbyanim 0.9s steps(10) infinite;
+}
+
 .fancy-toggle-button > .option.add, .fancy-toggle-button > .option.remove {
   font-size: 13px;
   margin: 0;
@@ -1343,7 +1574,7 @@ ul.report-reasons > li.report-reason {
 #header-img-a {
   display: inline-block;
   vertical-align: middle;
-  margin: 42px 10px 0 30px;
+  margin: 42px 10px 0 50px;
 }
 
 .pagename.redditname a {
@@ -1352,7 +1583,7 @@ ul.report-reasons > li.report-reason {
   top: 20px;
   width: 150px;
   height: 87px;
-  left: 85px;
+  left: 105px;
   color: transparent;
 }
 
@@ -2941,7 +3172,7 @@ table.diff tbody .diff_header:not([id]) {
   border: 0px solid #333;
   background: #FFCBCF;
   opacity: 0.85;
-  content: "Please reserve your downvotes for off-topic comments and submissions. Thank you.";
+  content: "OFF TOPIC OR RULE BREAKING";
   text-align: center;
   font-size: 10px;
   color: black;
@@ -2957,223 +3188,246 @@ table.diff tbody .diff_header:not([id]) {
 a[href$="#highlight"] {
   color: #e00707 !important;
   font-weight: bold;
-}
-
-/*Spoiler tag*/
-a[href="#s"],
-.md p > a[href="#s"] {
   text-decoration: none !important;
   cursor: default;
-  background: #000;
-  color: #fff !important;
-  display: inline-block;
 }
 
+/*Spoiler tag
+  Borrowed from /r/witcher!*/
+a[href="#s"],
+.md p > a[href="#s"],
+.res-nightmode a[href$="#s"],
+.res-nightmode .comment .md p a[href="#s"] {
+  text-decoration: none !important;
+  cursor: default;
+  font-weight: bold;
+  color: #111 !important;
+  text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8;
+  display: inline-block;
+  transition: .3s all;
+}
 a[href="#s"]::after,
-.md p > a[href="#s"]::after {
+.md p > a[href="#s"]::after,
+.res-nightmode a[href$="#s"]::after,
+.res-nightmode .comment .md p a[href="#s"]::after {
   content: attr(title);
-  color: #000;
+  color: transparent;
+  font-weight: normal;
   padding: 0 0.5em;
   visibility: visible;
+  transition: .3s all;
 }
-
-a[href="#s"]:hover,
-.md p > a[href="#s"]:hover {
-  color: #fff !important;
+a[href="#s"]:hover, a[href="#s"]:active,
+.md p > a[href="#s"]:hover,
+.md p > a[href="#s"]:active,
+.res-nightmode a[href$="#s"]:hover,
+.res-nightmode a[href$="#s"]:active,
+.res-nightmode .comment .md p a[href="#s"]:hover,
+.res-nightmode .comment .md p a[href="#s"]:active {
+  transition: 0.4s all;
 }
-
-a[href="#s"]:hover::after,
-a[href="#s"]:active::after,
+a[href="#s"]:hover::after, a[href="#s"]:active::after,
 .md p > a[href="#s"]:hover::after,
-.md p > a[href="#s"]:active::after {
-  color: #fff;
+.md p > a[href="#s"]:active::after,
+.res-nightmode a[href$="#s"]:hover::after,
+.res-nightmode a[href$="#s"]:active::after,
+.res-nightmode .comment .md p a[href="#s"]:hover::after,
+.res-nightmode .comment .md p a[href="#s"]:active::after {
+  text-shadow: none !important;
+  color: #111 !important;
 }
 
-/* NSFW->Spoiler */
-/*
-.nsfw-stamp acronym { display: none; }
-.nsfw-stamp:after {
-  content: 'SPOILER';
-  border: 2px solid;
-  color: blue;
-  padding: 0 2px;
-  border-radius: 3px;
-}
-*/
-/*
-.marknsfw-button a[href="#"], .unmarknsfw-button a[href="#"]
-{
- font-size:0px!important;
- display:inline-block;
- vertical-align:top;
- overflow:hidden;
- letter-spacing:-20px;
- content:""
-}
-
-.unmarknsfw-button a[href="#"]:before, .marknsfw-button a[href="#"]:before
-{
- display:block;
- letter-spacing:normal;
- content:"spoiler"
-}
-.unmarknsfw-button a[href="#"]:before{content:"un-spoiler";}
-
-.nsfw-stamp acronym
-{
- display:inline-block;
- font-size:0px!important;
- letter-spacing:0px;
- overflow:hidden;
- vertical-align:bottom;
- margin-bottom:-1px;
- content:""
-}
-
-.nsfw-stamp acronym:after
-{
- content:"SPOILER"!important;
- display:block;
- font-size:x-small!important;
- text-decoration:none;
- margin: -15px 2px 1px;
-}
-
-li.rounded.nsfw-stamp.stamp {
-  border:#5F99CF 1px solid!important;
-}
-
-
-noindex:-o-prefocus, .nsfw-stamp acronym {
-  display:none!important
-}
-
-div.over18 .entry .buttons .first{padding-left: 0px}
-*/
-/* NINTENDO FAMILY */
-/*===NINTENDO FAMILY===*/
-div.side a[href$="/r/nintendo"], div.side a[href$="/r/nintendogameclub"], div.side a[href$="/r/casualnintendo"], div.side a[href$="/r/3ds"], div.side a[href$="/r/animalcrossing"], div.side a[href$="/r/donkeykong"], div.side a[href$="/r/earthbound"], div.side a[href$="/r/fzero"], div.side a[href$="/r/fireemblem"], div.side a[href$="/r/gameboy"], div.side a[href$="/r/gamecube"], div.side a[href$="/r/kidicarus"], div.side a[href$="/r/kirby"], div.side a[href$="/r/mario"], div.side a[href$="/r/metroid"], div.side a[href$="/r/n64"], div.side a[href$="/r/nes"], div.side a[href$="/r/pikmin"], div.side a[href$="/r/pokemon"], div.side a[href$="/r/professorlayton"], div.side a[href$="/r/smashbros"], div.side a[href$="/r/snes"], div.side a[href$="/r/starfox"], div.side a[href$="/r/wii"], div.side a[href$="/r/wiiu"], div.side a[href$="/r/zelda"], div.side a[href$="/r/advance_wars"], div.side a[href$="/r/nintendomusic"], div.side a[href$="/r/Club_Nintendo"], div.side a[href$="/r/VirtualBoy"] {
+a[href="#spoiler"],
+.md p > a[href="#spoiler"],
+.res-nightmode a[href$="#spoiler"],
+.res-nightmode .comment .md p a[href="#spoiler"] {
+  text-decoration: none !important;
+  cursor: default;
+  color: transparent !important;
+  text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8;
   display: inline-block;
-  width: 33px;
-  height: 33px;
-  border: 0;
-  margin-right: 1px;
-  background: url(%%mininintendofamily%%);
+  transition: .3s all;
+}
+a[href="#spoiler"]:before,
+.md p > a[href="#spoiler"]:before,
+.res-nightmode a[href$="#spoiler"]:before,
+.res-nightmode .comment .md p a[href="#spoiler"]:before {
+  font-weight: bold;
+  color: #111 !important;
+  content: 'Spoiler: ';
+}
+a[href="#spoiler"]:hover,
+.md p > a[href="#spoiler"]:hover,
+.res-nightmode a[href$="#spoiler"]:hover,
+.res-nightmode .comment .md p a[href="#spoiler"]:hover {
+  color: #111 !important;
+  text-shadow: none;
+  transition: 0.4s all;
 }
 
-div.side a[href$="/r/advance_wars"] {
-  background-position: 0 -34px;
+/*===NINTENDO FAMILY=====================================*/
+div.side blockquote:last-of-type a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  margin: 1px;
+  background: url(%%nintendofamily%%);
 }
 
-div.side a[href$="/r/casualnintendo"] {
-  background-position: 0 -68px;
+div.side blockquote a[href$="/r/casualnintendo"] {
+  background-position: 0 -35px;
 }
 
-div.side a[href$="/r/3ds"] {
-  background-position: 0 -102px;
+div.side blockquote a[href$="/r/nintendomusic"] {
+  background-position: 0 -70px;
 }
 
-div.side a[href$="/r/animalcrossing"] {
-  background-position: 0 -136px;
+div.side blockquote a[href$="/r/Club_Nintendo"] {
+  background-position: 0 -105px;
 }
 
-div.side a[href$="/r/donkeykong"] {
-  background-position: 0 -170px;
+div.side blockquote a[href$="/r/mariners"] {
+  background-position: 0 -140px;
 }
 
-div.side a[href$="/r/earthbound"] {
-  background-position: 0 -204px;
+div.side blockquote a[href$="/r/amiibo"] {
+  background-position: 0 -175px;
 }
 
-div.side a[href$="/r/fzero"] {
-  background-position: 0 -238px;
+div.side blockquote a[href$="/r/wiiu"] {
+  background-position: 0 -210px;
 }
 
-div.side a[href$="/r/fireemblem"] {
-  background-position: 0 -272px;
+div.side blockquote a[href$="/r/3ds"] {
+  background-position: 0 -245px;
 }
 
-div.side a[href$="/r/gameboy"] {
-  background-position: 0 -306px;
+div.side blockquote a[href$="/r/wii"] {
+  background-position: 0 -280px;
 }
 
-div.side a[href$="/r/gamecube"] {
-  background-position: 0 -340px;
+div.side blockquote a[href$="/r/nds"] {
+  background-position: 0 -315px;
 }
 
-div.side a[href$="/r/kidicarus"] {
-  background-position: 0 -374px;
+div.side blockquote a[href$="/r/gamecube"] {
+  background-position: 0 -350px;
 }
 
-div.side a[href$="/r/kirby"] {
-  background-position: 0 -408px;
+div.side blockquote a[href$="/r/gameboyadvance"] {
+  background-position: 0 -385px;
 }
 
-div.side a[href$="/r/mario"] {
-  background-position: 0 -442px;
+div.side blockquote a[href$="/r/n64"] {
+  background-position: 0 -420px;
 }
 
-div.side a[href$="/r/metroid"] {
-  background-position: 0 -476px;
+div.side blockquote a[href$="/r/VirtualBoy"] {
+  background-position: 0 -455px;
 }
 
-div.side a[href$="/r/n64"] {
-  background-position: 0 -510px;
+div.side blockquote a[href$="/r/snes"] {
+  background-position: 0 -490px;
 }
 
-div.side a[href$="/r/nes"] {
-  background-position: 0 -544px;
+div.side blockquote a[href$="/r/gameboy"] {
+  background-position: 0 -525px;
 }
 
-div.side a[href$="/r/pikmin"] {
-  background-position: 0 -578px;
+div.side blockquote a[href$="/r/nes"] {
+  background-position: 0 -560px;
 }
 
-div.side a[href$="/r/pokemon"] {
-  background-position: 0 -612px;
+div.side blockquote a[href$="/r/hanafuda"] {
+  background-position: 0 -595px;
 }
 
-div.side a[href$="/r/professorlayton"] {
-  background-position: 0 -646px;
+div.side blockquote a[href$="/r/mario"] {
+  background-position: -35px 0;
 }
 
-div.side a[href$="/r/smashbros"] {
-  background-position: 0 -680px;
+div.side blockquote a[href$="/r/donkeykong"] {
+  background-position: -35px -35px;
 }
 
-div.side a[href$="/r/snes"] {
-  background-position: 0 -714px;
+div.side blockquote a[href$="/r/zelda"] {
+  background-position: -35px -70px;
 }
 
-div.side a[href$="/r/starfox"] {
-  background-position: 0 -748px;
+div.side blockquote a[href$="/r/metroid"] {
+  background-position: -35px -105px;
 }
 
-div.side a[href$="/r/wii"] {
-  background-position: 0 -782px;
+div.side blockquote a[href$="/r/kirby"] {
+  background-position: -35px -140px;
 }
 
-div.side a[href$="/r/wiiu"] {
-  background-position: 0 -816px;
+div.side blockquote a[href$="/r/starfox"] {
+  background-position: -35px -175px;
 }
 
-div.side a[href$="/r/zelda"] {
-  background-position: 0 -850px;
+div.side blockquote a[href$="/r/pokemon"] {
+  background-position: -35px -210px;
 }
 
-div.side a[href$="/r/VirtualBoy"] {
-  background-position: 0 -884px;
+div.side blockquote a[href$="/r/fzero"] {
+  background-position: -35px -245px;
 }
 
-div.side a[href$="/r/Club_Nintendo"] {
-  background-position: 0 -918px;
+div.side blockquote a[href$="/r/earthbound"] {
+  background-position: -35px -280px;
 }
 
-div.side a[href$="/r/nintendomusic"] {
-  background-position: 0 -952px;
+div.side blockquote a[href$="/r/fireemblem"] {
+  background-position: -35px -315px;
 }
 
-div.side a[href$="/r/nintendo"]:hover::before, div.side a[href$="/r/nintendogameclub"]:hover::before, div.side a[href$="/r/casualnintendo"]:hover::before, div.side a[href$="/r/3ds"]:hover::before, div.side a[href$="/r/animalcrossing"]:hover::before, div.side a[href$="/r/donkeykong"]:hover::before, div.side a[href$="/r/earthbound"]:hover::before, div.side a[href$="/r/fzero"]:hover::before, div.side a[href$="/r/fireemblem"]:hover::before, div.side a[href$="/r/gameboy"]:hover::before, div.side a[href$="/r/gamecube"]:hover::before, div.side a[href$="/r/kidicarus"]:hover::before, div.side a[href$="/r/kirby"]:hover::before, div.side a[href$="/r/mario"]:hover::before, div.side a[href$="/r/metroid"]:hover::before, div.side a[href$="/r/n64"]:hover::before, div.side a[href$="/r/nes"]:hover::before, div.side a[href$="/r/pikmin"]:hover::before, div.side a[href$="/r/pokemon"]:hover::before, div.side a[href$="/r/professorlayton"]:hover::before, div.side a[href$="/r/smashbros"]:hover::before, div.side a[href$="/r/snes"]:hover::before, div.side a[href$="/r/starfox"]:hover::before, div.side a[href$="/r/wii"]:hover::before, div.side a[href$="/r/wiiu"]:hover::before, div.side a[href$="/r/zelda"]:hover::before, div.side a[href$="/r/Club_Nintendo"]:hover::before, div.side a[href$="/r/nintendomusic"]:hover::before, div.side a[href$="/r/advance_wars"]:hover::before, div.side a[href$="/r/VirtualBoy"]:hover::before {
+div.side blockquote a[href$="/r/animalcrossing"] {
+  background-position: -35px -350px;
+}
+
+div.side blockquote a[href$="/r/kidicarus"] {
+  background-position: -35px -385px;
+}
+
+div.side blockquote a[href$="/r/pikmin"] {
+  background-position: -35px -420px;
+}
+
+div.side blockquote a[href$="/r/Xenoblade_Chronicles"] {
+  background-position: -35px -455px;
+}
+
+div.side blockquote a[href$="/r/advance_wars"] {
+  background-position: -35px -490px;
+}
+
+div.side blockquote a[href$="/r/tomodachilife"] {
+  background-position: -35px -525px;
+}
+
+div.side blockquote a[href$="/r/smashbros"] {
+  background-position: -35px -560px;
+}
+
+div.side blockquote a[href$="/r/splatoon"] {
+  background-position: 0px -665px;
+}
+
+div.side blockquote a[href$="/r/nintendocanada"] {
+  background-position: 0 -630px;
+}
+
+div.side blockquote a[href$="/r/NintendoLatam"] {
+  background-position: -35px -630px;
+}
+
+div.side blockquote a[href$="/r/NintendoUK"] {
+  background-position: -35px -595px;
+}
+
+div.side blockquote:last-of-type a:hover::before {
   display: block;
   position: absolute;
   margin-top: -27px;
@@ -3186,7 +3440,7 @@ div.side a[href$="/r/nintendo"]:hover::before, div.side a[href$="/r/nintendogame
   padding: 5px 8px 3px 8px;
 }
 
-div.side a[href$="/r/nintendo"]:hover::before {
+div.side blockquote [href$="/r/nintendo"]:hover::before {
   content: "/r/nintendo";
 }
 
@@ -3194,7 +3448,7 @@ div.side a[href$="/r/nintendogameclub"]:hover::before {
   content: "/r/nintendogameclub";
 }
 
-div.side a[href$="/r/casualnintendo"]:hover::before {
+div.side blockquote a[href$="/r/casualnintendo"]:hover::before {
   content: "/r/casualnintendo";
 }
 
@@ -3230,6 +3484,14 @@ div.side a[href$="/r/gamecube"]:hover::before {
   content: "/r/gamecube";
 }
 
+div.side a[href$="/r/gameboyadvance"]:hover::before {
+  content: "/r/gameboyadvance";
+}
+
+div.side a[href$="/r/hanafuda"]:hover::before {
+  content: "/r/hanafuda";
+}
+
 div.side a[href$="/r/kidicarus"]:hover::before {
   content: "/r/kidicarus";
 }
@@ -3258,6 +3520,10 @@ div.side a[href$="/r/pikmin"]:hover::before {
   content: "/r/pikmin";
 }
 
+div.side a[href$="/r/Xenoblade_Chronicles"]:hover::before {
+  content: "/r/Xenoblade_Chronicles";
+}
+
 div.side a[href$="/r/pokemon"]:hover::before {
   content: "/r/pokemon";
 }
@@ -3282,6 +3548,10 @@ div.side a[href$="/r/wii"]:hover::before {
   content: "/r/wii";
 }
 
+div.side a[href$="/r/nds"]:hover::before {
+  content: "/r/nds";
+}
+
 div.side a[href$="/r/wiiu"]:hover::before {
   content: "/r/wiiu";
 }
@@ -3294,8 +3564,20 @@ div.side a[href$="/r/advance_wars"]:hover::before {
   content: "/r/advance_wars";
 }
 
+div.side a[href$="/r/tomodachilife"]:hover::before {
+  content: "/r/tomodachilife";
+}
+
 div.side a[href$="/r/Club_Nintendo"]:hover::before {
   content: "/r/Club_Nintendo";
+}
+
+div.side a[href$="/r/mariners"]:hover::before {
+  content: "/r/mariners";
+}
+
+div.side a[href$="/r/amiibo"]:hover::before {
+  content: "/r/amiibo";
 }
 
 div.side a[href$="/r/nintendomusic"]:hover::before {
@@ -3306,6 +3588,22 @@ div.side a[href$="/r/VirtualBoy"]:hover::before {
   content: "/r/VirtualBoy";
 }
 
+div.side a[href$="/r/splatoon"]:hover::before {
+  content: "/r/splatoon";
+}
+
+div.side a[href$="/r/NintendoUK"]:hover::before {
+  content: "/r/NintendoUK";
+}
+
+div.side a[href$="/r/nintendocanada"]:hover::before {
+  content: "/r/nintendocanada";
+}
+
+div.side a[href$="/r/NintendoLatam"]:hover::before {
+  content: "/r/nintendoLatam";
+}
+
 .side blockquote {
   padding: 0;
   margin: 0;
@@ -3313,3 +3611,5 @@ div.side a[href$="/r/VirtualBoy"]:hover::before {
   background-color: transparent;
   text-align: center;
 }
+
+/*Sorry about the formatting of the Nintendo Family, blame SCSS*/

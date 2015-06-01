@@ -122,9 +122,9 @@
     border: none;
     text-align: center;
     margin-right: 3px;
-    background: -webkit-linear-gradient(top, #268bd2, #217ab8);
-    background: -moz-linear-gradient(top, #268bd2, #217ab8);
-    background: linear-gradient(top, #268bd2, #217ab8);
+    background: -webkit-linear-gradient(top, #62ade3, #1a6091);
+    background: -moz-linear-gradient(top, #62ade3, #1a6091);
+    background: linear-gradient(top, #62ade3, #1a6091);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
     border-radius: 4px;
   }
@@ -144,9 +144,9 @@
   .res .RESDashboardToggle:focus, .res #alert_message > input[type=button]:focus, .res .cancelButton:focus,
   .res .addButton:focus {
     color: #fff;
-    background: -webkit-linear-gradient(top, #62ade3, #1a6091);
-    background: -moz-linear-gradient(top, #62ade3, #1a6091);
-    background: linear-gradient(top, #62ade3, #1a6091);
+    background: -webkit-linear-gradient(top, #268bd2, #217ab8);
+    background: -moz-linear-gradient(top, #268bd2, #217ab8);
+    background: linear-gradient(top, #268bd2, #217ab8);
   }
   button:active,
   input[type=submit]:active, .multi-details .settings > button:active,
@@ -1153,7 +1153,7 @@
   #header-img-a {
     display: inline-block;
     vertical-align: middle;
-    margin: 42px 10px 0 30px;
+    margin: 42px 10px 0 50px;
   }
 
   .pagename.redditname a {
@@ -1162,7 +1162,7 @@
     top: 20px;
     width: 150px;
     height: 87px;
-    left: 85px;
+    left: 105px;
     color: transparent;
   }
 
@@ -2316,277 +2316,508 @@
     background-image: url(%%spritesheet%%);
     background-color: transparent;
     background-repeat: no-repeat;
+    text-indent: -999999px;
   }
 
+  @-webkit-keyframes kirbyanim {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -210px 0px;
+    }
+  }
+  @-moz-keyframes kirbyanim {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -210px 0px;
+    }
+  }
+  @-ms-keyframes kirbyanim {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -210px 0px;
+    }
+  }
+  @-o-keyframes kirbyanim {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -210px 0px;
+    }
+  }
+  @keyframes kirbyanim {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: -210px 0px;
+    }
+  }
   .flair-BnWKirby {
     min-width: 16px;
     height: 32px;
-    background-position: -2px -2px;
+    background-position: -5px -5px;
   }
 
   .flair-ChuChu {
     min-width: 24px;
     height: 32px;
-    background-position: -22px -2px;
+    background-position: -31px -5px;
   }
 
   .flair-ColorDedede {
     min-width: 32px;
     height: 32px;
-    background-position: -50px -2px;
+    background-position: -65px -5px;
   }
 
   .flair-DarkMetaKnight {
     min-width: 36px;
     height: 32px;
-    background-position: -86px -2px;
+    background-position: -107px -5px;
   }
 
   .flair-Dedede {
     min-width: 32px;
     height: 32px;
-    background-position: -126px -2px;
+    background-position: -153px -5px;
   }
 
   .flair-FlyingDedede {
     min-width: 32px;
     height: 32px;
-    background-position: -162px -2px;
+    background-position: -195px -5px;
   }
 
   .flair-Gooey {
     min-width: 23px;
     height: 32px;
-    background-position: -198px -2px;
+    background-position: -237px -5px;
   }
 
   .flair-Hammer {
     min-width: 23px;
     height: 32px;
-    background-position: -225px -2px;
+    background-position: -270px -5px;
   }
 
   .flair-Jet {
     min-width: 23px;
     height: 32px;
-    background-position: -252px -2px;
+    background-position: -303px -5px;
   }
 
   .flair-Kracko {
     min-width: 30px;
     height: 32px;
-    background-position: -279px -2px;
+    background-position: -336px -5px;
   }
 
   .flair-Kine {
     min-width: 31px;
     height: 32px;
-    background-position: -313px -2px;
+    background-position: -376px -5px;
   }
 
   .flair-GalactaKnight {
     min-width: 35px;
     height: 32px;
-    background-position: -348px -2px;
+    background-position: -417px -5px;
   }
 
   .flair-GalactaKnight2 {
     min-width: 32px;
     height: 32px;
-    background-position: -387px -2px;
+    background-position: -462px -5px;
   }
 
   .flair-Magalor {
     min-width: 28px;
     height: 32px;
-    background-position: -423px -2px;
+    background-position: -504px -5px;
   }
 
   .flair-Marx {
     min-width: 28px;
     height: 32px;
-    background-position: -455px -2px;
+    background-position: -542px -5px;
   }
 
   .flair-MasklessMetaknight {
     min-width: 37px;
     height: 32px;
-    background-position: -487px -2px;
+    background-position: -580px -5px;
   }
 
   .flair-Metaknight {
     min-width: 38px;
     height: 32px;
-    background-position: -528px -2px;
+    background-position: -627px -5px;
   }
 
   .flair-Mirror {
     min-width: 25px;
     height: 32px;
-    background-position: -570px -2px;
+    background-position: -675px -5px;
+  }
+
+  .flair-MirrorKirby {
+    min-width: 30px;
+    height: 32px;
+    background-position: -710px -5px;
   }
 
   .flair-Naga {
     min-width: 25px;
     height: 32px;
-    background-position: -599px -2px;
+    background-position: -750px -5px;
+  }
+
+  .flair-NormalDedede {
+    min-width: 24px;
+    height: 32px;
+    background-position: -785px -5px;
   }
 
   .flair-Pitch {
     min-width: 20px;
     height: 32px;
-    background-position: -628px -2px;
+    background-position: -819px -5px;
   }
 
   .flair-Rick {
     min-width: 26px;
     height: 32px;
-    background-position: -652px -2px;
+    background-position: -849px -5px;
   }
 
   .flair-Rockstar {
     min-width: 22px;
     height: 32px;
-    background-position: -682px -2px;
+    background-position: -885px -5px;
   }
 
   .flair-Scarfy {
     min-width: 24px;
     height: 32px;
-    background-position: -708px -2px;
+    background-position: -917px -5px;
   }
 
   .flair-Scuba {
     min-width: 25px;
     height: 32px;
-    background-position: -736px -2px;
+    background-position: -951px -5px;
   }
 
   .flair-Slash {
     min-width: 25px;
     height: 32px;
-    background-position: -765px -2px;
+    background-position: -986px -5px;
   }
 
   .flair-Sparky {
     min-width: 24px;
     height: 32px;
-    background-position: -794px -2px;
+    background-position: -1021px -5px;
   }
 
   .flair-Star {
     min-width: 25px;
     height: 32px;
-    background-position: -822px -2px;
+    background-position: -1055px -5px;
+  }
+
+  .flair-Starship {
+    min-width: 28px;
+    height: 32px;
+    background-position: -1090px -5px;
   }
 
   .flair-Sunglasses {
     min-width: 22px;
     height: 32px;
-    background-position: -851px -2px;
+    background-position: -1128px -5px;
   }
 
   .flair-Taranza {
     min-width: 44px;
     height: 32px;
-    background-position: -877px -2px;
+    background-position: -1160px -5px;
   }
 
   .flair-Victory {
     min-width: 19px;
     height: 32px;
-    background-position: -925px -2px;
+    background-position: -1214px -5px;
   }
 
   .flair-Waddledee {
     min-width: 26px;
     height: 32px;
-    background-position: -948px -2px;
+    background-position: -1243px -5px;
   }
 
   .flair-Witch {
     min-width: 28px;
     height: 32px;
-    background-position: -978px -2px;
+    background-position: -1279px -5px;
+  }
+
+  .flair-YoYo {
+    min-width: 27px;
+    height: 32px;
+    background-position: -1317px -5px;
   }
 
   .flair-Chilly {
     min-width: 29px;
     height: 32px;
-    background-position: -1010px -2px;
+    background-position: -1354px -5px;
   }
 
   .flair-Fighter {
     min-width: 30px;
     height: 32px;
-    background-position: -1043px -2px;
+    background-position: -1393px -5px;
   }
 
   .flair-Peace {
     min-width: 32px;
     height: 32px;
-    background-position: -1077px -2px;
+    background-position: -1433px -5px;
   }
 
   .flair-kirby-default {
     min-width: 21px;
     height: 19px;
-    background-image: url("%%KirbyAnimation%%");
-    background-position: -209px -0px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim1%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-default:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
   }
 
-  .flair-kirby-default:hover {
+  .flair-kirby-yellow {
     min-width: 21px;
     height: 19px;
-    margin-top: 13px;
-    background-image: url("%%KirbyAnimation%%");
-    -webkit-animation: kirbyanim-default 0.9s steps(10) infinite;
-    -moz-animation: kirbyanim-default 0.9s steps(10) infinite;
-    -ms-animation: kirbyanim-default 0.9s steps(10) infinite;
-    -o-animation: kirbyanim-default 0.9s steps(10) infinite;
-    animation: kirbyanim-default 0.9s steps(10) infinite;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim2%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-yellow:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
   }
 
-  @-webkit-keyframes kirbyanim-default {
-    from {
-      background-position: 0px -0px;
-    }
-    to {
-      background-position: -210px -0px;
-    }
+  .flair-kirby-red {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim3%%");
+    background-position: -209px 0px;
   }
-  @-moz-keyframes kirbyanim-default {
-    from {
-      background-position: 0px -0px;
-    }
-    to {
-      background-position: -210px -0px;
-    }
+  .flair-kirby-red:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
   }
-  @-ms-keyframes kirbyanim-default {
-    from {
-      background-position: 0px -0px;
-    }
-    to {
-      background-position: -210px -0px;
-    }
+
+  .flair-kirby-green {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim4%%");
+    background-position: -209px 0px;
   }
-  @-o-keyframes kirbyanim-default {
-    from {
-      background-position: 0px -0px;
-    }
-    to {
-      background-position: -210px -0px;
-    }
+  .flair-kirby-green:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
   }
-  @keyframes kirbyanim-default {
-    from {
-      background-position: 0px -0px;
-    }
-    to {
-      background-position: -210px -0px;
-    }
+
+  .flair-kirby-snow {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim5%%");
+    background-position: -209px 0px;
   }
+  .flair-kirby-snow:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-carbon {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim6%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-carbon:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-ocean {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim7%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-ocean:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-sapphire {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim8%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-sapphire:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-grape {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim9%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-grape:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-emerald {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim10%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-emerald:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-orange {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim11%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-orange:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-chocolate {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim12%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-chocolate:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-cherry {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim13%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-cherry:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-chalk {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim14%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-chalk:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
+  .flair-kirby-mirror {
+    min-width: 21px;
+    height: 19px;
+    margin: 6px 2px 7px 2px;
+    background-image: url("%%anim15%%");
+    background-position: -209px 0px;
+  }
+  .flair-kirby-mirror:hover {
+    -webkit-animation: kirbyanim 0.9s steps(10) infinite;
+    -moz-animation: kirbyanim 0.9s steps(10) infinite;
+    -ms-animation: kirbyanim 0.9s steps(10) infinite;
+    -o-animation: kirbyanim 0.9s steps(10) infinite;
+    animation: kirbyanim 0.9s steps(10) infinite;
+  }
+
   .subscription-box .sr-type-img,
   .subreddit .sr-type-img {
     overflow: hidden;
