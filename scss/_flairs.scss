@@ -12,7 +12,7 @@
 	background-image: url(%%spritesheet%%);
 	background-color: rgba(0,0,0,0);
 	background-repeat: no-repeat;
-	text-indent: -999999px;
+	text-indent: -9999em;
 }
 
 @mixin kirby-flair ($width, $pos, $name) {

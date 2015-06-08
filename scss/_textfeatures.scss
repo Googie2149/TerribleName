@@ -8,7 +8,30 @@ cursor: default;
 
 /*Spoiler tag
   Borrowed from /r/witcher!*/
+a[href="/s"],
+.md p > a[href="/s"],
+.res-nightmode a[href$="/s"],
+.res-nightmode .comment .md p a[href="/s"] {
+  text-decoration: none !important;
+  cursor: default;
+  color: transparent !important;
+  text-shadow: 0 0 15px $kirby-pink, 0 0 15px $kirby-pink, 0 0 15px $kirby-pink;
+  display: inline-block;
+  transition: .3s all;
+    &:before {
+    font-weight: bold;
+    color: $black !important;
+      content: 'Spoiler: ';
+  }
 
+    &:hover {
+    color: $black !important;
+    text-shadow: none;
+    transition: 0.4s all;
+  }
+}
+
+/* Old spoiler tag */
 a[href="#s"],
 .md p > a[href="#s"],
 .res-nightmode a[href$="#s"],
@@ -36,31 +59,5 @@ a[href="#s"],
       text-shadow: none !important;
       color: $black !important;
     }
-  }
-}
-
-
-a[href="#spoiler"],
-.md p > a[href="#spoiler"],
-.res-nightmode a[href$="#spoiler"],
-.res-nightmode .comment .md p a[href="#spoiler"] {
-  text-decoration: none !important;
-  cursor: default;
-  color: transparent !important;
-  text-shadow: 0 0 15px $kirby-pink, 0 0 15px $kirby-pink, 0 0 15px $kirby-pink;
-  display: inline-block;
-  transition: .3s all;
-
-  &:before {
-    font-weight: bold;
-    color: $black !important;
-
-    content: 'Spoiler: ';
-  }
-
-  &:hover {
-    color: $black !important;
-    text-shadow: none;
-    transition: 0.4s all;
   }
 }

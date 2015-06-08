@@ -391,7 +391,7 @@
   table.diff .diff_add { background: rgba(38, 153, 0, 0.3); }
   table.diff tbody .diff_header { text-align: right; }
   table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
-  .flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -999999px; }
+  .flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -9999em; }
   @-webkit-keyframes kirbyanim { from { background-position: 0px 0px; }
     to { background-position: -210px 0px; } }
   @-moz-keyframes kirbyanim { from { background-position: 0px 0px; }
