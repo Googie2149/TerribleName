@@ -1,10 +1,10 @@
-/* Terrible Name Theme (https://github.com/Googie2149/TerribleName | https://www.reddit.com/r/NuttyNoon) */
+/* Terrible Name  A simple theme for reddit  Author: unzan (https://github.com/unzan) Contributor: - David Davis (https://github.com/daviddavis) - matheod (https://github.com/matheod) Edited by Googie2149 for /r/Kirby License: WTFPL  Default icons provided with this theme are part of the Fugue Icon Set by Yusuke Kamiyamane [1]. Default banner is a photograph [2] by Holger Weinandt [3].  [1]: http://p.yusukekamiyamane.com/ [2]: http://commons.wikimedia.org/wiki/File:Panorama_Frankfurt_vom_Maintower_edit.jpg [3]: http://de.wikipedia.org/wiki/Benutzer:Schaengel */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(reddit.com) { a.pretty-button, a.pretty-button.neutral, .big-mod-buttons .pretty-button, .link.spam, .comment.noncollapsed > .entry .usertext.border > .usertext-body, .users-online:before, .sidebox .spacer { background: none; }
   .morelink, .morelink:hover, .flairselection > .linkflair > a:hover, .flairselection > .flairremove > a:hover, .res .comment.noncollapsed > .entry.RES-keyNav-activeElement .md, .res .morerecursion > .entry.RES-keyNav-activeElement, .res .morechildren > .entry.RES-keyNav-activeElement, .res .comment.collapsed > .entry.RES-keyNav-activeElement, .res #RESDashboardAddComponent, .res.res-commentBoxes .comments-page .nestedlisting .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res.res-commentBoxes .comments-page .nestedlisting .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment { background: none !important; }
   a, .thing .title, .link .tagline a, .md a { color: #2177b4; }
   a:visited, .thing .title:visited, .link .tagline a:visited { color: #5358ba; }
-  #header { background: #111 url("http://i.imgur.com/kfumYVX.jpg") 0 0 no-repeat !important; }
+  #header { background: #111 url("%%banner%%") 0 0 no-repeat !important; }
   #header .tabmenu > li > a, .res .redditname > a[href$="/r/Dashboard/"], .res .redditname > .dashboardTab { background: none; display: block; font-weight: normal; color: #fff; padding: 8px 13px; }
   #header .tabmenu > li > a:hover, .res .redditname > a[href$="/r/Dashboard/"]:hover, .res .redditname > .dashboardTab:hover { color: white; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); background: linear-gradient(top, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)); }
   #header .tabmenu > li.selected > a, .res .redditname > a[href$="/r/Dashboard/"].active, .res .redditname > .dashboardTab.active { color: white; border: none; background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); background: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)); }
@@ -47,7 +47,7 @@
   .comment.noncollapsed > .entry .tagline, .message.noncollapsed > .entry .tagline { display: block; padding: 6px 14px 6px 10px; min-height: 32px; line-height: 32px; border-bottom: solid 1px #e6e6e6; border-radius: 3px 3px 0 0; }
   .comment.noncollapsed > .entry .flat-list.buttons, .message.noncollapsed > .entry .flat-list.buttons { background: whitesmoke; border-top: solid 1px #e6e6e6; padding: 4px 12px 4px 8px; border-radius: 0 0 3px 3px; }
   .comment.noncollapsed > .entry .flat-list.buttons li a, .message.noncollapsed > .entry .flat-list.buttons li a { font-weight: normal; }
-  .submit.mod-override > .morelink > a:after, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .tagline .userattrs .cakeday, #mail, #modmail, .gilded-icon:before, .icon-menu .reddit-edit:before, .icon-menu .reddit-edited:before, .icon-menu .moderator-mail:before, .icon-menu .reddit-moderators:before, .icon-menu .reddit-contributors:before, .icon-menu .reddit-traffic:before, .icon-menu .reddit-modqueue:before, .icon-menu .reddit-reported:before, .icon-menu .reddit-spam:before, .icon-menu .reddit-ban:before, .icon-menu .reddit-flair:before, .icon-menu .reddit-moderationlog:before, .icon-menu .reddit-unmoderated:before, .icon-menu .edit-stylesheet:before, .icon-menu .wikiaction-revisions:before, .icon-menu .wikiaction-pages:before, .subscription-box .sr-type-img, .subreddit .sr-type-img, .message.new > .entry .head:after, .trending-subreddits strong:before, .explore-label:before, .profile-page .titlebox > .bottom > a[href*="/compose/"]:before, .res .gearIcon, .res #BigEditor .RESCloseButton:before, .res button.RESBigEditorPop:before { display: inline-block !important; background-image: url("http://i.imgur.com/MJ7y1Zy.png") !important; background-repeat: no-repeat !important; width: 16px !important; height: 16px !important; }
+  .submit.mod-override > .morelink > a:after, .titlebox .leavemoderator:before, .titlebox form.leavecontributor-button:before, .tagline .userattrs .cakeday, #mail, #modmail, .gilded-icon:before, .icon-menu .reddit-edit:before, .icon-menu .reddit-edited:before, .icon-menu .moderator-mail:before, .icon-menu .reddit-moderators:before, .icon-menu .reddit-contributors:before, .icon-menu .reddit-traffic:before, .icon-menu .reddit-modqueue:before, .icon-menu .reddit-reported:before, .icon-menu .reddit-spam:before, .icon-menu .reddit-ban:before, .icon-menu .reddit-flair:before, .icon-menu .reddit-moderationlog:before, .icon-menu .reddit-unmoderated:before, .icon-menu .edit-stylesheet:before, .icon-menu .wikiaction-revisions:before, .icon-menu .wikiaction-pages:before, .subscription-box .sr-type-img, .subreddit .sr-type-img, .message.new > .entry .head:after, .trending-subreddits strong:before, .explore-label:before, .profile-page .titlebox > .bottom > a[href*="/compose/"]:before, .res .gearIcon, .res #BigEditor .RESCloseButton:before, .res button.RESBigEditorPop:before { display: inline-block !important; background-image: url("%%icons%%") !important; background-repeat: no-repeat !important; width: 16px !important; height: 16px !important; }
   .arrow { margin-left: 3px; }
   .up.arrow, .up.arrow:hover, .down.arrow, .down.arrow:hover, .upmod.arrow, .upmod.arrow:hover, .downmod.arrow, .downmod.arrow:hover { display: inline-block; background-image: url(%%arrows%%); background-repeat: no-repeat; height: 21px !important; width: 21px !important; padding-right: 1px; }
   .up.arrow, .up.arrow:hover { background-position: -5px -67px !important; }
@@ -62,7 +62,7 @@
   .menuarea .spacer .dropdown.lightdrop > .selected:after, .res .RESMacroDropdownTitle:after { content: ''; width: 0; height: 0; margin-left: 4px; display: inline-block; vertical-align: middle; border-left: solid 4px transparent; border-right: solid 4px transparent; border-top: solid 4px #6b6b6b; }
   .menuarea .drop-choices.lightdrop a.choice, .res .RESMacroDropdown li > a { color: inherit; vertical-align: middle; padding: 2px 4px; border: none; border-radius: 3px; }
   .menuarea .drop-choices.lightdrop a.choice:hover, .res .RESMacroDropdown li > a:hover { background: #268bd2; color: #fff; }
-  body { background: #eaeaea url("http://i.imgur.com/l6K6XJU.jpg") left top repeat; color: #111; font-family: "Liberation Sans", Arial, sans-serif; }
+  body { background: #eaeaea url("%%noise%%") left top repeat; color: #111; font-family: "Liberation Sans", Arial, sans-serif; }
   hr { margin: 1.5em 0; }
   .error { color: #111; }
   .content { overflow: hidden; padding-bottom: 10px; }
@@ -89,8 +89,10 @@
   .submit.mod-override > .morelink > a:after { background-position: -16px -32px; left: 3px; top: 1px; opacity: 0.6; }
   .submit.mod-override > .morelink:hover > a:after { opacity: 1; }
   .expando-button, .res .expando-button.toggleImage.image, .res .expando-button.toggleImage.video-muted { cursor: pointer; width: 19px; height: 19px; position: relative; padding: 0 !important; background-position: 0 0 !important; }
-  .expando-button:before, .res .expando-button.toggleImage.image:before, .res .expando-button.toggleImage.video-muted:before { content: ''; position: absolute; left: 4px; right: 4px; height: 3px; top: 8px; background: #848484; }
-  .expando-button.selftext.collapsed:after, .res .selftext.collapsed.expando-button.toggleImage.image:after, .res .toggleImage.image.expando-button.collapsedExpando:after, .res .selftext.collapsed.expando-button.toggleImage.video-muted:after, .res .toggleImage.video-muted.expando-button.collapsedExpando:after, .expando-button.video.collapsed:after, .res .video.collapsed.expando-button.toggleImage.image:after, .res .video.collapsed.expando-button.toggleImage.video-muted:after { content: ''; position: absolute; top: 4px; bottom: 4px; width: 3px; left: 8px; background: #848484; }
+  .expando-button:before, .res .expando-button.toggleImage.image:before, .res .expando-button.toggleImage.video-muted:before { content: ''; position: absolute; left: 0; right: 0; height: 0; top: 0; background: #848484; background-color: rgba(255, 255, 255, 0.5); }
+  .expando-button:after, .res .expando-button.toggleImage.image:after, .res .expando-button.toggleImage.video-muted:after { content: ''; position: absolute; width: 19px; height: 19px; left: 0; }
+  .expando-button.selftext.collapsed:after, .res .selftext.collapsed.expando-button.toggleImage.image:after, .res .toggleImage.image.expando-button.collapsedExpando:after, .res .selftext.collapsed.expando-button.toggleImage.video-muted:after, .res .toggleImage.video-muted.expando-button.collapsedExpando:after, .expando-button.video.collapsed:after, .res .video.collapsed.expando-button.toggleImage.image:after, .res .video.collapsed.expando-button.toggleImage.video-muted:after { background: url("%%ExpandoPlus%%"); /*background: $expand-button-fg;*/ }
+  .expando-button.selftext.expanded:after, .res .toggleImage.image.expando-button.collapsed.expanded:after, .res .toggleImage.image.expando-button.expanded:after, .res .toggleImage.video-muted.expando-button.collapsed.expanded:after, .res .toggleImage.video-muted.expando-button.expanded:after, .expando-button.video.expanded:after, .res .video.expanded.expando-button.toggleImage.image:after, .res .video.expanded.expando-button.toggleImage.video-muted:after { background: url("%%ExpandoMinus%%"); }
   .nav-buttons { padding: 1em 0; }
   .nextprev { color: #111; }
   a.pretty-button { display: inline-block; border: none; padding: 0; font-size: 13px; border-radius: 0; }
@@ -214,7 +216,13 @@
   .link .flat-list.buttons > li { display: inline-block; padding: 0; }
   .link .flat-list.buttons > li.option.active { display: inline-block; }
   .link .flat-list.buttons > li.nsfw-stamp, .link .flat-list.buttons > li.first { display: inline-block !important; }
+  .thing .title { border-radius: 6px; }
   .thing.stickied a.title { color: #208000 !important; font-weight: bold !important; }
+  .thing.over18 a.title { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+  .thing.over18 a.title:before { font-weight: bold; color: #2177b4 !important; content: 'Spoiler: '; }
+  .thing.over18 a.title:before:visited { color: #5358ba !important; }
+  .thing.over18 a.title:hover { color: #2177b4 !important; text-shadow: none; transition: 0.4s all; }
+  .thing.over18 a.title:hover:visited { color: #5358ba !important; }
   .thumbnail { padding: 2px 4px 0 0; position: relative; overflow: visible; font-size: 16px; line-height: 1em; text-align: center; /* &:before { display: inline-block; margin-top: 5px; width: 40px; height: 40px; background: $default-thumb-bg; color: $default-thumb-fg; font: normal 28px $serif; line-height: 1.4em; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); @include rounded(100%); @include shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.8)); }
 */ }
   .thumbnail.default, .thumbnail.self, .thumbnail.nsfw { width: 72px; height: 55px; background: url(%%thumbnails%%); }
@@ -231,7 +239,7 @@
   .userattrs .admin:after { content: 'dmin'; }
   .userattrs .submitter { color: #2177b4; font-size: 0; }
   .userattrs .submitter:after { font-size: 13px; content: 'OP'; }
-  .nsfw-stamp { border: none !important; margin: 0 4px 0 0; font-size: 0px !important; }
+  .nsfw-stamp { border: none !important; margin: 0 4px 0 0; font-size: 0px !important; line-height: 2px; }
   .nsfw-stamp acronym { display: inline-block; border: none !important; background: #268bd2; color: #fff; border-radius: 2px; font-size: 0px !important; padding: 9px 5px 6px 5px; content: ""; }
   .nsfw-stamp acronym::after { font-size: 11px !important; content: "SPOILER"; }
   .marknsfw-button a[href="#"], .unmarknsfw-button a[href="#"] { height: 18px; margin-top: -3px; font-size: 0px !important; display: inline-block; vertical-align: top; overflow: hidden; letter-spacing: -20px; content: ""; }
@@ -263,6 +271,8 @@
   .md pre > code { border: solid 1px #b7b7b7; }
   .md ul { list-style-type: square; padding-left: 20px; }
   .md a:hover { text-decoration: underline; }
+  .md a[href$="/spoiler"] { background: #111 !important; color: #111 !important; text-decoration: none; }
+  .md a[href$="/spoiler"]:hover { color: #fff !important; }
   .commentarea { border-top: solid 1px rgba(0, 0, 0, 0.2); padding-top: 10px; position: relative; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7); }
   .commentarea > .infobar { margin-bottom: 15px; margin-left: 10px; border-left: solid 4px #cca400; }
   .commentarea .menuarea { color: #111; }
@@ -397,11 +407,8 @@
   table.diff .diff_add { background: rgba(38, 153, 0, 0.3); }
   table.diff tbody .diff_header { text-align: right; }
   table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
-<<<<<<< HEAD
   /* .title .linkflairlabel { 	display:inline-block; 	position:relative; 	width:60px; 	height:34px; 	padding:0px; 	margin:0px 8px -5px 0px; 	border:none; 	background:none; 	text-indent:-9999px }  .title .linkflairlabel:hover { 	cursor:pointer!important } */
   /* .flairselection .flairoptionpane li { 	min-width: 75px; 	max-width: 100px; 	text-align: center; 	padding: 0 !important; 	margin: 0 !important; 	display: inline-block; }  @include postflair(113, 30, -5,   20, 20, "modpost"); @include postflair(134, 24, -49,  20, 20, "mainseries"); @include postflair(119, 22, -93,  20, 20, "spinoff"); @include postflair(86,  26, -137, 20, 20, "anime"); @include postflair(172, 31, -181, 20, 20, "mangacomic"); @include postflair(150, 33, -225, 20, 20, "smashbros"); @include postflair(168, 34, -269, 20, 20, "animespoilers"); @include postflair(161, 24, -313, 20, 20, "gamespoilers"); @include postflair(86,  32, -357, 20, 20, "music"); @include postflair(112, 32, -401, 20, 20, "artwork"); @include postflair(156, 34, -445, 20, 20, "collectables"); @include postflair(81,  31, -489, 20, 20, "news"); @include postflair(123, 32, -533, 20, 20, "questions"); @include postflair(79,  24, -577, 20, 20, "meta"); @include postflair(83,  23, -621, 20, 20, "misc"); @include postflair(165, 28, -665, 20, 20, "monthly"); */
-=======
->>>>>>> origin/nuttynoon
   .flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -9999em; }
   @-webkit-keyframes kirbyanim { from { background-position: 0px 0px; }
     to { background-position: -210px 0px; } }
@@ -497,7 +504,7 @@
   .explore-header #explore-settings button, #compose-message button#send { padding-bottom: 3px; }
   .sidebox.holiday_shopping > .morelink > a { color: #fff; }
   .sidebox.holiday_shopping > .morelink > a:before { position: absolute; left: 12px; top: 2px; }
-  #header-img.default-header { background: url("http://i.imgur.com/1yRy1Sk.png") center center no-repeat; width: 82px; height: 109px; margin: 0 10px 0 20px; vertical-align: middle; }
+  #header-img.default-header { background: url("../image/logo.png") center center no-repeat; width: 82px; height: 109px; margin: 0 10px 0 20px; vertical-align: middle; }
   #header-img-a { max-width: 300px; overflow: hidden; }
   #header-img-a > #header-img { max-height: 109px !important; width: auto !important; }
   body.with-listing-chooser #header .pagename { position: static; margin-left: 0; }
@@ -556,7 +563,7 @@
   body.with-listing-chooser.listing-chooser-collapsed > .listing-chooser .grippy { width: 10px; }
   body.with-listing-chooser.listing-chooser-collapsed > .content { margin-left: 30px; }
   body.with-listing-chooser .listing-chooser { top: 160px; background: rgba(0, 0, 0, 0.9); padding-right: 0; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.8); }
-  body.with-listing-chooser .listing-chooser .grippy { background: #eaeaea url("http://i.imgur.com/l6K6XJU.jpg") top left repeat; border-left: none; width: 10px; border-right: solid 1px rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.9); }
+  body.with-listing-chooser .listing-chooser .grippy { background: #eaeaea url("%%noise%%") top left repeat; border-left: none; width: 10px; border-right: solid 1px rgba(0, 0, 0, 0.2); box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.9); }
   body.with-listing-chooser .listing-chooser .grippy:before, body.with-listing-chooser .listing-chooser .grippy:after { display: none !important; }
   body.with-listing-chooser .listing-chooser .intro { border-top: solid 3px rgba(232, 176, 0, 0.4); border-bottom: solid 3px rgba(232, 176, 0, 0.4); padding: 10px 0; color: #fff; background: rgba(181, 137, 0, 0.4); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.4); }
   body.with-listing-chooser .listing-chooser .intro > p { margin-right: 10px; }
@@ -782,3 +789,5 @@
 @-moz-document regexp("https?://([^.]+\\.)?reddit\\.com/r/[Dd]ashboard([/#?].*)?") { .redditname { position: absolute; z-index: 100; left: 10px; top: 129px; }
   .redditname:before { display: none; }
   #viewImagesButton { margin-left: 360px; } }
+
+/*# sourceMappingURL=userstyle.css.map */

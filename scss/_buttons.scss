@@ -183,11 +183,20 @@ input[type=submit] {
   &:before {
     content: '';
     position: absolute;
-    left: 4px;
-    right: 4px;
-    height: 3px;
-    top: 8px;
+    left: 0;
+    right: 0;
+    height: 0;
+    top: 0;
     background: $expand-button-fg;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 0;
   }
 
   &.selftext,
@@ -199,13 +208,8 @@ input[type=submit] {
       }
 
       &:after {
-        content: '';
-        position: absolute;
-        top: 4px;
-        bottom: 4px;
-        width: 3px;
-        left: 8px;
-        background: $expand-button-fg;
+        background: url("%%ExpandoPlus%%");
+        /*background: $expand-button-fg;*/
       }
     }
 
@@ -214,6 +218,10 @@ input[type=submit] {
       &:hover {
         @extend %tn-small-button-default;
         @extend %tn-small-button-pressed;
+      }
+
+      &:after {
+        background: url("%%ExpandoMinus%%");
       }
     }
   }

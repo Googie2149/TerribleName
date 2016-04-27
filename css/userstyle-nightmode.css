@@ -1,15 +1,15 @@
-/* Terrible Name Theme (https://github.com/Googie2149/TerribleName | https://www.reddit.com/r/NuttyNoon) */
+/* Terrible Name  A simple theme for reddit  Author: unzan (https://github.com/unzan) Contributor: - David Davis (https://github.com/daviddavis) - matheod (https://github.com/matheod) Edited by Googie2149 for /r/Kirby License: WTFPL  Default icons provided with this theme are part of the Fugue Icon Set by Yusuke Kamiyamane [1]. Default banner is a photograph [2] by Holger Weinandt [3].  [1]: http://p.yusukekamiyamane.com/ [2]: http://commons.wikimedia.org/wiki/File:Panorama_Frankfurt_vom_Maintower_edit.jpg [3]: http://de.wikipedia.org/wiki/Benutzer:Schaengel */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(reddit.com) { .res.res-nightmode.moderator .tabpane-content .linefield, .res.res-nightmode .login-form-side .submit, .res.res-nightmode #dashboardContents, .res.res-nightmode .RESDashboardAddComponent { background: none; }
   .res.res-nightmode .content, .res.res-nightmode #header-bottom-left, .res.res-nightmode #header-bottom-right, .res.res-nightmode form.submit.content, .res.res-nightmode .tabpane-content .roundfield, .res.res-nightmode .formtabs-content .roundfield, .res.res-nightmode .nav-buttons, .res.res-nightmode .side .titlebox, .res.res-nightmode .side .sidebox, .res.res-nightmode .side .sidebox .spacer, .res.res-nightmode .side .leavemoderator, .res.res-nightmode .side .leavecontributor-button, .res.res-nightmode .side .titlebox form.flairtoggle, .res.res-nightmode .linklisting .link .entry.RES-keyNav-activeElement .usertext > .usertext-body, .res.res-nightmode .linklisting .link .entry.RES-keyNav-activeElement .usertext > .usertext-body .md p, .res.res-nightmode .RES-keyNav-activeElement .md, .res.res-nightmode .comment, .res.res-nightmode .comment.noncollapsed > .entry.RES-keyNav-activeElement .usertext-body, .res.res-nightmode .comment.noncollapsed > .entry.RES-keyNav-activeElement .usertext-body .md p, .res.res-nightmode.wiki-page .md.wiki > .toc > ul, .res.res-nightmode .usertext-edit .RESDialogSmall .md.RESDialogContents, .res.res-nightmode.moderator .footer-parent .footer { background: none !important; }
-  .res.res-nightmode #header { background: #111 url("http://i.imgur.com/kfumYVX.jpg") 0 0 no-repeat !important; }
+  .res.res-nightmode #header { background: #111 url("%%banner%%") 0 0 no-repeat !important; }
   .res.res-nightmode .thing .midcol > .arrow { margin-left: 3px; }
   .res.res-nightmode .thing .midcol > .up.arrow, .res.res-nightmode .thing .midcol > .up.arrow:hover, .res.res-nightmode .thing .midcol > .down.arrow, .res.res-nightmode .thing .midcol > .down.arrow:hover, .res.res-nightmode .thing .midcol > .upmod.arrow, .res.res-nightmode .thing .midcol > .upmod.arrow:hover, .res.res-nightmode .thing .midcol > .downmod.arrow, .res.res-nightmode .thing .midcol > .downmod.arrow:hover { display: inline-block; background-image: url(%%arrows%%); background-repeat: no-repeat; height: 21px !important; width: 21px !important; padding-right: 1px; }
   .res.res-nightmode .thing .midcol > .up.arrow, .res.res-nightmode .thing .midcol > .up.arrow:hover { background-position: -5px -67px !important; }
   .res.res-nightmode .thing .midcol > .upmod.arrow, .res.res-nightmode .thing .midcol > .upmod.arrow:hover { background-position: -5px -98px !important; }
   .res.res-nightmode .thing .midcol > .down.arrow, .res.res-nightmode .thing .midcol > .down.arrow:hover { background-position: -5px -5px !important; }
   .res.res-nightmode .thing .midcol > .downmod.arrow, .res.res-nightmode .thing .midcol > .downmod.arrow:hover { background-position: -5px -36px !important; }
-  .res.res-nightmode { background: #13161A url("http://i.imgur.com/zunAMnr.jpg") left top repeat !important; }
+  .res.res-nightmode { background: #13161A url("%%dark-noise%%") left top repeat !important; }
   .res.res-nightmode .flairselector.drop-choices.active > h2 { background: -webkit-linear-gradient(top, #242a32, #1e2229); background: -moz-linear-gradient(top, #242a32, #1e2229); background: linear-gradient(top, #242a32, #1e2229); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 0 #3e4855; }
   .res.res-nightmode .flairselector.drop-choices.active { border: none !important; background: -webkit-linear-gradient(top, #242a32, #1e2229); background: -moz-linear-gradient(top, #242a32, #1e2229); background: linear-gradient(top, #242a32, #1e2229); box-shadow: inset 0 1px 0 #3a434f, 0 1px 2px rgba(0, 0, 0, 0.3); }
   .res.res-nightmode .linklisting .link .entry .usertext > .usertext-body > .md, .res.res-nightmode .organic-listing .link .entry .usertext > .usertext-body > .md, .res.res-nightmode .explore-item .entry .usertext > .usertext-body > .md, .res.res-nightmode .wiki-page .wiki-page-content .md.wiki, .res.res-nightmode .RESDialogSmall.livePreview { background-color: #242a32 !important; color: #9e9e9e !important; }
@@ -141,7 +141,7 @@
   .res.res-nightmode #BigEditor > .RESDialogSmall.BERight .md a:visited, .res.res-nightmode #BigEditor > .RESDialogSmall.BERight #BigPreview.md a:visited, .res.res-nightmode .RESDialogSmall.livePreview .md a:visited, .res.res-nightmode .RESDialogSmall.livePreview #BigPreview.md a:visited { color: #5358ba !important; }
   .res.res-nightmode .RESDialogSmall.livePreview { border-color: #13161A; overflow: hidden; }
   .res.res-nightmode .RESDialogSmall.livePreview > h3 { border-top: none; border-left: none; border-right: none; }
-  .res.res-nightmode #BigEditor > .RESDialogSmall.BELeft { background: #13161A url("http://i.imgur.com/zunAMnr.jpg") left top repeat; box-shadow: inset 0 1px 0 #292f37; }
+  .res.res-nightmode #BigEditor > .RESDialogSmall.BELeft { background: #13161A url("%%dark-noise%%") left top repeat; box-shadow: inset 0 1px 0 #292f37; }
   .res.res-nightmode #BigEditor > .RESDialogSmall.BERight { background: #191d23 !important; }
   .res.res-nightmode .RESCharCounter { background-color: #242a32; color: #9e9e9e; }
   .res.res-nightmode .RESCharCounter.tooLong { background-color: #621210; }
@@ -159,7 +159,7 @@
   .res.res-nightmode .RESMacroWrappingSpan > .RESMacroDropdownTitle { border: none; }
   .res.res-nightmode .RESMacroWrappingSpan > .RESMacroDropdownTitle.openMacro { background: #353e49; }
   .res.res-nightmode body.with-listing-chooser .listing-chooser { background: #111417; box-shadow: 1px 0 0 #242a32; }
-  .res.res-nightmode body.with-listing-chooser .listing-chooser .grippy { border-right: solid 1px #0a0c0e; border-left: solid 1px #0a0c0e !important; background: #13161A url("http://i.imgur.com/zunAMnr.jpg") top left repeat; box-shadow: inset 1px 0 0 #292f37; }
+  .res.res-nightmode body.with-listing-chooser .listing-chooser .grippy { border-right: solid 1px #0a0c0e; border-left: solid 1px #0a0c0e !important; background: #13161A url("%%dark-noise%%") top left repeat; box-shadow: inset 1px 0 0 #292f37; }
   .res.res-nightmode body.with-listing-chooser .listing-chooser li { color: #9e9e9e; border: none; margin-bottom: 7px; background: -webkit-linear-gradient(top, #292f37, #1e2229); background: -moz-linear-gradient(top, #292f37, #1e2229); background: linear-gradient(top, #292f37, #1e2229); box-shadow: inset 0 1px 0 #3e4855, 0 2px 2px #0d0f11; }
   .res.res-nightmode body.with-listing-chooser .listing-chooser li > a { color: inherit; }
   .res.res-nightmode body.with-listing-chooser .listing-chooser li.selected { background: -webkit-linear-gradient(top, #333b46, #242a32); background: -moz-linear-gradient(top, #333b46, #242a32); background: linear-gradient(top, #333b46, #242a32); }
@@ -205,3 +205,5 @@
   .res.res-nightmode .widgetStateButtons > li:not(.updateTime) { border: solid 1px #13161A; }
   .res.res-nightmode .widgetStateButtons > li.updateTime, .res.res-nightmode .widgetStateButtons > li.updateTime:hover { color: inherit !important; background: none; }
   .res.res-nightmode .backToWidgetTypes { color: #9e9e9e; } }
+
+/*# sourceMappingURL=userstyle-nightmode.css.map */

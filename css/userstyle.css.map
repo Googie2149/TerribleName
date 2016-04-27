@@ -1,0 +1,6 @@
+{
+"version": 3,
+"sources": ["../scss/_license.scss","../scss/userstyle.scss","../scss/_placeholders.scss","../scss/_variables.scss","../scss/userstyle/_variables.scss","../scss/_mixins.scss","../scss/_basic.scss","../scss/_buttons.scss","../scss/_form.scss","../scss/_header.scss","../scss/_list.scss","../scss/_markdown.scss","../scss/_comments.scss","../scss/_sidebar.scss","../scss/_footer.scss","../scss/_icons.scss","../scss/_wiki.scss","../scss/_flairs.scss","../scss/userstyle/_icons.scss","../scss/userstyle/_buttons.scss","../scss/userstyle/_header.scss","../scss/userstyle/_list.scss","../scss/userstyle/_explore.scss","../scss/userstyle/_multireddits.scss","../scss/userstyle/_profile.scss","../scss/userstyle/_inbox.scss","../scss/res/normal/_header.scss","../scss/res/normal/_button.scss","../scss/res/normal/_sidebar.scss","../scss/res/normal/_list.scss","../scss/res/normal/_comment.scss","../scss/res/normal/_editor.scss","../scss/res/normal/_menu.scss","../scss/userstyle/_dashboard.scss","../scss/userstyle/_res.scss","../scss/res/_comment_reset.scss","../scss/userstyle/_dashboard_fix.scss"],
+"names": [],
+"file": "userstyle.css"
+}
