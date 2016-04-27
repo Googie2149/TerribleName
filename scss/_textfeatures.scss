@@ -8,10 +8,17 @@ cursor: default;
 
 /*Spoiler tag
   Borrowed from /r/witcher!*/
+<<<<<<< HEAD
 a[href="#spoiler"],
 .md p > a[href="#spoiler"],
 .res-nightmode a[href$="#spoiler"],
 .res-nightmode .comment .md p a[href="#spoiler"] {
+=======
+a[href="/s"],
+.md p > a[href="/s"],
+.res-nightmode a[href$="/s"],
+.res-nightmode .comment .md p a[href="/s"] {
+>>>>>>> origin/nuttynoon
   text-decoration: none !important;
   cursor: default;
   color: transparent !important;
@@ -32,10 +39,17 @@ a[href="#spoiler"],
 }
 
 /* Old spoiler tag */
+<<<<<<< HEAD
 a[href="#s"], a[href="/s"],
 .md p > a[href="#s"], .md p > a[href="/s"],
 .res-nightmode a[href$="#s"], .res-nightmode a[href$="/s"],
 .res-nightmode .comment .md p a[href="#s"], .res-nightmode .comment .md p a[href="/s"] {
+=======
+a[href="#s"],
+.md p > a[href="#s"],
+.res-nightmode a[href$="#s"],
+.res-nightmode .comment .md p a[href="#s"] {
+>>>>>>> origin/nuttynoon
   text-decoration: none !important;
   background-color: transparent !important;
   cursor: default;

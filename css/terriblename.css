@@ -113,6 +113,7 @@ hr { margin: 1.5em 0; }
 
 ::-moz-focus-inner { border: none; }
 
+<<<<<<< HEAD
 /*
 .title .linkflairlabel {
 	display:inline-block;
@@ -157,6 +158,8 @@ hr { margin: 1.5em 0; }
 @include postflair(83,  23, -621, 20, 20, "misc");
 @include postflair(165, 28, -665, 20, 20, "monthly");
 */
+=======
+>>>>>>> origin/nuttynoon
 .flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -9999em; }
 
 @-webkit-keyframes kirbyanim { from { background-position: 0px 0px; }
@@ -826,6 +829,7 @@ table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
 a[href$="#highlight"] { color: #e00707 !important; font-weight: bold; text-decoration: none !important; cursor: default; }
 
 /*Spoiler tag Borrowed from /r/witcher!*/
+<<<<<<< HEAD
 a[href="#spoiler"], .md p > a[href="#spoiler"], .res-nightmode a[href$="#spoiler"], .res-nightmode .comment .md p a[href="#spoiler"] { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
 a[href="#spoiler"]:before, .md p > a[href="#spoiler"]:before, .res-nightmode a[href$="#spoiler"]:before, .res-nightmode .comment .md p a[href="#spoiler"]:before { font-weight: bold; color: #111 !important; content: 'Spoiler: '; }
 a[href="#spoiler"]:hover, .md p > a[href="#spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover, .res-nightmode .comment .md p a[href="#spoiler"]:hover { color: #111 !important; text-shadow: none; transition: 0.4s all; }
@@ -835,6 +839,17 @@ a[href="#s"], a[href="/s"], .md p > a[href="#s"], .md p > a[href="/s"], .res-nig
 a[href="#s"]::after, a[href="/s"]::after, .md p > a[href="#s"]::after, .md p > a[href="/s"]::after, .res-nightmode a[href$="#s"]::after, .res-nightmode a[href$="/s"]::after, .res-nightmode .comment .md p a[href="#s"]::after, .res-nightmode .comment .md p a[href="/s"]::after { background-color: transparent !important; content: attr(title); color: transparent; font-weight: normal; padding: 0 0.5em; visibility: visible; transition: .3s all; }
 a[href="#s"]:hover, a[href="#s"]:active, a[href="/s"]:hover, a[href="/s"]:active, .md p > a[href="#s"]:hover, .md p > a[href="#s"]:active, .md p > a[href="/s"]:hover, .md p > a[href="/s"]:active, .res-nightmode a[href$="#s"]:hover, .res-nightmode a[href$="#s"]:active, .res-nightmode a[href$="/s"]:hover, .res-nightmode a[href$="/s"]:active, .res-nightmode .comment .md p a[href="#s"]:hover, .res-nightmode .comment .md p a[href="#s"]:active, .res-nightmode .comment .md p a[href="/s"]:hover, .res-nightmode .comment .md p a[href="/s"]:active { transition: 0.4s all; text-shadow: none !important; }
 a[href="#s"]:hover::after, a[href="#s"]:active::after, a[href="/s"]:hover::after, a[href="/s"]:active::after, .md p > a[href="#s"]:hover::after, .md p > a[href="#s"]:active::after, .md p > a[href="/s"]:hover::after, .md p > a[href="/s"]:active::after, .res-nightmode a[href$="#s"]:hover::after, .res-nightmode a[href$="#s"]:active::after, .res-nightmode a[href$="/s"]:hover::after, .res-nightmode a[href$="/s"]:active::after, .res-nightmode .comment .md p a[href="#s"]:hover::after, .res-nightmode .comment .md p a[href="#s"]:active::after, .res-nightmode .comment .md p a[href="/s"]:hover::after, .res-nightmode .comment .md p a[href="/s"]:active::after { color: #111 !important; }
+=======
+a[href="/s"], .md p > a[href="/s"], .res-nightmode a[href$="/s"], .res-nightmode .comment .md p a[href="/s"] { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+a[href="/s"]:before, .md p > a[href="/s"]:before, .res-nightmode a[href$="/s"]:before, .res-nightmode .comment .md p a[href="/s"]:before { font-weight: bold; color: #111 !important; content: 'Spoiler: '; }
+a[href="/s"]:hover, .md p > a[href="/s"]:hover, .res-nightmode a[href$="/s"]:hover, .res-nightmode .comment .md p a[href="/s"]:hover { color: #111 !important; text-shadow: none; transition: 0.4s all; }
+
+/* Old spoiler tag */
+a[href="#s"], .md p > a[href="#s"], .res-nightmode a[href$="#s"], .res-nightmode .comment .md p a[href="#s"] { text-decoration: none !important; cursor: default; font-weight: bold; color: #111 !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+a[href="#s"]::after, .md p > a[href="#s"]::after, .res-nightmode a[href$="#s"]::after, .res-nightmode .comment .md p a[href="#s"]::after { content: attr(title); color: transparent; font-weight: normal; padding: 0 0.5em; visibility: visible; transition: .3s all; }
+a[href="#s"]:hover, a[href="#s"]:active, .md p > a[href="#s"]:hover, .md p > a[href="#s"]:active, .res-nightmode a[href$="#s"]:hover, .res-nightmode a[href$="#s"]:active, .res-nightmode .comment .md p a[href="#s"]:hover, .res-nightmode .comment .md p a[href="#s"]:active { transition: 0.4s all; }
+a[href="#s"]:hover::after, a[href="#s"]:active::after, .md p > a[href="#s"]:hover::after, .md p > a[href="#s"]:active::after, .res-nightmode a[href$="#s"]:hover::after, .res-nightmode a[href$="#s"]:active::after, .res-nightmode .comment .md p a[href="#s"]:hover::after, .res-nightmode .comment .md p a[href="#s"]:active::after { text-shadow: none !important; color: #111 !important; }
+>>>>>>> origin/nuttynoon
 
 /*===NINTENDO FAMILY=====================================*/
 div.side blockquote:last-of-type a { display: inline-block; width: 35px; height: 35px; border: 1px solid black; margin: 1px; background: url(%%nintendofamily%%); }
