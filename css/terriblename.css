@@ -22,9 +22,9 @@ a.pretty-button:after, .sidecontentbox > .title .collapse-button:after, .wiki-pa
 
 .linkflairlabel { display: inline-block; font-size: 13px !important; border: solid 1px #268bd2; line-height: 1.2em; padding: 1px 4px; vertical-align: middle; background-color: #268bd2; color: #fff; }
 
-button, input[type=submit], .fancy-toggle-button > .option.add, .fancy-toggle-button > .option.remove, .morelink a, .res .RESshortcutside, .res .RESshortcutside.remove, .res .RESDashboardToggle, .res .RESDashboardToggle.remove, .res #alert_message > input[type=button] { color: #fff !important; font-family: "Liberation Sans", Arial, sans-serif; padding: 2px 8px; width: auto; min-width: 4em; height: auto; line-height: 1.5em; vertical-align: middle; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); text-decoration: none !important; border: none; text-align: center; margin-right: 3px; background: -webkit-linear-gradient(top, #62ade3, #1a6091); background: -moz-linear-gradient(top, #62ade3, #1a6091); background: linear-gradient(top, #62ade3, #1a6091); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3); border-radius: 4px; }
-button:hover, input[type=submit]:hover, .fancy-toggle-button > .option.add:hover, .fancy-toggle-button > .option.remove:hover, .morelink a:hover, .res .RESshortcutside:hover, .res .RESDashboardToggle:hover, .res #alert_message > input[type=button]:hover, button:focus, input[type=submit]:focus, .fancy-toggle-button > .option.add:focus, .fancy-toggle-button > .option.remove:focus, .morelink a:focus, .res .RESshortcutside:focus, .res .RESDashboardToggle:focus, .res #alert_message > input[type=button]:focus { color: #fff; background: -webkit-linear-gradient(top, #268bd2, #217ab8); background: -moz-linear-gradient(top, #268bd2, #217ab8); background: linear-gradient(top, #268bd2, #217ab8); }
-button:active, input[type=submit]:active, .fancy-toggle-button > .option.add:active, .fancy-toggle-button > .option.remove:active, .morelink a:active, .res .RESshortcutside:active, .res .RESDashboardToggle:active, .res #alert_message > input[type=button]:active { background: -webkit-linear-gradient(top, #1e6ea7, #268bd2); background: -moz-linear-gradient(top, #1e6ea7, #268bd2); background: linear-gradient(top, #1e6ea7, #268bd2); box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7); }
+button, input[type=submit], .fancy-toggle-button > .option.add, .fancy-toggle-button > .option.remove, .res .RESshortcutside, .res .RESshortcutside.remove, .res .RESDashboardToggle, .res .RESDashboardToggle.remove, .res #alert_message > input[type=button] { color: #fff !important; font-family: "Liberation Sans", Arial, sans-serif; padding: 2px 8px; width: auto; min-width: 4em; height: auto; line-height: 1.5em; vertical-align: middle; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); text-decoration: none !important; border: none; text-align: center; margin-right: 3px; background: -webkit-linear-gradient(top, #62ade3, #1a6091); background: -moz-linear-gradient(top, #62ade3, #1a6091); background: linear-gradient(top, #62ade3, #1a6091); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3); border-radius: 4px; }
+button:hover, input[type=submit]:hover, .fancy-toggle-button > .option.add:hover, .fancy-toggle-button > .option.remove:hover, .res .RESshortcutside:hover, .res .RESDashboardToggle:hover, .res #alert_message > input[type=button]:hover, button:focus, input[type=submit]:focus, .fancy-toggle-button > .option.add:focus, .fancy-toggle-button > .option.remove:focus, .res .RESshortcutside:focus, .res .RESDashboardToggle:focus, .res #alert_message > input[type=button]:focus { color: #fff; background: -webkit-linear-gradient(top, #268bd2, #217ab8); background: -moz-linear-gradient(top, #268bd2, #217ab8); background: linear-gradient(top, #268bd2, #217ab8); }
+button:active, input[type=submit]:active, .fancy-toggle-button > .option.add:active, .fancy-toggle-button > .option.remove:active, .res .RESshortcutside:active, .res .RESDashboardToggle:active, .res #alert_message > input[type=button]:active { background: -webkit-linear-gradient(top, #1e6ea7, #268bd2); background: -moz-linear-gradient(top, #1e6ea7, #268bd2); background: linear-gradient(top, #1e6ea7, #268bd2); box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7); }
 
 button, input[type=submit] { display: inline-block; padding-bottom: 3px; text-transform: capitalize; }
 
@@ -113,7 +113,51 @@ hr { margin: 1.5em 0; }
 
 ::-moz-focus-inner { border: none; }
 
-.flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -999999px; }
+/*
+.title .linkflairlabel {
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:34px;
+	padding:0px;
+	margin:0px 8px -5px 0px;
+	border:none;
+	background:none;
+	text-indent:-9999px
+}
+
+.title .linkflairlabel:hover {
+	cursor:pointer!important
+}
+*/
+/*
+.flairselection .flairoptionpane li {
+	min-width: 75px;
+	max-width: 100px;
+	text-align: center;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: inline-block;
+}
+
+@include postflair(113, 30, -5,   20, 20, "modpost");
+@include postflair(134, 24, -49,  20, 20, "mainseries");
+@include postflair(119, 22, -93,  20, 20, "spinoff");
+@include postflair(86,  26, -137, 20, 20, "anime");
+@include postflair(172, 31, -181, 20, 20, "mangacomic");
+@include postflair(150, 33, -225, 20, 20, "smashbros");
+@include postflair(168, 34, -269, 20, 20, "animespoilers");
+@include postflair(161, 24, -313, 20, 20, "gamespoilers");
+@include postflair(86,  32, -357, 20, 20, "music");
+@include postflair(112, 32, -401, 20, 20, "artwork");
+@include postflair(156, 34, -445, 20, 20, "collectables");
+@include postflair(81,  31, -489, 20, 20, "news");
+@include postflair(123, 32, -533, 20, 20, "questions");
+@include postflair(79,  24, -577, 20, 20, "meta");
+@include postflair(83,  23, -621, 20, 20, "misc");
+@include postflair(165, 28, -665, 20, 20, "monthly");
+*/
+.flair { display: inline-block; font-size: 13px !important; line-height: 1.2em; padding: 0; border: 0; vertical-align: middle; background-image: url(%%spritesheet%%); background-color: transparent; background-repeat: no-repeat; text-indent: -9999em; }
 
 @-webkit-keyframes kirbyanim { from { background-position: 0px 0px; }
   to { background-position: -210px 0px; } }
@@ -257,7 +301,17 @@ hr { margin: 1.5em 0; }
 .nub { display: none; }
 
 .morelink { border: none; height: auto; }
-.morelink a { letter-spacing: 0; margin-right: 0; padding: 5px 8px; }
+.morelink a { color: #fff !important; font-family: "Liberation Sans", Arial, sans-serif; padding: 2px 8px; width: auto; min-width: 4em; height: auto; line-height: 1.5em; vertical-align: middle; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); text-decoration: none !important; border: none; text-align: center; margin-right: 3px; background: -webkit-linear-gradient(top, #62ade3, #1a6091); background: -moz-linear-gradient(top, #62ade3, #1a6091); background: linear-gradient(top, #62ade3, #1a6091); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3); border-radius: 4px; letter-spacing: 0; margin-right: 0; padding: 5px 8px; }
+.morelink a:hover, .morelink a:focus { color: #fff; background: -webkit-linear-gradient(top, #268bd2, #217ab8); background: -moz-linear-gradient(top, #268bd2, #217ab8); background: linear-gradient(top, #268bd2, #217ab8); }
+.morelink a:active { background: -webkit-linear-gradient(top, #1e6ea7, #268bd2); background: -moz-linear-gradient(top, #1e6ea7, #268bd2); background: linear-gradient(top, #1e6ea7, #268bd2); box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7); }
+
+.submit-link .morelink a { background: url(%%LinkDefault%%) no-repeat, -webkit-linear-gradient(top, #62ade3, #1a6091) !important; background: url(%%LinkDefault%%) no-repeat, -moz-linear-gradient(top, #62ade3, #1a6091) !important; background: url(%%LinkDefault%%) no-repeat, linear-gradient(top, #62ade3, #1a6091) !important; background-position: 5px center !important; border-radius: 4px; }
+.submit-link .morelink a:hover, .submit-link .morelink a:focus { color: #fff; background: url(%%LinkHover%%) no-repeat, -webkit-linear-gradient(top, #268bd2, #217ab8) !important; background: url(%%LinkHover%%) no-repeat, -moz-linear-gradient(top, #268bd2, #217ab8) !important; background: url(%%LinkHover%%) no-repeat, linear-gradient(top, #268bd2, #217ab8) !important; background-position: 20px top !important; }
+.submit-link .morelink a:active { background: url(%%LinkActive%%) no-repeat, -webkit-linear-gradient(top, #1e6ea7, #268bd2) !important; background: url(%%LinkActive%%) no-repeat, -moz-linear-gradient(top, #1e6ea7, #268bd2) !important; background: url(%%LinkActive%%) no-repeat, linear-gradient(top, #1e6ea7, #268bd2) !important; background-position: 40px bottom !important; box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7); }
+
+.submit-text .morelink a { background: url(%%TextDefault%%) no-repeat, -webkit-linear-gradient(top, #62ade3, #1a6091) !important; background: url(%%TextDefault%%) no-repeat, -moz-linear-gradient(top, #62ade3, #1a6091) !important; background: url(%%TextDefault%%) no-repeat, linear-gradient(top, #62ade3, #1a6091) !important; background-position: 5px center !important; border-radius: 4px; }
+.submit-text .morelink a:hover, .submit-text .morelink a:focus { color: #fff; background: url(%%TextHover%%) no-repeat, -webkit-linear-gradient(top, #268bd2, #217ab8) !important; background: url(%%TextHover%%) no-repeat, -moz-linear-gradient(top, #268bd2, #217ab8) !important; background: url(%%TextHover%%) no-repeat, linear-gradient(top, #268bd2, #217ab8) !important; background-position: 5px center !important; }
+.submit-text .morelink a:active { background: url(%%TextActive%%) no-repeat, -webkit-linear-gradient(top, #1e6ea7, #268bd2) !important; background: url(%%TextActive%%) no-repeat, -moz-linear-gradient(top, #1e6ea7, #268bd2) !important; background: url(%%TextActive%%) no-repeat, linear-gradient(top, #1e6ea7, #268bd2) !important; background-position: 5px center !important; box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7); }
 
 .submit.disabled > .morelink > a { color: rgba(0, 0, 0, 0.4) !important; background: #cbcbcb; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 1px 2px rgba(0, 0, 0, 0.2); }
 .submit.mod-override > .morelink > a { padding-left: 30px; }
@@ -500,8 +554,6 @@ span.hover.pagename.redditname { color: transparent; }
 .md pre > code { border: solid 1px #b7b7b7; }
 .md ul { list-style-type: square; padding-left: 20px; }
 .md a:hover { text-decoration: underline; }
-.md a[href$="/spoiler"] { background: #111 !important; color: #111 !important; text-decoration: none; }
-.md a[href$="/spoiler"]:hover { color: #fff !important; }
 
 .commentarea { border-top: solid 1px rgba(0, 0, 0, 0.2); padding-top: 10px; position: relative; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7); }
 .commentarea > .infobar { margin-bottom: 15px; margin-left: 10px; border-left: solid 4px #cca400; }
@@ -774,14 +826,15 @@ table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
 a[href$="#highlight"] { color: #e00707 !important; font-weight: bold; text-decoration: none !important; cursor: default; }
 
 /*Spoiler tag Borrowed from /r/witcher!*/
-a[href="#s"], .md p > a[href="#s"], .res-nightmode a[href$="#s"], .res-nightmode .comment .md p a[href="#s"] { text-decoration: none !important; cursor: default; font-weight: bold; color: #111 !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
-a[href="#s"]::after, .md p > a[href="#s"]::after, .res-nightmode a[href$="#s"]::after, .res-nightmode .comment .md p a[href="#s"]::after { content: attr(title); color: transparent; font-weight: normal; padding: 0 0.5em; visibility: visible; transition: .3s all; }
-a[href="#s"]:hover, a[href="#s"]:active, .md p > a[href="#s"]:hover, .md p > a[href="#s"]:active, .res-nightmode a[href$="#s"]:hover, .res-nightmode a[href$="#s"]:active, .res-nightmode .comment .md p a[href="#s"]:hover, .res-nightmode .comment .md p a[href="#s"]:active { transition: 0.4s all; }
-a[href="#s"]:hover::after, a[href="#s"]:active::after, .md p > a[href="#s"]:hover::after, .md p > a[href="#s"]:active::after, .res-nightmode a[href$="#s"]:hover::after, .res-nightmode a[href$="#s"]:active::after, .res-nightmode .comment .md p a[href="#s"]:hover::after, .res-nightmode .comment .md p a[href="#s"]:active::after { text-shadow: none !important; color: #111 !important; }
-
 a[href="#spoiler"], .md p > a[href="#spoiler"], .res-nightmode a[href$="#spoiler"], .res-nightmode .comment .md p a[href="#spoiler"] { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
 a[href="#spoiler"]:before, .md p > a[href="#spoiler"]:before, .res-nightmode a[href$="#spoiler"]:before, .res-nightmode .comment .md p a[href="#spoiler"]:before { font-weight: bold; color: #111 !important; content: 'Spoiler: '; }
 a[href="#spoiler"]:hover, .md p > a[href="#spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover, .res-nightmode .comment .md p a[href="#spoiler"]:hover { color: #111 !important; text-shadow: none; transition: 0.4s all; }
+
+/* Old spoiler tag */
+a[href="#s"], a[href="/s"], .md p > a[href="#s"], .md p > a[href="/s"], .res-nightmode a[href$="#s"], .res-nightmode a[href$="/s"], .res-nightmode .comment .md p a[href="#s"], .res-nightmode .comment .md p a[href="/s"] { text-decoration: none !important; background-color: transparent !important; cursor: default; font-weight: bold; color: #111 !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+a[href="#s"]::after, a[href="/s"]::after, .md p > a[href="#s"]::after, .md p > a[href="/s"]::after, .res-nightmode a[href$="#s"]::after, .res-nightmode a[href$="/s"]::after, .res-nightmode .comment .md p a[href="#s"]::after, .res-nightmode .comment .md p a[href="/s"]::after { background-color: transparent !important; content: attr(title); color: transparent; font-weight: normal; padding: 0 0.5em; visibility: visible; transition: .3s all; }
+a[href="#s"]:hover, a[href="#s"]:active, a[href="/s"]:hover, a[href="/s"]:active, .md p > a[href="#s"]:hover, .md p > a[href="#s"]:active, .md p > a[href="/s"]:hover, .md p > a[href="/s"]:active, .res-nightmode a[href$="#s"]:hover, .res-nightmode a[href$="#s"]:active, .res-nightmode a[href$="/s"]:hover, .res-nightmode a[href$="/s"]:active, .res-nightmode .comment .md p a[href="#s"]:hover, .res-nightmode .comment .md p a[href="#s"]:active, .res-nightmode .comment .md p a[href="/s"]:hover, .res-nightmode .comment .md p a[href="/s"]:active { transition: 0.4s all; text-shadow: none !important; }
+a[href="#s"]:hover::after, a[href="#s"]:active::after, a[href="/s"]:hover::after, a[href="/s"]:active::after, .md p > a[href="#s"]:hover::after, .md p > a[href="#s"]:active::after, .md p > a[href="/s"]:hover::after, .md p > a[href="/s"]:active::after, .res-nightmode a[href$="#s"]:hover::after, .res-nightmode a[href$="#s"]:active::after, .res-nightmode a[href$="/s"]:hover::after, .res-nightmode a[href$="/s"]:active::after, .res-nightmode .comment .md p a[href="#s"]:hover::after, .res-nightmode .comment .md p a[href="#s"]:active::after, .res-nightmode .comment .md p a[href="/s"]:hover::after, .res-nightmode .comment .md p a[href="/s"]:active::after { color: #111 !important; }
 
 /*===NINTENDO FAMILY=====================================*/
 div.side blockquote:last-of-type a { display: inline-block; width: 35px; height: 35px; border: 1px solid black; margin: 1px; background: url(%%nintendofamily%%); }

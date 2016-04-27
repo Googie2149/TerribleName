@@ -8,38 +8,6 @@ cursor: default;
 
 /*Spoiler tag
   Borrowed from /r/witcher!*/
-
-a[href="#s"],
-.md p > a[href="#s"],
-.res-nightmode a[href$="#s"],
-.res-nightmode .comment .md p a[href="#s"] {
-  text-decoration: none !important;
-  cursor: default;
-  font-weight: bold;
-  color: $black !important;
-  text-shadow: 0 0 15px $kirby-pink, 0 0 15px $kirby-pink, 0 0 15px $kirby-pink;
-  display: inline-block;
-  transition: .3s all;
-
-  &::after {
-    content: attr(title);
-    color: transparent;
-    font-weight: normal;
-    padding: 0 0.5em;
-    visibility: visible;
-    transition: .3s all;
-  }
-
-  &:hover, &:active {
-    transition: 0.4s all;
-    &::after {
-      text-shadow: none !important;
-      color: $black !important;
-    }
-  }
-}
-
-
 a[href="#spoiler"],
 .md p > a[href="#spoiler"],
 .res-nightmode a[href$="#spoiler"],
@@ -50,17 +18,49 @@ a[href="#spoiler"],
   text-shadow: 0 0 15px $kirby-pink, 0 0 15px $kirby-pink, 0 0 15px $kirby-pink;
   display: inline-block;
   transition: .3s all;
-
-  &:before {
+    &:before {
     font-weight: bold;
     color: $black !important;
-
-    content: 'Spoiler: ';
+      content: 'Spoiler: ';
   }
 
-  &:hover {
+    &:hover {
     color: $black !important;
     text-shadow: none;
     transition: 0.4s all;
+  }
+}
+
+/* Old spoiler tag */
+a[href="#s"], a[href="/s"],
+.md p > a[href="#s"], .md p > a[href="/s"],
+.res-nightmode a[href$="#s"], .res-nightmode a[href$="/s"],
+.res-nightmode .comment .md p a[href="#s"], .res-nightmode .comment .md p a[href="/s"] {
+  text-decoration: none !important;
+  background-color: transparent !important;
+  cursor: default;
+  font-weight: bold;
+  color: $black !important;
+  text-shadow: 0 0 15px $kirby-pink, 0 0 15px $kirby-pink, 0 0 15px $kirby-pink;
+  display: inline-block;
+  transition: .3s all;
+
+  &::after {
+
+    background-color: transparent !important;
+    content: attr(title);
+    color: transparent;
+    font-weight: normal;
+    padding: 0 0.5em;
+    visibility: visible;
+    transition: .3s all;
+  }
+
+  &:hover, &:active {
+    transition: 0.4s all;
+      text-shadow: none !important;
+    &::after {
+      color: $black !important;
+    }
   }
 }

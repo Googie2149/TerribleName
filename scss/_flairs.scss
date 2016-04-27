@@ -1,7 +1,70 @@
 .linkflairlabel {
 	@extend %tn-flair;
 }
+/*
+.title .linkflairlabel {
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:34px;
+	padding:0px;
+	margin:0px 8px -5px 0px;
+	border:none;
+	background:none;
+	text-indent:-9999px
+}
 
+.title .linkflairlabel:hover {
+	cursor:pointer!important
+}
+*/
+@mixin postflair ($width, $height, $pos, $offsetx, $offsety, $name) {
+	.linkflair-#{$name} .linkflairlabel:before {
+		content:"";
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:#{$width}px;
+		height:34px;
+		background:url('%%PostFlairs%%') no-repeat;
+		background-position:-5px #{$pos}px;
+	}
+	.flairoptinepane .linkflair-#{$name} {
+		top: -9999px !important;
+		left: -9999px !important;
+		display:none;
+	}
+	.linkflair-#{$name} .linkflairlabel {
+		padding-left: $width - 60px !important;
+	}
+}
+/*
+.flairselection .flairoptionpane li {
+	min-width: 75px;
+	max-width: 100px;
+	text-align: center;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: inline-block;
+}
+
+@include postflair(113, 30, -5,   20, 20, "modpost");
+@include postflair(134, 24, -49,  20, 20, "mainseries");
+@include postflair(119, 22, -93,  20, 20, "spinoff");
+@include postflair(86,  26, -137, 20, 20, "anime");
+@include postflair(172, 31, -181, 20, 20, "mangacomic");
+@include postflair(150, 33, -225, 20, 20, "smashbros");
+@include postflair(168, 34, -269, 20, 20, "animespoilers");
+@include postflair(161, 24, -313, 20, 20, "gamespoilers");
+@include postflair(86,  32, -357, 20, 20, "music");
+@include postflair(112, 32, -401, 20, 20, "artwork");
+@include postflair(156, 34, -445, 20, 20, "collectables");
+@include postflair(81,  31, -489, 20, 20, "news");
+@include postflair(123, 32, -533, 20, 20, "questions");
+@include postflair(79,  24, -577, 20, 20, "meta");
+@include postflair(83,  23, -621, 20, 20, "misc");
+@include postflair(165, 28, -665, 20, 20, "monthly");
+*/
 .flair {
 	display: inline-block;
 	font-size: $normal-font-size !important;
@@ -12,7 +75,7 @@
 	background-image: url(%%spritesheet%%);
 	background-color: rgba(0,0,0,0);
 	background-repeat: no-repeat;
-	text-indent: -999999px;
+	text-indent: -9999em;
 }
 
 @mixin kirby-flair ($width, $pos, $name) {

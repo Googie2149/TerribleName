@@ -42,6 +42,7 @@
   display: none;
 }
 
+
 .morelink {
   @extend %tn-background-force-reset;
   border: none;
@@ -50,12 +51,89 @@
   &:hover {
     @extend %tn-background-force-reset;
   }
-
+// Modified from %tn-button
   a {
-    @extend %tn-button;
+    color: $button-fg !important;
+    font-family: $sans-serif;
+    padding: 2px 8px;
+    width: auto;
+    min-width: 4em;
+    height: auto;
+    line-height: 1.5em;
+    vertical-align: middle;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    text-decoration: none !important;
+    border: none;
+    text-align: center;
+    margin-right: 3px;
+    @include linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%));
+    @include shadow(0 1px 2px rgba(0, 0, 0, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3));
+    @include rounded(4px);
+
+    &:hover,
+    &:focus {
+      color: $button-fg;
+      @include linear-gradient(top, $button-bg, darken($button-bg, 6%));
+    }
+
+    &:active {
+      @include linear-gradient(top, darken($button-bg, 10%), $button-bg);
+      @include shadow(inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7));
+    }
+
     letter-spacing: 0;
     margin-right: 0;
     padding: 5px 8px;
+  }
+}
+
+.submit-link .morelink a{
+  background: url(%%LinkDefault%%) no-repeat, -webkit-linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background: url(%%LinkDefault%%) no-repeat, -moz-linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background: url(%%LinkDefault%%) no-repeat, linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background-position: 5px center !important;
+  @include rounded(4px);
+
+  &:hover,
+  &:focus {
+    color: $button-fg;
+    background: url(%%LinkHover%%) no-repeat, -webkit-linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background: url(%%LinkHover%%) no-repeat, -moz-linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background: url(%%LinkHover%%) no-repeat, linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background-position: 20px top !important;
+  }
+
+  &:active {
+    background: url(%%LinkActive%%) no-repeat, -webkit-linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background: url(%%LinkActive%%) no-repeat, -moz-linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background: url(%%LinkActive%%) no-repeat, linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background-position: 40px bottom !important;
+    @include shadow(inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7));
+  }
+}
+
+.submit-text .morelink a{
+  background: url(%%TextDefault%%) no-repeat, -webkit-linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background: url(%%TextDefault%%) no-repeat, -moz-linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background: url(%%TextDefault%%) no-repeat, linear-gradient(top, lighten($button-bg, 15%), darken($button-bg, 15%)) !important;
+  background-position: 5px center !important;
+  @include rounded(4px);
+
+  &:hover,
+  &:focus {
+    color: $button-fg;
+    background: url(%%TextHover%%) no-repeat, -webkit-linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background: url(%%TextHover%%) no-repeat, -moz-linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background: url(%%TextHover%%) no-repeat, linear-gradient(top, $button-bg, darken($button-bg, 6%)) !important;
+    background-position: 5px center !important;
+  }
+
+  &:active {
+    background: url(%%TextActive%%) no-repeat, -webkit-linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background: url(%%TextActive%%) no-repeat, -moz-linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background: url(%%TextActive%%) no-repeat, linear-gradient(top, darken($button-bg, 10%), $button-bg) !important;
+    background-position: 5px center !important;
+    @include shadow(inset 0 2px 3px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(255, 255, 255, 0.7));
   }
 }
 
@@ -76,6 +154,7 @@
         left: 3px;
         top: 1px;
         opacity: 0.6;
+
       }
     }
 
