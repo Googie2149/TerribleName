@@ -48,16 +48,17 @@ $kirby-pink:      #f8a0d8;
 
 $sidebar-width:   300px;
 
+// Changed the default
+$main-bg-image: '%%noise%%';
+$header-bg-image: '%%banner%%';
+$icon-image: '%%icons%%';
+$res-night-bg-image: '%%dark-noise%%';
 
-$main-bg-image: '../image/noise.jpg';
-$header-bg-image: '../image/banner.jpg';
-$icon-image: '../image/icons.png';
-$res-night-bg-image: '../image/dark-noise.jpg';
-@if env(ASSETS) == remote {
-  $main-bg-image: '%%noise%%';
-  $header-bg-image: '%%banner%%';
-  $icon-image: '%%icons%%';
-  $res-night-bg-image: '%%dark-noise%%';
+@if env(ASSETS) == local {
+  $main-bg-image: '../image/noise.jpg';
+  $header-bg-image: '../image/banner.jpg';
+  $icon-image: '../image/icons.png';
+  $res-night-bg-image: '../image/dark-noise.jpg';
 }
 
 $sans-serif: 'Liberation Sans', Arial, sans-serif;
