@@ -73,7 +73,6 @@
 .thing {
   .title {
     @extend %tn-link;
-    @include rounded(6px);
   }
 
   &.stickied {
@@ -85,6 +84,7 @@
 
   &.over18 {
     a.title {
+      @include rounded(4px);
       text-decoration: none !important;
       cursor: default;
       color: transparent !important;

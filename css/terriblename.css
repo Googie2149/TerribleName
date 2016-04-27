@@ -492,9 +492,8 @@ span.hover.pagename.redditname { color: transparent; }
 .link .flat-list.buttons > li.option.active { display: inline-block; }
 .link .flat-list.buttons > li.nsfw-stamp, .link .flat-list.buttons > li.first { display: inline-block !important; }
 
-.thing .title { border-radius: 6px; }
 .thing.stickied a.title { color: #208000 !important; font-weight: bold !important; }
-.thing.over18 a.title { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+.thing.over18 a.title { border-radius: 4px; text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
 .thing.over18 a.title:before { font-weight: bold; color: #2177b4 !important; content: 'Spoiler: '; }
 .thing.over18 a.title:before:visited { color: #5358ba !important; }
 .thing.over18 a.title:hover { color: #2177b4 !important; text-shadow: none; transition: 0.4s all; }
@@ -836,7 +835,7 @@ table.diff tbody .diff_header:not([id]) { color: #9d9d9d; }
 a[href$="#highlight"] { color: #e00707 !important; font-weight: bold; text-decoration: none !important; cursor: default; }
 
 /*Spoiler tag Borrowed from /r/witcher!*/
-a[href="#spoiler"], .md p > a[href="#spoiler"], .res-nightmode a[href$="#spoiler"], .res-nightmode .comment .md p a[href="#spoiler"] { border-radius: 6px; text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+a[href="#spoiler"], .md p > a[href="#spoiler"], .res-nightmode a[href$="#spoiler"], .res-nightmode .comment .md p a[href="#spoiler"] { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
 a[href="#spoiler"]:before, .md p > a[href="#spoiler"]:before, .res-nightmode a[href$="#spoiler"]:before, .res-nightmode .comment .md p a[href="#spoiler"]:before { font-weight: bold; color: #111 !important; content: 'Spoiler: '; }
 a[href="#spoiler"]:hover, .md p > a[href="#spoiler"]:hover, .res-nightmode a[href$="#spoiler"]:hover, .res-nightmode .comment .md p a[href="#spoiler"]:hover { color: #111 !important; text-shadow: none; transition: 0.4s all; }
 

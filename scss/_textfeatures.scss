@@ -12,7 +12,6 @@ a[href="#spoiler"],
 .md p > a[href="#spoiler"],
 .res-nightmode a[href$="#spoiler"],
 .res-nightmode .comment .md p a[href="#spoiler"] {
-  @include rounded(6px);
   text-decoration: none !important;
   cursor: default;
   color: transparent !important;

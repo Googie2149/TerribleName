@@ -216,9 +216,8 @@
   .link .flat-list.buttons > li { display: inline-block; padding: 0; }
   .link .flat-list.buttons > li.option.active { display: inline-block; }
   .link .flat-list.buttons > li.nsfw-stamp, .link .flat-list.buttons > li.first { display: inline-block !important; }
-  .thing .title { border-radius: 6px; }
   .thing.stickied a.title { color: #208000 !important; font-weight: bold !important; }
-  .thing.over18 a.title { text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
+  .thing.over18 a.title { border-radius: 4px; text-decoration: none !important; cursor: default; color: transparent !important; text-shadow: 0 0 15px #f8a0d8, 0 0 15px #f8a0d8, 0 0 15px #f8a0d8; display: inline-block; transition: .3s all; }
   .thing.over18 a.title:before { font-weight: bold; color: #2177b4 !important; content: 'Spoiler: '; }
   .thing.over18 a.title:before:visited { color: #5358ba !important; }
   .thing.over18 a.title:hover { color: #2177b4 !important; text-shadow: none; transition: 0.4s all; }
