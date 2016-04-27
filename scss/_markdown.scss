@@ -147,9 +147,18 @@
   }
 
   a {
-    @extend %tn-link;
+    @extend %tn-link; 
     &:hover {
       text-decoration: underline;
+    }
+
+    &[href$="/spoiler"] {
+      background: $spoiler-bg !important;
+      color: $spoiler-bg !important;
+      text-decoration: none;
+      &:hover {
+        color: $spoiler-fg !important;
+      }
     }
   }
 }
